@@ -13,6 +13,8 @@ import {
 import { links } from '@/constants/links';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { Button } from '../ui/button';
+import { FaWhatsapp } from 'react-icons/fa6';
 
 export default function NavigationJseg() {
 	const path = usePathname();
@@ -85,6 +87,16 @@ export default function NavigationJseg() {
 							</>
 						);
 					})}
+					<Link
+						href={'/'}
+						target='_blank'>
+						<Button
+							variant={'brand'}
+							className='flex gap-2 bg-left transition-all duration-200 ease-linear hover:bg-right bg-[length:496px_100px] rounded-lg drop-shadow-lg hover:drop-shadow-xl text-base text-zinc-50 hover:bg-brand-green-700'>
+							<FaWhatsapp size={24} />
+							Whatsapp
+						</Button>
+					</Link>
 				</NavigationMenuList>
 			</NavigationMenu>
 		</>

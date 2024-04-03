@@ -82,6 +82,10 @@
     font-family: var(--montserrat);
    }
 
+   button{
+    font-family: var(--montserrat);
+   }
+
    p{
     font-family: var(--poppins);
    }

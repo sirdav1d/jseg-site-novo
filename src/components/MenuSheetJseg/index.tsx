@@ -14,6 +14,8 @@ import Image from 'next/image';
 import logo from '@/assets/images/logo_jseg.png';
 import { links } from '@/constants/links';
 import Link from 'next/link';
+import { Button } from '../ui/button';
+import { FaWhatsapp } from 'react-icons/fa6';
 
 export default function MenuSheetJseg() {
 	return (
@@ -55,6 +57,17 @@ export default function MenuSheetJseg() {
 							);
 						})}
 					</ul>
+					<Link
+						href={'/'}
+						target='_blank'>
+						<Button
+						size={'lg'}
+							variant={'brand'}
+							className='flex gap-4 bg-left transition-all duration-200 ease-linear hover:bg-right bg-[length:496px_100px] rounded-lg drop-shadow-lg hover:drop-shadow-xl text-xl text-zinc-50 hover:bg-brand-green-700'>
+							<FaWhatsapp size={28} />
+							Whatsapp
+						</Button>
+					</Link>
 				</SheetContent>
 			</Sheet>
 		</div>
