@@ -8,6 +8,9 @@ import React, { useEffect, useState } from 'react';
 import { useQuerySubscription, Image as ResponsiveImage } from 'react-datocms';
 import { ChevronRight, Plus } from 'lucide-react';
 import HeroTypeAnimation from './HeroTypeAnimation';
+import { MotionDiv } from '@/components/MotionComponents';
+import { SlideUp } from '@/animations/SlideUp';
+import { SlideRight } from '@/animations/SlideRight';
 
 export default function ContentHero({ subscription }: { subscription: any }) {
 	const [hydrated, setHydrated] = useState(false);
@@ -37,7 +40,7 @@ export default function ContentHero({ subscription }: { subscription: any }) {
 										className='h-full'>
 										<div className='flex flex-col h-full justify-between py-5'>
 											<div className='flex flex-col gap-5'>
-												<h1 className='text-zinc-900 font-extrabold text-4xl '>
+												<h1 className='text-zinc-900 font-extrabold max-w-lg text-4xl '>
 													{res.heading}&nbsp;
 													<span className='text-brand-green-500'>
 														<HeroTypeAnimation
@@ -49,7 +52,7 @@ export default function ContentHero({ subscription }: { subscription: any }) {
 														/>
 													</span>
 												</h1>
-												<p className='text-base font-light max-w-3xl mb-10'>
+												<p className='text-base prose font-normal max-w-2xl mb-10'>
 													{res.subheadline}
 												</p>
 												<Button
@@ -62,16 +65,36 @@ export default function ContentHero({ subscription }: { subscription: any }) {
 													/>
 												</Button>
 											</div>
-											<div className='flex w-full justify-between'>
+											<div className='flex w-full justify-between border-t border-b bg-zinc-50/40 backdrop-blur-sm border-zinc-600/10'>
 												<div className='w-1/3 flex gap-5'>
-													<ResponsiveImage
-														data={res.imagehero[4].responsiveImage}
-														className='object-contain'
-													/>
-													<ResponsiveImage
-														data={res.imagehero[3].responsiveImage}
-														className='object-contain'
-													/>
+													<MotionDiv
+														variants={SlideRight}
+														whileInView='open'
+														transition={{
+															delay: 0.9,
+															type: 'tween',
+															duration: 0.5,
+														}}
+														initial='close'>
+														<ResponsiveImage
+															data={res.imagehero[4].responsiveImage}
+															className='object-contain'
+														/>
+													</MotionDiv>
+													<MotionDiv
+														variants={SlideRight}
+														whileInView='open'
+														transition={{
+															delay: 1.2,
+															type: 'tween',
+															duration: 0.5,
+														}}
+														initial='close'>
+														<ResponsiveImage
+															data={res.imagehero[3].responsiveImage}
+															className='object-contain'
+														/>
+													</MotionDiv>
 												</div>
 												<div className='flex items-center justify-center flex-col gap-5'>
 													<h2 className='font-bold text-xl'>
@@ -79,7 +102,7 @@ export default function ContentHero({ subscription }: { subscription: any }) {
 													</h2>
 													<div className='flex gap-2 items-center justify-center'>
 														<Plus size={24} />
-														<p className='text-brand-green-500 font-semibold text-4xl'>
+														<p className='text-brand-green-500 font-semibold text-5xl'>
 															{res.status01.value}
 														</p>
 													</div>
@@ -90,7 +113,7 @@ export default function ContentHero({ subscription }: { subscription: any }) {
 													</h2>
 													<div className='flex gap-2 items-center justify-center'>
 														<Plus size={24} />
-														<p className='text-brand-green-500 font-semibold text-4xl'>
+														<p className='text-brand-green-500 font-semibold text-5xl'>
 															{res.status02.value}
 														</p>
 													</div>
@@ -101,7 +124,7 @@ export default function ContentHero({ subscription }: { subscription: any }) {
 													</h2>
 													<div className='flex gap-2 items-center justify-center'>
 														<Plus size={24} />
-														<p className='text-brand-green-500 font-semibold text-4xl'>
+														<p className='text-brand-green-500 font-semibold text-5xl'>
 															{res.status03.value}
 														</p>
 													</div>
@@ -110,19 +133,45 @@ export default function ContentHero({ subscription }: { subscription: any }) {
 										</div>
 										<div>
 											<div className='absolute top-0 -z-10 right-0 object-contain w-[38%]'>
-												<ResponsiveImage
-													data={
-														res.imagehero[0].responsiveImage
-													}></ResponsiveImage>
+												<MotionDiv
+													variants={SlideUp}
+													whileInView='open'
+													animate='open'
+													initial='close'>
+													<ResponsiveImage
+														data={
+															res.imagehero[0].responsiveImage
+														}></ResponsiveImage>
+												</MotionDiv>
 												<div className='flex w-[60%] object-contain -translate-y-32'>
-													<ResponsiveImage
-														data={
-															res.imagehero[1].responsiveImage
-														}></ResponsiveImage>
-													<ResponsiveImage
-														data={
-															res.imagehero[2].responsiveImage
-														}></ResponsiveImage>
+													<MotionDiv
+														variants={SlideRight}
+														transition={{
+															delay: 0.3,
+															type: 'tween',
+															duration: 0.5,
+														}}
+														whileInView='open'
+														initial='close'>
+														<ResponsiveImage
+															data={
+																res.imagehero[1].responsiveImage
+															}></ResponsiveImage>
+													</MotionDiv>
+													<MotionDiv
+														variants={SlideRight}
+														transition={{
+															delay: 0.6,
+															type: 'tween',
+															duration: 0.5,
+														}}
+														whileInView='open'
+														initial='close'>
+														<ResponsiveImage
+															data={
+																res.imagehero[2].responsiveImage
+															}></ResponsiveImage>
+													</MotionDiv>
 												</div>
 											</div>
 										</div>

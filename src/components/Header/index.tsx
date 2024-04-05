@@ -9,7 +9,7 @@ import MenuSheetJseg from '../MenuSheetJseg';
 
 export default function Header() {
 	return (
-		<div className='py-4  w-full bg-zinc-50/40 backdrop-blur-md'>
+		<div className='py-4  w-full bg-zinc-50/40 backdrop-blur-sm border-b border-zinc-600/10'>
 			<Container>
 				<div className='flex justify-between items-center '>
 					<a href='/'>

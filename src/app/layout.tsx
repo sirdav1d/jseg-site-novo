@@ -13,7 +13,7 @@ const montserrat = Montserrat({
 });
 const poppins = Poppins({
 	subsets: ['latin'],
-	weight: ['300', '500', '800'],
+	weight: ['300', '400', '500', '800'],
 	variable: '--poppins',
 	display: 'swap',
 });
