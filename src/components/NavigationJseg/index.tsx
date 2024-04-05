@@ -24,7 +24,7 @@ export default function NavigationJseg() {
 				<NavigationMenuList className='gap-4 text-stone-700 font-semibold flex flex-col lg:flex-row '>
 					{links.map((l, i) => {
 						return (
-							<>
+							<div key={i}>
 								{l.label === 'Soluções' ? (
 									<>
 										<NavigationMenuItem>
@@ -84,7 +84,7 @@ export default function NavigationJseg() {
 										</Link>
 									</NavigationMenuItem>
 								)}
-							</>
+							</div>
 						);
 					})}
 					<Link
@@ -92,7 +92,7 @@ export default function NavigationJseg() {
 						target='_blank'>
 						<Button
 							variant={'brand'}
-							className='flex gap-2 bg-left transition-all duration-200 ease-linear hover:bg-right bg-[length:496px_100px] rounded-lg drop-shadow-lg hover:drop-shadow-xl text-base text-zinc-50 hover:bg-brand-green-700'>
+							className='flex gap-2  transition-all duration-200 ease-linear rounded-lg drop-shadow-lg hover:drop-shadow-xl text-base text-zinc-50 hover:bg-brand-green-700'>
 							<FaWhatsapp size={24} />
 							Whatsapp
 						</Button>

@@ -8,6 +8,7 @@ import Header from '@/components/Header';
 const montserrat = Montserrat({
 	subsets: ['latin'],
 	variable: '--montserrat',
+	weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
 	display: 'swap',
 });
 const poppins = Poppins({
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
 	title: 'JSEG Equipamentos | Especializada Em Segurança Eletrõnica',
 	description:
 		'Loja de Equipamentos de Rede e Segurança, focada no cliente, abrangente em soluções e produtos',
-    icons:'/images/frame.png'
+	icons: '/images/frame.png',
 };
 
 export default function RootLayout({
