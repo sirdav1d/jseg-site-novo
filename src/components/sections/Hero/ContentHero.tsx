@@ -29,7 +29,7 @@ export default function ContentHero({ subscription }: { subscription: any }) {
 
 	return (
 		hydrated && (
-			<div className='h-full w-full py-20 flex items-center justify-center'>
+			<div className='h-full w-full py-10 flex items-center justify-center'>
 				<Container>
 					<>
 						<div className='h-full'>
@@ -38,7 +38,7 @@ export default function ContentHero({ subscription }: { subscription: any }) {
 									<div
 										key={index}
 										className='h-full'>
-										<div className='flex flex-col h-full justify-between py-5'>
+										<div className='flex flex-col h-full justify-between gap-5 py-5'>
 											<div className='flex flex-col gap-5'>
 												<h1 className='text-zinc-900 font-extrabold max-w-lg text-4xl '>
 													{res.heading}&nbsp;
@@ -143,7 +143,7 @@ export default function ContentHero({ subscription }: { subscription: any }) {
 															res.imagehero[0].responsiveImage
 														}></ResponsiveImage>
 												</MotionDiv>
-												<div className='flex w-[60%] object-contain -translate-y-32'>
+												<div className='flex w-[60%] object-contain -translate-y-40 -translate-x-10'>
 													<MotionDiv
 														variants={SlideRight}
 														transition={{
