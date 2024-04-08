@@ -1,16 +1,16 @@
 /** @format */
 
 'use client';
+import { SlideRight } from '@/animations/SlideRight';
+import { SlideUp } from '@/animations/SlideUp';
 import Container from '@/components/Container';
+import { MotionDiv } from '@/components/MotionComponents';
 import { Button } from '@/components/ui/button';
 import { AllHomepageHero } from '@/lib/datocms';
-import React, { useEffect, useState } from 'react';
-import { useQuerySubscription, Image as ResponsiveImage } from 'react-datocms';
 import { ChevronRight, Plus } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { Image as ResponsiveImage, useQuerySubscription } from 'react-datocms';
 import HeroTypeAnimation from './HeroTypeAnimation';
-import { MotionDiv } from '@/components/MotionComponents';
-import { SlideUp } from '@/animations/SlideUp';
-import { SlideRight } from '@/animations/SlideRight';
 
 export default function ContentHero({ subscription }: { subscription: any }) {
 	const [hydrated, setHydrated] = useState(false);

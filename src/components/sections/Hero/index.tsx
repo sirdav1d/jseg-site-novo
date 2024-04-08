@@ -1,7 +1,6 @@
 /** @format */
 
-import { AllHomepageHero, queryHeroSection, request } from '@/lib/datocms';
-import { Image as ResponsiveImage } from 'react-datocms';
+import { queryHeroSection, request } from '@/lib/datocms';
 import ContentHero from './ContentHero';
 
 export default async function HeroSection() {

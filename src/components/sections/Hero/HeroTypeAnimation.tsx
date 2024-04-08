@@ -1,6 +1,5 @@
 /** @format */
 
-import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 
 export default function HeroTypeAnimation({ words }: { words: string[] }) {
