@@ -61,7 +61,6 @@ export default function MenuSheetJseg() {
 						href={'/'}
 						target='_blank'>
 						<Button
-						size={'lg'}
 							variant={'brand'}
 							className='flex gap-4 bg-left transition-all duration-200 ease-linear hover:bg-right bg-[length:496px_100px] rounded-lg drop-shadow-lg hover:drop-shadow-xl text-xl text-zinc-50 hover:bg-brand-green-700'>
 							<FaWhatsapp size={28} />
