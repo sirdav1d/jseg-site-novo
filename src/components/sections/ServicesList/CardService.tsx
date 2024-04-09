@@ -13,7 +13,7 @@ interface CardServiceProps {
 export default function CardService(props: CardServiceProps) {
 	return (
 		<div>
-			<Card className='w-full xl:max-w-[364px] h-full '>
+			<Card className='w-full xl:max-w-[364px] lg:h-[228px] h-full '>
 				<CardHeader>
 					<CardTitle className='flex flex-col items-start gap-3 text-xl bg-cardColor text-transparent bg-clip-text bg-contain font-extrabold w-fit'>
 						{props.icon}

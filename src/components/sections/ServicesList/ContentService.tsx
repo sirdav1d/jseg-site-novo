@@ -14,6 +14,8 @@ import Alarm from '@/assets/icons/alarm';
 import Cftv from '@/assets/icons/cftv';
 import Phone from '@/assets/icons/phone';
 import Wifi from '@/assets/icons/wifi';
+import { MotionDiv } from '@/components/MotionComponents';
+import { SlideRight } from '@/animations/SlideRight';
 
 export default function ContentService({
 	subscription,
@@ -48,7 +50,9 @@ export default function ContentService({
 										<h2 className='text-3xl w-full font-bold'>
 											{res.sectioncontent01.title}
 										</h2>
-										<p className='prose mb-10 lg:mb-0'>{res.sectioncontent01.description}</p>{' '}
+										<p className='prose mb-10 lg:mb-0'>
+											{res.sectioncontent01.description}
+										</p>{' '}
 									</div>
 									<Button
 										variant={'brand'}
@@ -61,31 +65,67 @@ export default function ContentService({
 									</Button>
 								</div>
 
-								<div className='grid md:grid-cols-2 xl:grid-cols-3 gap-5 w-full'>
-									<CardService
-										icon={<BrainCircuit />}
-										title={res.cardservice01.title}
-										description={res.cardservice01.description}></CardService>
-									<CardService
-										icon={<Wifi />}
-										title={res.cardservice02.title}
-										description={res.cardservice02.description}></CardService>
-									<CardService
-										icon={<Cftv />}
-										title={res.cardservice03.title}
-										description={res.cardservice03.description}></CardService>
-									<CardService
-										icon={<Access />}
-										title={res.cardservice04.title}
-										description={res.cardservice04.description}></CardService>
-									<CardService
-										icon={<Phone />}
-										title={res.cardservice05.title}
-										description={res.cardservice05.description}></CardService>
-									<CardService
-										icon={<Alarm />}
-										title={res.cardservice06.title}
-										description={res.cardservice06.description}></CardService>
+								<div className='grid md:grid-cols-2 xl:grid-cols-3 gap-5 w-full h-full'>
+									<MotionDiv
+										variants={SlideRight}
+										transition={{ ease: 'linear', duration: 0.5, delay: 0.2 }}
+										whileInView='open'
+										initial='close'>
+										<CardService
+											icon={<BrainCircuit />}
+											title={res.cardservice01.title}
+											description={res.cardservice01.description}></CardService>
+									</MotionDiv>
+									<MotionDiv
+										variants={SlideRight}
+										transition={{ ease: 'linear', duration: 0.5, delay: 0.3 }}
+										whileInView='open'
+										initial='close'>
+										<CardService
+											icon={<Wifi />}
+											title={res.cardservice02.title}
+											description={res.cardservice02.description}></CardService>
+									</MotionDiv>
+									<MotionDiv
+										transition={{ ease: 'linear', duration: 0.5, delay: 0.4 }}
+										variants={SlideRight}
+										whileInView='open'
+										initial='close'>
+										<CardService
+											icon={<Cftv />}
+											title={res.cardservice03.title}
+											description={res.cardservice03.description}></CardService>
+									</MotionDiv>
+									<MotionDiv
+										transition={{ ease: 'linear', duration: 0.5, delay: 0.5 }}
+										variants={SlideRight}
+										whileInView='open'
+										initial='close'>
+										<CardService
+											icon={<Access />}
+											title={res.cardservice04.title}
+											description={res.cardservice04.description}></CardService>
+									</MotionDiv>
+									<MotionDiv
+										transition={{ ease: 'linear', duration: 0.5, delay: 0.5 }}
+										variants={SlideRight}
+										whileInView='open'
+										initial='close'>
+										<CardService
+											icon={<Phone />}
+											title={res.cardservice05.title}
+											description={res.cardservice05.description}></CardService>
+									</MotionDiv>
+									<MotionDiv
+										transition={{ ease: 'linear', duration: 0.5, delay: 0.6 }}
+										variants={SlideRight}
+										whileInView='open'
+										initial='close'>
+										<CardService
+											icon={<Alarm />}
+											title={res.cardservice06.title}
+											description={res.cardservice06.description}></CardService>
+									</MotionDiv>
 								</div>
 							</div>
 						);
