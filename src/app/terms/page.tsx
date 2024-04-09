@@ -53,7 +53,7 @@ export default function Terms() {
 							<li>
 								remover quaisquer direitos autorais ou outras notações de
 								propriedade dos materiais; ou transferir os materiais para outra
-								pessoa ou 'espelhe' os materiais em qualquer outro servidor.
+								pessoa ou espelhe os materiais em qualquer outro servidor.
 							</li>
 						</ol>
 						<br />
@@ -70,8 +70,8 @@ export default function Terms() {
 						</h2>
 						<br />
 						<p className='prose w-full prose-base'>
-							Os materiais no site da Jseg Equipamentos são fornecidos 'como
-							estão'. Jseg Equipamentos não oferece garantias, expressas ou
+							Os materiais no site da Jseg Equipamentos são fornecidos como
+							estão. Jseg Equipamentos não oferece garantias, expressas ou
 							implícitas, e, por este meio, isenta e nega todas as outras
 							garantias, incluindo, sem limitação, garantias implícitas ou
 							condições de comercialização, adequação a um fim específico ou não
