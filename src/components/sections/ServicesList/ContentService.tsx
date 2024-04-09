@@ -15,7 +15,7 @@ import Cftv from '@/assets/icons/cftv';
 import Phone from '@/assets/icons/phone';
 import Wifi from '@/assets/icons/wifi';
 import { MotionDiv } from '@/components/MotionComponents';
-import { SlideRight } from '@/animations/SlideRight';
+import { RevealRight } from '@/animations/RevealRight';
 
 export default function ContentService({
 	subscription,
@@ -67,7 +67,7 @@ export default function ContentService({
 
 								<div className='grid md:grid-cols-2 xl:grid-cols-3 gap-5 w-full h-full'>
 									<MotionDiv
-										variants={SlideRight}
+										variants={RevealRight}
 										transition={{ ease: 'linear', duration: 0.5, delay: 0.2 }}
 										whileInView='open'
 										initial='close'>
@@ -77,8 +77,8 @@ export default function ContentService({
 											description={res.cardservice01.description}></CardService>
 									</MotionDiv>
 									<MotionDiv
-										variants={SlideRight}
-										transition={{ ease: 'linear', duration: 0.5, delay: 0.3 }}
+										variants={RevealRight}
+										transition={{ ease: 'linear', duration: 0.5, delay: 0.4 }}
 										whileInView='open'
 										initial='close'>
 										<CardService
@@ -87,8 +87,8 @@ export default function ContentService({
 											description={res.cardservice02.description}></CardService>
 									</MotionDiv>
 									<MotionDiv
-										transition={{ ease: 'linear', duration: 0.5, delay: 0.4 }}
-										variants={SlideRight}
+										transition={{ ease: 'linear', duration: 0.5, delay: 0.6 }}
+										variants={RevealRight}
 										whileInView='open'
 										initial='close'>
 										<CardService
@@ -97,8 +97,8 @@ export default function ContentService({
 											description={res.cardservice03.description}></CardService>
 									</MotionDiv>
 									<MotionDiv
-										transition={{ ease: 'linear', duration: 0.5, delay: 0.5 }}
-										variants={SlideRight}
+										transition={{ ease: 'linear', duration: 0.5, delay: 0.8 }}
+										variants={RevealRight}
 										whileInView='open'
 										initial='close'>
 										<CardService
@@ -107,8 +107,8 @@ export default function ContentService({
 											description={res.cardservice04.description}></CardService>
 									</MotionDiv>
 									<MotionDiv
-										transition={{ ease: 'linear', duration: 0.5, delay: 0.5 }}
-										variants={SlideRight}
+										transition={{ ease: 'linear', duration: 0.5, delay: 1 }}
+										variants={RevealRight}
 										whileInView='open'
 										initial='close'>
 										<CardService
@@ -117,8 +117,8 @@ export default function ContentService({
 											description={res.cardservice05.description}></CardService>
 									</MotionDiv>
 									<MotionDiv
-										transition={{ ease: 'linear', duration: 0.5, delay: 0.6 }}
-										variants={SlideRight}
+										transition={{ ease: 'linear', duration: 0.5, delay: 1.2 }}
+										variants={RevealRight}
 										whileInView='open'
 										initial='close'>
 										<CardService
