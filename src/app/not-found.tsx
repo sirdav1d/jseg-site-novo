@@ -13,7 +13,7 @@ export default function NotFound() {
 		<div>
 			<Container>
 				<div className='flex flex-col items-center justify-center w-full mt-20 m-auto gap-20 h-full'>
-					<h2 className='font-bold text-brand-green-500 text-3xl'>
+					<h2 className='font-bold text-brand-green-500 text-3xl text-center'>
 						Página Não Encontrada
 					</h2>
 					<Link
