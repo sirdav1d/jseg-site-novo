@@ -83,6 +83,10 @@ const config = {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 			},
+			backgroundImage: {
+				cardColor:
+					' linear-gradient(90.05deg, #03A60E 26.47%, #2FB838 51.99%, #03A113 73.87%);',
+			},
 		},
 	},
 	plugins: [require('tailwindcss-animate'), require('@tailwindcss/typography')],

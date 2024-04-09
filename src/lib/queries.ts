@@ -41,3 +41,45 @@ export const queryHeroSection = gql`
 		}
 	}
 `;
+
+
+export const queryServicesList = gql`
+	query {
+		allHomepages {
+			sectioncontent01 {
+				title
+				description
+			}
+			cardservice01 {
+				id
+				title
+				description
+			}
+			cardservice02 {
+				id
+				title
+				description
+			}
+			cardservice03 {
+				id
+				title
+				description
+			}
+			cardservice04 {
+				id
+				title
+				description
+			}
+			cardservice05 {
+				id
+				title
+				description
+			}
+			cardservice06 {
+				id
+				title
+				description
+			}
+		}
+	}
+`;

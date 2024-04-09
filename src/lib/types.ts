@@ -34,3 +34,25 @@ export interface AllHomepageHero {
 	status02: Status;
 	status03: Status;
 }
+
+
+export interface CardService {
+	id: string;
+	title: string;
+	description: string;
+}
+
+export interface SectionContent {
+	title: string;
+	description: string;
+}
+
+export interface AllHomepageService {
+	sectioncontent01: SectionContent;
+	cardservice01: CardService;
+	cardservice02: CardService;
+	cardservice03: CardService;
+	cardservice04: CardService;
+	cardservice05: CardService;
+	cardservice06: CardService;
+}
