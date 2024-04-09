@@ -44,11 +44,11 @@ export default function ContentService({
 								key={index}
 								className='flex flex-col gap-10  w-full'>
 								<div className='w-full'>
-									<div className='flex'>
+									<div className='flex flex-col gap-5 lg:flex-row'>
 										<h2 className='text-3xl w-full font-bold'>
 											{res.sectioncontent01.title}
 										</h2>
-										<p className='prose'>{res.sectioncontent01.description}</p>{' '}
+										<p className='prose mb-10 lg:mb-0'>{res.sectioncontent01.description}</p>{' '}
 									</div>
 									<Button
 										variant={'brand'}
@@ -61,7 +61,7 @@ export default function ContentService({
 									</Button>
 								</div>
 
-								<div className='grid grid-cols-3 gap-5 w-full'>
+								<div className='grid md:grid-cols-2 xl:grid-cols-3 gap-5 w-full'>
 									<CardService
 										icon={<BrainCircuit />}
 										title={res.cardservice01.title}

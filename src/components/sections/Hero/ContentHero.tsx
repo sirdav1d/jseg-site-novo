@@ -39,7 +39,7 @@ export default function ContentHero({ subscription }: { subscription: any }) {
 										key={index}
 										className='h-full'>
 										<div className='flex flex-col h-full justify-between gap-5 py-5'>
-											<div className='flex flex-col gap-5'>
+											<div className='flex flex-col gap-5 align-middle my-auto'>
 												<h1 className='text-zinc-900 font-extrabold  max-w-xs lg:max-w-lg text-4xl '>
 													{res.heading}&nbsp;
 													<span className='text-brand-green-500'>
