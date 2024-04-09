@@ -1,6 +1,6 @@
 /** @format */
 
-import { gql, GraphQLClient } from 'graphql-request';
+import { GraphQLClient } from 'graphql-request';
 
 interface RequestProps {
 	query: string;
@@ -22,77 +22,3 @@ export function request({ query, variables, revalidate }: RequestProps) {
 	return graphQLClient.request(query, variables);
 }
 
-export const queryHeroSection = gql`
-	query {
-		allHomepages {
-			heading
-			keyword01
-			keyword02
-			keyword03
-			subheadline
-			imagehero {
-				responsiveImage {
-					alt
-					aspectRatio
-					base64
-					bgColor
-					height
-					sizes
-					src
-					srcSet
-					__typename
-					width
-					webpSrcSet
-					title
-				}
-			}
-			status01 {
-				title
-				value
-			}
-			status02 {
-				title
-				value
-			}
-			status03 {
-				title
-				value
-			}
-		}
-	}
-`;
-
-export interface ResponsiveImage {
-	alt: string | null;
-	aspectRatio: number;
-	base64: string;
-	height: number;
-	sizes: string;
-	src: string;
-	srcSet: string;
-	title?: string | null;
-	webpSrcSet: string;
-	width: number;
-	__typename: string;
-}
-
-interface Imagehero {
-	responsiveImage: ResponsiveImage;
-}
-
-export interface Status {
-	title: string;
-	value: number;
-}
-
-export interface AllHomepageHero {
-	heading: string;
-	keyword01: string;
-	keyword02: string;
-	keyword03: string;
-	subheadline: string;
-	imagehero: Imagehero[];
-	status01: Status;
-	status02: Status;
-	status03: Status;
-}

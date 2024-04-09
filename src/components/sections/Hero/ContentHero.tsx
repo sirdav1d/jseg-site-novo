@@ -6,7 +6,7 @@ import { SlideUp } from '@/animations/SlideUp';
 import Container from '@/components/Container';
 import { MotionDiv } from '@/components/MotionComponents';
 import { Button } from '@/components/ui/button';
-import { AllHomepageHero } from '@/lib/datocms';
+import { AllHomepageHero } from '@/lib/types';
 import { ChevronRight, Plus } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { Image as ResponsiveImage, useQuerySubscription } from 'react-datocms';
@@ -40,7 +40,7 @@ export default function ContentHero({ subscription }: { subscription: any }) {
 										className='h-full'>
 										<div className='flex flex-col h-full justify-between gap-5 py-5'>
 											<div className='flex flex-col gap-5'>
-												<h1 className='text-zinc-900 font-extrabold max-w-lg text-4xl '>
+												<h1 className='text-zinc-900 font-extrabold  max-w-xs lg:max-w-lg text-4xl '>
 													{res.heading}&nbsp;
 													<span className='text-brand-green-500'>
 														<HeroTypeAnimation
@@ -65,8 +65,8 @@ export default function ContentHero({ subscription }: { subscription: any }) {
 													/>
 												</Button>
 											</div>
-											<div className='flex w-full justify-between border-t border-b bg-zinc-50/40 backdrop-blur-sm border-zinc-600/10'>
-												<div className='w-1/3 flex gap-5'>
+											<div className='flex w-full items-center flex-row py-3 justify-between border-t border-b bg-zinc-50/40 backdrop-blur-sm border-zinc-600/10'>
+												<div className='w-1/3 lg:flex gap-5 hidden'>
 													<MotionDiv
 														variants={SlideRight}
 														whileInView='open'
@@ -96,35 +96,35 @@ export default function ContentHero({ subscription }: { subscription: any }) {
 														/>
 													</MotionDiv>
 												</div>
-												<div className='flex items-center justify-center flex-col gap-5'>
-													<h2 className='font-bold text-xl'>
+												<div className='flex items-center justify-center flex-col gap-3'>
+													<h2 className='font-bold text-sm text-center lg:text-xl'>
 														{res.status01.title}
 													</h2>
-													<div className='flex gap-2 items-center justify-center'>
+													<div className='flex gap-1 lg:gap-2 items-center justify-center'>
 														<Plus size={24} />
-														<p className='text-brand-green-500 font-semibold text-5xl'>
+														<p className='text-brand-green-500 font-semibold text-2xl lg:text-5xl'>
 															{res.status01.value}
 														</p>
 													</div>
 												</div>
-												<div className='flex items-center justify-center flex-col gap-5'>
-													<h2 className='font-bold text-xl'>
+												<div className='flex items-center justify-center flex-col gap-3'>
+													<h2 className='font-bold text-sm text-center lg:text-xl'>
 														{res.status02.title}
 													</h2>
-													<div className='flex gap-2 items-center justify-center'>
+													<div className='flex gap-1 lg:gap-2 items-center justify-center'>
 														<Plus size={24} />
-														<p className='text-brand-green-500 font-semibold text-5xl'>
+														<p className='text-brand-green-500 font-semibold text-2xl lg:text-5xl'>
 															{res.status02.value}
 														</p>
 													</div>
 												</div>
-												<div className='flex items-center justify-center flex-col gap-5'>
-													<h2 className='font-bold text-xl'>
+												<div className='flex items-center justify-center flex-col gap-3'>
+													<h2 className='font-bold text-sm text-center lg:text-xl'>
 														{res.status03.title}
 													</h2>
-													<div className='flex gap-2 items-center justify-center'>
+													<div className='flex gap-1 lg:gap-2 items-center justify-center'>
 														<Plus size={24} />
-														<p className='text-brand-green-500 font-semibold text-5xl'>
+														<p className='text-brand-green-500 font-semibold text-2xl lg:text-5xl'>
 															{res.status03.value}
 														</p>
 													</div>
@@ -132,7 +132,7 @@ export default function ContentHero({ subscription }: { subscription: any }) {
 											</div>
 										</div>
 										<div>
-											<div className='absolute top-0 -z-10 right-0 object-contain w-[38%]'>
+											<div className='absolute top-0 -z-10 right-0 object-contain w-[38%] hidden lg:block'>
 												<MotionDiv
 													variants={SlideUp}
 													whileInView='open'
@@ -143,13 +143,13 @@ export default function ContentHero({ subscription }: { subscription: any }) {
 															res.imagehero[0].responsiveImage
 														}></ResponsiveImage>
 												</MotionDiv>
-												<div className='flex w-[60%] object-contain -translate-y-40 -translate-x-10'>
+												<div className='w-[56%] object-contain -translate-y-20 -translate-x-16 flex'>
 													<MotionDiv
 														variants={SlideRight}
 														transition={{
 															delay: 0.3,
-															type: 'tween',
 															duration: 0.5,
+															ease: 'linear',
 														}}
 														whileInView='open'
 														initial='close'>
@@ -162,10 +162,11 @@ export default function ContentHero({ subscription }: { subscription: any }) {
 														variants={SlideRight}
 														transition={{
 															delay: 0.6,
-															type: 'tween',
+															ease: 'linear',
 															duration: 0.5,
 														}}
 														whileInView='open'
+														className='w-full'
 														initial='close'>
 														<ResponsiveImage
 															data={

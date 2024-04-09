@@ -1,7 +1,8 @@
 /** @format */
 
-import { queryHeroSection, request } from '@/lib/datocms';
+import { request } from '@/lib/datocms';
 import ContentHero from './ContentHero';
+import { queryHeroSection } from '@/lib/queries';
 
 export default async function HeroSection() {
 	const data: any = await request({
