@@ -14,7 +14,7 @@ export default function Terms() {
 						</h2>
 						<br />
 						<p className='prose w-full prose-base'>
-							Ao acessar ao site&nbsp;
+							Ao acessar ao site
 							<a
 								className='text-brand-green-500 underline'
 								href='http://jsegequipamentos.com.br/'>
@@ -37,25 +37,23 @@ export default function Terms() {
 							materiais (informações ou software) no site Jseg Equipamentos ,
 							apenas para visualização transitória pessoal e não comercial. Esta
 							é a concessão de uma licença, não uma transferência de título e,
-							sob esta licença, você não pode:&nbsp;
+							sob esta licença, você não pode:
 						</p>
+						<br />
 						<ol className='prose w-full prose-base'>
-							<li>modificar ou copiar os materiais;&nbsp;</li>
+							<li>modificar ou copiar os materiais;</li>
 							<li>
 								usar os materiais para qualquer finalidade comercial ou para
-								exibição pública (comercial ou não comercial);&nbsp;
+								exibição pública (comercial ou não comercial);
 							</li>
 							<li>
 								tentar descompilar ou fazer engenharia reversa de qualquer
-								software contido no site Jseg Equipamentos;&nbsp;
+								software contido no site Jseg Equipamentos;
 							</li>
 							<li>
 								remover quaisquer direitos autorais ou outras notações de
-								propriedade dos materiais; ou&nbsp;
-							</li>
-							<li>
-								transferir os materiais para outra pessoa ou 'espelhe' os
-								materiais em qualquer outro servidor.
+								propriedade dos materiais; ou transferir os materiais para outra
+								pessoa ou 'espelhe' os materiais em qualquer outro servidor.
 							</li>
 						</ol>
 						<br />

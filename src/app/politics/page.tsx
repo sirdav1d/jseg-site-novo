@@ -48,7 +48,7 @@ export default function Politics() {
 							O nosso site pode ter links para sites externos que não são
 							operados por nós. Esteja ciente de que não temos controle sobre o
 							conteúdo e práticas desses sites e não podemos aceitar
-							responsabilidade por suas respectivas&nbsp;
+							responsabilidade por suas respectivas &nbsp;
 							<a
 								className='text-brand-green-500'
 								href='https://politicaprivacidade.com/'
