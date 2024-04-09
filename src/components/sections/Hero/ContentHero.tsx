@@ -143,7 +143,7 @@ export default function ContentHero({ subscription }: { subscription: any }) {
 															res.imagehero[0].responsiveImage
 														}></ResponsiveImage>
 												</MotionDiv>
-												<div className='w-[56%] object-contain -translate-y-20 -translate-x-16 flex'>
+												<div className='w-[56%] object-contain -translate-y-40 -translate-x-20 flex'>
 													<MotionDiv
 														variants={SlideRight}
 														transition={{
