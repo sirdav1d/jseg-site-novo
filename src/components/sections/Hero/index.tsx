@@ -11,7 +11,7 @@ export default async function HeroSection() {
 	});
 
 	return (
-		<div className='w-full h-[90vh] text-zinc-900'>
+		<div className='w-full h-[94vh] text-zinc-900'>
 			<ContentHero
 				subscription={{
 					initialData: data,

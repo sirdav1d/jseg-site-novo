@@ -14,7 +14,8 @@ export interface ResponsiveImage {
 	__typename: string;
 }
 
-interface Imagehero {
+interface Image {
+	id?: string;
 	responsiveImage: ResponsiveImage;
 }
 
@@ -29,12 +30,11 @@ export interface AllHomepageHero {
 	keyword02: string;
 	keyword03: string;
 	subheadline: string;
-	imagehero: Imagehero[];
+	imagehero: Image[];
 	status01: Status;
 	status02: Status;
 	status03: Status;
 }
-
 
 export interface CardService {
 	id: string;
@@ -55,4 +55,18 @@ export interface AllHomepageService {
 	cardservice04: CardService;
 	cardservice05: CardService;
 	cardservice06: CardService;
+}
+
+export interface Featurecontent {
+	title: string;
+	tag: string;
+	description: string;
+	images: Image[];
+}
+
+export interface AllHomepageFeatures {
+	sectioncontent02: SectionContent;
+	featurecontent01: Featurecontent;
+	featurecontent02: Featurecontent;
+	featurecontent03: Featurecontent;
 }

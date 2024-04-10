@@ -38,7 +38,7 @@ export default function ContentService({
 
 	return (
 		hydrated && (
-			<div className='h-full w-full py-10 flex items-center justify-center'>
+			<div className='h-full w-full flex items-center justify-center'>
 				<Container>
 					{results.map((res, index) => {
 						return (
@@ -47,7 +47,7 @@ export default function ContentService({
 								className='flex flex-col gap-10  w-full'>
 								<div className='w-full'>
 									<div className='flex flex-col gap-5 lg:flex-row'>
-										<h2 className='text-3xl w-full font-bold'>
+										<h2 className='text-2xl w-full font-bold'>
 											{res.sectioncontent01.title}
 										</h2>
 										<p className='prose mb-10 lg:mb-0'>
@@ -69,7 +69,7 @@ export default function ContentService({
 									<MotionDiv
 										variants={RevealRight}
 										transition={{ ease: 'linear', duration: 0.5, delay: 0.2 }}
-										whileInView='open'
+										animate='open'
 										initial='close'>
 										<CardService
 											icon={<BrainCircuit />}
@@ -79,7 +79,7 @@ export default function ContentService({
 									<MotionDiv
 										variants={RevealRight}
 										transition={{ ease: 'linear', duration: 0.5, delay: 0.4 }}
-										whileInView='open'
+										animate='open'
 										initial='close'>
 										<CardService
 											icon={<Wifi />}
@@ -89,7 +89,7 @@ export default function ContentService({
 									<MotionDiv
 										transition={{ ease: 'linear', duration: 0.5, delay: 0.6 }}
 										variants={RevealRight}
-										whileInView='open'
+										animate='open'
 										initial='close'>
 										<CardService
 											icon={<Cftv />}
@@ -99,7 +99,7 @@ export default function ContentService({
 									<MotionDiv
 										transition={{ ease: 'linear', duration: 0.5, delay: 0.8 }}
 										variants={RevealRight}
-										whileInView='open'
+										animate='open'
 										initial='close'>
 										<CardService
 											icon={<Access />}
@@ -109,7 +109,7 @@ export default function ContentService({
 									<MotionDiv
 										transition={{ ease: 'linear', duration: 0.5, delay: 1 }}
 										variants={RevealRight}
-										whileInView='open'
+										animate='open'
 										initial='close'>
 										<CardService
 											icon={<Phone />}
@@ -119,7 +119,7 @@ export default function ContentService({
 									<MotionDiv
 										transition={{ ease: 'linear', duration: 0.5, delay: 1.2 }}
 										variants={RevealRight}
-										whileInView='open'
+										animate='open'
 										initial='close'>
 										<CardService
 											icon={<Alarm />}

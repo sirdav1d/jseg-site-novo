@@ -2,7 +2,7 @@
 
 import { request } from '@/lib/datocms';
 import ContentService from './ContentService';
-import { queryServicesList} from '@/lib/queries';
+import { queryServicesList } from '@/lib/queries';
 
 export default async function ServicesListSection() {
 	const data: any = await request({
@@ -11,7 +11,7 @@ export default async function ServicesListSection() {
 	});
 
 	return (
-		<div className='w-full h-[90vh] text-zinc-900'>
+		<div className='w-full  h-full text-zinc-900 py-10'>
 			<ContentService
 				subscription={{
 					initialData: data,

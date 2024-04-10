@@ -1,6 +1,6 @@
 /** @format */
 
-import { gql } from "graphql-request";
+import { gql } from 'graphql-request';
 
 export const queryHeroSection = gql`
 	query {
@@ -42,7 +42,6 @@ export const queryHeroSection = gql`
 	}
 `;
 
-
 export const queryServicesList = gql`
 	query {
 		allHomepages {
@@ -79,6 +78,83 @@ export const queryServicesList = gql`
 				id
 				title
 				description
+			}
+		}
+	}
+`;
+
+export const queryFeatures = gql`
+	query {
+		allHomepages {
+			sectioncontent02 {
+				title
+				description
+			}
+			featurecontent01 {
+				title
+				tag
+				description
+				images {
+					id
+					responsiveImage {
+						alt
+						aspectRatio
+						base64
+						bgColor
+						height
+						sizes
+						src
+						srcSet
+						title
+						webpSrcSet
+						width
+						__typename
+					}
+				}
+			}
+			featurecontent02 {
+				title
+				tag
+				description
+				images {
+					id
+					responsiveImage {
+						alt
+						aspectRatio
+						base64
+						bgColor
+						height
+						sizes
+						src
+						srcSet
+						title
+						webpSrcSet
+						width
+						__typename
+					}
+				}
+			}
+			featurecontent03 {
+				title
+				tag
+				description
+				images {
+					id
+					responsiveImage {
+						alt
+						aspectRatio
+						base64
+						bgColor
+						height
+						sizes
+						src
+						srcSet
+						title
+						webpSrcSet
+						width
+						__typename
+					}
+				}
 			}
 		}
 	}

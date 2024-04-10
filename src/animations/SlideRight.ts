@@ -11,6 +11,6 @@ export const SlideRight: Variants = {
 	close: {
 		scale: 0,
 		opacity: 0,
-		x: -200,
+		x: -60,
 	},
 };

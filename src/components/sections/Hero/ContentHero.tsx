@@ -132,7 +132,7 @@ export default function ContentHero({ subscription }: { subscription: any }) {
 											</div>
 										</div>
 										<div>
-											<div className='absolute top-0 -z-10 right-0 object-contain w-[38%] hidden lg:block'>
+											<div className='absolute top-0 -z-10 right-0 object-contain w-[45%] xl:w-[38%] hidden lg:block'>
 												<MotionDiv
 													variants={SlideUp}
 													whileInView='open'
@@ -143,7 +143,7 @@ export default function ContentHero({ subscription }: { subscription: any }) {
 															res.imagehero[0].responsiveImage
 														}></ResponsiveImage>
 												</MotionDiv>
-												<div className='w-[56%] object-contain -translate-y-40 -translate-x-20 flex'>
+												<div className='w-[56%] object-contain -translate-y-40 -translate-x-20 xl:flex hidden'>
 													<MotionDiv
 														variants={SlideRight}
 														transition={{
