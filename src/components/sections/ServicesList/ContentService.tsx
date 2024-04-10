@@ -69,7 +69,8 @@ export default function ContentService({
 									<MotionDiv
 										variants={RevealRight}
 										transition={{ ease: 'linear', duration: 0.5, delay: 0.2 }}
-										animate='open'
+										whileInView='open'
+										viewport={{ once: true }}
 										initial='close'>
 										<CardService
 											icon={<BrainCircuit />}
@@ -79,7 +80,8 @@ export default function ContentService({
 									<MotionDiv
 										variants={RevealRight}
 										transition={{ ease: 'linear', duration: 0.5, delay: 0.4 }}
-										animate='open'
+										whileInView='open'
+										viewport={{ once: true }}
 										initial='close'>
 										<CardService
 											icon={<Wifi />}
@@ -89,7 +91,8 @@ export default function ContentService({
 									<MotionDiv
 										transition={{ ease: 'linear', duration: 0.5, delay: 0.6 }}
 										variants={RevealRight}
-										animate='open'
+										whileInView='open'
+										viewport={{ once: true }}
 										initial='close'>
 										<CardService
 											icon={<Cftv />}
@@ -99,7 +102,8 @@ export default function ContentService({
 									<MotionDiv
 										transition={{ ease: 'linear', duration: 0.5, delay: 0.8 }}
 										variants={RevealRight}
-										animate='open'
+										whileInView='open'
+										viewport={{ once: true }}
 										initial='close'>
 										<CardService
 											icon={<Access />}
@@ -109,7 +113,8 @@ export default function ContentService({
 									<MotionDiv
 										transition={{ ease: 'linear', duration: 0.5, delay: 1 }}
 										variants={RevealRight}
-										animate='open'
+										whileInView='open'
+										viewport={{ once: true }}
 										initial='close'>
 										<CardService
 											icon={<Phone />}
@@ -119,7 +124,8 @@ export default function ContentService({
 									<MotionDiv
 										transition={{ ease: 'linear', duration: 0.5, delay: 1.2 }}
 										variants={RevealRight}
-										animate='open'
+										whileInView='open'
+										viewport={{ once: true }}
 										initial='close'>
 										<CardService
 											icon={<Alarm />}
