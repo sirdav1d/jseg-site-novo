@@ -66,7 +66,7 @@ export default function ContentHero({ subscription }: { subscription: any }) {
 												</Button>
 											</div>
 											<div className='flex w-full items-center flex-row py-3 justify-between border-t border-b bg-zinc-50/40 backdrop-blur-sm border-zinc-600/10'>
-												<div className='w-1/3 lg:flex gap-5 hidden'>
+												<div className='w-1/3 xl:flex gap-5 hidden'>
 													<MotionDiv
 														variants={SlideRight}
 														whileInView='open'
@@ -132,7 +132,7 @@ export default function ContentHero({ subscription }: { subscription: any }) {
 											</div>
 										</div>
 										<div>
-											<div className='absolute top-0 -z-10 right-0 object-contain w-[45%] xl:w-[38%] hidden lg:block'>
+											<div className='absolute top-0 -z-10 right-0 object-contain w-[45%] xl:w-[38%] hidden xl:block'>
 												<MotionDiv
 													variants={SlideUp}
 													whileInView='open'
@@ -143,7 +143,7 @@ export default function ContentHero({ subscription }: { subscription: any }) {
 															res.imagehero[0].responsiveImage
 														}></ResponsiveImage>
 												</MotionDiv>
-												<div className='w-[56%] object-contain -translate-y-40 -translate-x-20 xl:flex hidden'>
+												<div className='w-[56%] object-contain -translate-y-28 -translate-x-20 2xl:flex hidden'>
 													<MotionDiv
 														variants={SlideRight}
 														transition={{
@@ -166,7 +166,7 @@ export default function ContentHero({ subscription }: { subscription: any }) {
 															duration: 0.5,
 														}}
 														whileInView='open'
-														className='w-full'
+														className='w-96'
 														initial='close'>
 														<ResponsiveImage
 															data={

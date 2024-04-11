@@ -1,13 +1,11 @@
 /** @format */
 'use client';
 import Container from '@/components/Container';
-import { MotionDiv, MotionSpan } from '@/components/MotionComponents';
-import TagComponent from '@/components/TagComponent';
 import { Button } from '@/components/ui/button';
 import { AllHomepageFeatures } from '@/lib/types';
 import { ChevronRight } from 'lucide-react';
-import React, { useEffect, useState } from 'react';
-import { useQuerySubscription, Image as ResponsiveImage } from 'react-datocms';
+import { useEffect, useState } from 'react';
+import { useQuerySubscription } from 'react-datocms';
 import FeatureS from './FeatureS';
 
 export default function ContentFeature({
@@ -40,7 +38,7 @@ export default function ContentFeature({
 								className='flex flex-col gap-20 '>
 								<div className=' flex flex-col items-start gap-5'>
 									<div className='flex flex-col xl:flex-row items-start justify-between w-full gap-5'>
-										<h2 className='text-2xl font-bold'>
+										<h2 className='text-2xl font-bold max-w-md'>
 											{res.sectioncontent02.title}
 										</h2>
 										<p className='prose'>{res.sectioncontent02.description}</p>

@@ -9,7 +9,7 @@ export default function FeatureS(props: Featurecontent) {
 	return (
 		<div
 			data-tag={props.tag}
-			className='w-full flex flex-col items-start lg:items-center gap-5 lg:flex-row-reverse data-[tag=Confiabilidade]:lg:flex-row  justify-between '>
+			className='w-fit flex flex-col mx-auto items-start lg:items-center gap-5 lg:gap-10 xl:gap-32 xl:flex-row-reverse data-[tag=Confiabilidade]:xl:flex-row  justify-center'>
 			<div className='flex flex-col gap-5'>
 				<TagComponent>{props.tag}</TagComponent>
 				<h2 className='text-xl font-bold'>{props.title}</h2>

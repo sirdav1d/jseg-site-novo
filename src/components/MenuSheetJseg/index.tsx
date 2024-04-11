@@ -19,7 +19,7 @@ import { FaWhatsapp } from 'react-icons/fa6';
 
 export default function MenuSheetJseg() {
 	return (
-		<div className='flex lg:hidden'>
+		<div className='flex xl:hidden'>
 			<Sheet>
 				<SheetTrigger className='text-stone-100'>
 					<AlignJustify
