@@ -23,6 +23,8 @@ export default function MenuSheetJseg() {
 			<Sheet>
 				<SheetTrigger className='text-stone-100'>
 					<AlignJustify
+						aria-label='Abrir Menu'
+						name='Abrir Menu'
 						className='text-stone-900'
 						size={40}
 					/>

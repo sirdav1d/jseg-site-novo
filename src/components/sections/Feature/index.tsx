@@ -1,23 +1,26 @@
 /** @format */
-
-import { request } from '@/lib/datocms';
+'use client';
+import { useEffect, useState } from 'react';
+import { useQuerySubscription } from 'react-datocms';
 import ContentFeature from './ContentFeature';
-import { queryFeatures } from '@/lib/queries';
 
-export default async function Feature() {
-	const data: any = await request({
-		query: queryFeatures,
-		revalidate: 30,
+export default function Feature({ subscription }: { subscription: any }) {
+	const [hydrated, setHydrated] = useState(false);
+
+	useEffect(() => setHydrated(true), []);
+	const { query, initialData, token } = subscription;
+
+	const { data, error, status } = useQuerySubscription({
+		query: query,
+		enabled: true,
+		token,
+		initialData,
 	});
-
 	return (
-		<div className='w-full h-full min-h-[90vh] text-zinc-900 py-20'>
-			<ContentFeature
-				subscription={{
-					initialData: data,
-					query: queryFeatures,
-					token: process.env.NEXT_DATOCMS_TOKEN,
-				}}></ContentFeature>
-		</div>
+		hydrated && (
+			<div className='w-full h-full min-h-[90vh] text-zinc-900 py-20'>
+				<ContentFeature data={data}></ContentFeature>
+			</div>
+		)
 	);
 }

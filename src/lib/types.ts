@@ -24,18 +24,6 @@ export interface Status {
 	value: number;
 }
 
-export interface AllHomepageHero {
-	heading: string;
-	keyword01: string;
-	keyword02: string;
-	keyword03: string;
-	subheadline: string;
-	imagehero: Image[];
-	status01: Status;
-	status02: Status;
-	status03: Status;
-}
-
 export interface CardService {
 	id: string;
 	title: string;
@@ -49,7 +37,7 @@ export interface SectionContent {
 
 export interface AllHomepageService {
 	sectioncontent01: SectionContent;
-	cardservice01: CardService;
+	CardService: CardService;
 	cardservice02: CardService;
 	cardservice03: CardService;
 	cardservice04: CardService;
@@ -66,7 +54,52 @@ export interface Featurecontent {
 
 export interface AllHomepageFeatures {
 	sectioncontent02: SectionContent;
+	Featurecontent: Featurecontent;
+	featurecontent02: Featurecontent;
+	featurecontent03: Featurecontent;
+}
+
+export interface AllHomepage {
+	heading: string;
+	keyword01: string;
+	keyword02: string;
+	keyword03: string;
+	subheadline: string;
+	imagehero: Image[];
+	status01: Status;
+	status02: Status;
+	status03: Status;
+	sectioncontent03: SectionContent;
+	sectioncontent01: SectionContent;
+	cardservice01: CardService;
+	cardservice02: CardService;
+	cardservice03: CardService;
+	cardservice04: CardService;
+	cardservice05: CardService;
+	cardservice06: CardService;
+	sectioncontent02: SectionContent;
 	featurecontent01: Featurecontent;
 	featurecontent02: Featurecontent;
 	featurecontent03: Featurecontent;
+	rating01: Rating;
+	rating02: Rating;
+	rating03: Rating;
+	rating04: Rating;
+	title: string;
+	benefit01: string;
+	benefit02: string;
+	benefit03: string;
+	benefit04: string;
+	benefit05: string;
+	benefit06: string;
+}
+
+interface Rating {
+	avatar: Image;
+	name: string;
+	testimony: string;
+}
+
+export interface Data {
+	allHomepages: AllHomepage[];
 }

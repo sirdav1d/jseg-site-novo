@@ -1,23 +1,33 @@
 /** @format */
+'use client';
 
-import { request } from '@/lib/datocms';
+import { useEffect, useState } from 'react';
+import { useQuerySubscription } from 'react-datocms';
 import ContentService from './ContentService';
-import { queryServicesList } from '@/lib/queries';
 
-export default async function ServicesListSection() {
-	const data: any = await request({
-		query: queryServicesList,
-		revalidate: 30,
+export default function ServicesListSection({
+	subscription,
+}: {
+	subscription: any;
+}) {
+	const [hydrated, setHydrated] = useState(false);
+
+	useEffect(() => setHydrated(true), []);
+	const { query, initialData, token } = subscription;
+
+	const { data, error, status } = useQuerySubscription({
+		query: query,
+		enabled: true,
+		token,
+		initialData,
 	});
-
-	return (
-		<div className='w-full  h-full text-zinc-900 py-10'>
-			<ContentService
-				subscription={{
-					initialData: data,
-					query: queryServicesList,
-					token: process.env.NEXT_DATOCMS_TOKEN,
-				}}></ContentService>
-		</div>
-	);
+	{
+		return (
+			hydrated && (
+				<div className='w-full  h-full text-zinc-900 py-10'>
+					<ContentService data={data}></ContentService>
+				</div>
+			)
+		);
+	}
 }

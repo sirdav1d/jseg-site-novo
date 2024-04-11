@@ -24,7 +24,7 @@ export default function NavigationJseg() {
 				<NavigationMenuList className='gap-4 text-stone-700 font-semibold flex flex-col lg:flex-row '>
 					{links.map((l, i) => {
 						return (
-							<div key={i}>
+							<span key={i}>
 								{l.label === 'Soluções' ? (
 									<>
 										<NavigationMenuItem>
@@ -84,7 +84,7 @@ export default function NavigationJseg() {
 										</Link>
 									</NavigationMenuItem>
 								)}
-							</div>
+							</span>
 						);
 					})}
 
