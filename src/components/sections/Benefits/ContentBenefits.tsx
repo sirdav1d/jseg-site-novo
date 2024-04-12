@@ -21,18 +21,18 @@ export default function ContentBenefits({ data }: { data: Data }) {
 									data.allHomepages[0].benefitimages[0].responsiveImage
 								}></ResponsiveImage>
 						</MotionDiv>
-						<MotionDiv className='absolute w-60 bottom-10 -right-10 drop-shadow-md'>
+						<MotionDiv className='absolute w-52 bottom-10 -right-10 drop-shadow-lg'>
 							<ResponsiveImage
 								data={
 									data.allHomepages[0].benefitimages[1].responsiveImage
 								}></ResponsiveImage>
 						</MotionDiv>
 					</div>
-					<div className='xl:w-1/2 w-full flex flex-col gap-10 xl:gap-20'>
+					<div className='xl:w-1/2 w-full flex flex-col gap-10 '>
 						<h2 className='text-3xl font-bold text-zinc-50 text-center xl:text-start'>
 							{data.allHomepages[0].title}
 						</h2>
-						<div className='flex-col gap-10 flex'>
+						<div className='flex-col gap-20 flex'>
 							<ul className='flex flex-col mx-auto w-full  gap-6 text-zinc-100 lg:text-xl prose prose-sm'>
 								<MotionLI
 									variants={RevealRight}

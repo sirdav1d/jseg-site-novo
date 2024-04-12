@@ -14,7 +14,8 @@ export default function TagComponent({
 		<MotionDiv
 			variants={RevealRight}
 			whileInView='open'
-			transition={{ delay: 1 }}
+			transition={{ delay: 0.8, duration: 0.5, ease: 'linear' }}
+			viewport={{ once: true }}
 			initial='close'>
 			<HoverBorderGradient className='text-xs'>{children}</HoverBorderGradient>
 		</MotionDiv>
