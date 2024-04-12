@@ -386,6 +386,23 @@ export const QueryHomePage = gql`
 				}
 			}
 			title
+			benefitimages {
+				id
+				responsiveImage {
+					width
+					alt
+					aspectRatio
+					base64
+					bgColor
+					height
+					sizes
+					src
+					srcSet
+					title
+					webpSrcSet
+					__typename
+				}
+			}
 			benefit01
 			benefit02
 			benefit03

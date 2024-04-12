@@ -11,7 +11,7 @@ export default function FeatureS(props: Featurecontent) {
 	return (
 		<div
 			data-tag={props.tag}
-			className='w-full h-full flex flex-col mx-auto py-10 items-center gap-5 lg:gap-10 xl:gap-32 xl:flex-row-reverse data-[tag=Confiabilidade]:xl:flex-row justify-between'>
+			className='w-full h-full flex flex-col mx-auto py-5 xl:py-10 items-center gap-5 lg:gap-10 xl:gap-32 xl:flex-row-reverse data-[tag=Confiabilidade]:xl:flex-row justify-between'>
 			<div className='flex flex-col gap-5 h-full'>
 				<TagComponent>{props.tag}</TagComponent>
 				<h2 className='text-xl font-bold'>{props.title}</h2>

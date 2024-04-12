@@ -1,5 +1,6 @@
 /** @format */
 
+import Benefits from '@/components/sections/Benefits';
 import Feature from '@/components/sections/Feature';
 import HeroSection from '@/components/sections/Hero';
 import Ratings from '@/components/sections/Ratings';
@@ -36,6 +37,13 @@ export default async function Home() {
 				}}
 			/>
 			<Ratings
+				subscription={{
+					initialData: data,
+					query: QueryHomePage,
+					token: process.env.NEXT_DATOCMS_TOKEN,
+				}}
+			/>
+			<Benefits
 				subscription={{
 					initialData: data,
 					query: QueryHomePage,

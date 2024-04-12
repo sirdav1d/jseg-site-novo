@@ -86,6 +86,7 @@ export interface AllHomepage {
 	rating03: Rating;
 	rating04: Rating;
 	title: string;
+	benefitimages: Image[];
 	benefit01: string;
 	benefit02: string;
 	benefit03: string;

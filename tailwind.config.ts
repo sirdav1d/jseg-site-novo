@@ -86,6 +86,8 @@ const config = {
 			backgroundImage: {
 				cardColor:
 					' linear-gradient(90.05deg, #03A60E 26.47%, #2FB838 51.99%, #03A113 73.87%);',
+				bgBenefits:
+					'linear-gradient(123.96deg, #03A60E 26.98%, #5AC962 60.04%, #03A40E 96.94%);',
 			},
 		},
 	},
