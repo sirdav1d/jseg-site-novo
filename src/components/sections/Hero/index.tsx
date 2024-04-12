@@ -20,7 +20,7 @@ export default function HeroSection({ subscription }: { subscription: any }) {
 
 	return (
 		hydrated && (
-			<div className='w-full h-[90vh] lg:h-full text-zinc-900'>
+			<div className='w-full h-[90vh] text-zinc-900'>
 				<ContentHero data={data}></ContentHero>
 			</div>
 		)
