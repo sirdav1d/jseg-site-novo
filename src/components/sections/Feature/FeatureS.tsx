@@ -57,7 +57,7 @@ export default function FeatureS(props: Featurecontent) {
 					whileInView={'open'}
 					transition={{ delay: 1, duration: 0.5, ease: 'linear' }}
 					initial='close'
-					className='w-28 absolute bottom-0 -right-8'>
+					className='w-28 absolute bottom-0 xl:-bottom-12 -left-8'>
 					<ResponsiveImage data={props.images[2].responsiveImage} />
 				</MotionDiv>
 			</div>
