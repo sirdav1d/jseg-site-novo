@@ -32,7 +32,7 @@ export default function ContentFeature({ data }: { data: Data }) {
 									/>
 								</Button>
 							</div>
-							<div className='gap-20 xl:gap-10 flex flex-col w-full item-center justify-center'>
+							<div className='gap-20 xl:gap-10 flex flex-col w-full h-full item-center justify-center'>
 								<FeatureS
 									title={res.featurecontent01.title}
 									tag={res.featurecontent01.tag}

@@ -11,7 +11,7 @@ export const links = [
 	{ href: '/', label: 'Home' },
 	{ href: '/about', label: 'Sobre Nós' },
 	{
-		href: '/solutions',
+		href: '/',
 		label: 'Soluções',
 		opt: [
 			{

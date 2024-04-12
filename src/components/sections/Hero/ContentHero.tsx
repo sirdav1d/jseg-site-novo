@@ -11,7 +11,6 @@ import { Image as ResponsiveImage } from 'react-datocms';
 import HeroTypeAnimation from './HeroTypeAnimation';
 
 export default function ContentHero({ data }: { data: Data }) {
-	
 	return (
 		<div className='h-full w-full py-10 flex items-center justify-center'>
 			<Container>
@@ -85,7 +84,7 @@ export default function ContentHero({ data }: { data: Data }) {
 													{res.status01.title}
 												</h2>
 												<div className='flex gap-1 lg:gap-2 items-center justify-center'>
-													<Plus size={24} />
+													<Plus size={20} />
 													<p className='text-brand-green-500 font-semibold text-2xl lg:text-5xl'>
 														{res.status01.value}
 													</p>
@@ -96,7 +95,7 @@ export default function ContentHero({ data }: { data: Data }) {
 													{res.status02.title}
 												</h2>
 												<div className='flex gap-1 lg:gap-2 items-center justify-center'>
-													<Plus size={24} />
+													<Plus size={20} />
 													<p className='text-brand-green-500 font-semibold text-2xl lg:text-5xl'>
 														{res.status02.value}
 													</p>
@@ -107,7 +106,7 @@ export default function ContentHero({ data }: { data: Data }) {
 													{res.status03.title}
 												</h2>
 												<div className='flex gap-1 lg:gap-2 items-center justify-center'>
-													<Plus size={24} />
+													<Plus size={20} />
 													<p className='text-brand-green-500 font-semibold text-2xl lg:text-5xl'>
 														{res.status03.value}
 													</p>

@@ -1,5 +1,7 @@
 /** @format */
 
+import { RevealRight } from '@/animations/RevealRight';
+import { SlideRight } from '@/animations/SlideRight';
 import { MotionDiv, MotionSpan } from '@/components/MotionComponents';
 import TagComponent from '@/components/TagComponent';
 import { Featurecontent } from '@/lib/types';
@@ -9,26 +11,53 @@ export default function FeatureS(props: Featurecontent) {
 	return (
 		<div
 			data-tag={props.tag}
-			className='w-fit flex flex-col mx-auto items-start lg:items-center gap-5 lg:gap-10 xl:gap-32 xl:flex-row-reverse data-[tag=Confiabilidade]:xl:flex-row  justify-center'>
-			<div className='flex flex-col gap-5'>
+			className='w-full h-full flex flex-col mx-auto py-10 items-center gap-5 lg:gap-10 xl:gap-32 xl:flex-row-reverse data-[tag=Confiabilidade]:xl:flex-row justify-between'>
+			<div className='flex flex-col gap-5 h-full'>
 				<TagComponent>{props.tag}</TagComponent>
 				<h2 className='text-xl font-bold'>{props.title}</h2>
 				<p className='prose prose-sm'>{props.description}</p>
 			</div>
-			<div className='relative '>
-				<div className='relative'>
-					<MotionDiv className='w-full max-w-[324px] h-auto rounded-md'>
+			<div className='relative h-full	mx-auto lg:mx-0 '>
+				<div className='relative h-full '>
+					<MotionDiv
+						variants={RevealRight}
+						whileInView={'open'}
+						transition={{ delay: 0.3, duration: 0.5, ease: 'linear' }}
+						viewport={{ once: true }}
+						initial='close'
+						className='w-full h-full max-w-[280px] xl:h-[240px] xl:max-w-[340px] -translate-x-8 lg:-translate-x-0 rounded-md'>
 						<ResponsiveImage
 							className='rounded-md'
 							data={props.images[0].responsiveImage}
 						/>
 					</MotionDiv>
-					<MotionSpan className='w-[324px] h-[264px] bg-brand-green-500 absolute top-10 rounded-md -z-10 left-4'></MotionSpan>
+					<MotionSpan
+						variants={RevealRight}
+						viewport={{ once: true }}
+						whileInView={'open'}
+						transition={{ delay: 0.6, duration: 0.5, ease: 'linear' }}
+						initial='close'
+						data-tag={props.tag}
+						className={`w-full h-full max-w-[280px] ${
+							props.tag == 'Confiabilidade' ? 'right-4' : 'left-4'
+						}  xl:h-[276px] xl:max-w-[340px] bg-brand-green-500 absolute top-10 rounded-md -z-10 `}></MotionSpan>
 				</div>
-				<MotionDiv className='w-28 absolute top-3 -right-12'>
+				<MotionDiv
+					variants={RevealRight}
+					viewport={{ once: true }}
+					whileInView={'open'}
+					transition={{ delay: 1, duration: 0.5, ease: 'linear' }}
+					initial='close'
+					className='w-28 absolute top-3 -right-8'>
 					<ResponsiveImage data={props.images[1].responsiveImage} />
 				</MotionDiv>
-				<MotionDiv className='w-28 absolute bottom-2 -right-12'>
+				<MotionDiv
+					variants={RevealRight}
+					viewport={{ once: true }}
+					whileInView={'open'}
+					transition={{ delay: 1, duration: 0.5, ease: 'linear' }}
+					initial='close'
+					className='w-28 absolute bottom-0 -right-8'>
 					<ResponsiveImage data={props.images[2].responsiveImage} />
 				</MotionDiv>
 			</div>

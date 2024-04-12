@@ -29,14 +29,9 @@ export default function NavigationJseg() {
 									<>
 										<NavigationMenuItem>
 											<NavigationMenuTrigger>
-												<Link
-													href={l.href}
-													legacyBehavior
-													passHref>
-													<NavigationMenuLink className='hover:text-brand-green-500 group transition-all duration-200 ease-in-out text-base xl:text-lg flex flex-col font-semibold'>
-														{l.label}
-													</NavigationMenuLink>
-												</Link>
+												<NavigationMenuLink className='hover:text-brand-green-500 group transition-all duration-200 ease-in-out text-base xl:text-lg flex flex-col font-semibold'>
+													{l.label}
+												</NavigationMenuLink>
 											</NavigationMenuTrigger>{' '}
 											<NavigationMenuContent>
 												<ul className='grid w-[400px] gap-2 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]'>
@@ -50,11 +45,11 @@ export default function NavigationJseg() {
 																	legacyBehavior
 																	passHref>
 																	<NavigationMenuLink className='hover:text-brand-green-500 group transition-all duration-300 ease-in-out xl:text-lg flex flex-col'>
-																		<div className='text-sm font-bold leading-none flex items-center justify-start gap-2'>
+																		<div className='text-base font-bold leading-none flex items-center justify-start gap-2'>
 																			<o.icon />
 																			{o.label}
 																		</div>
-																		<p className='line-clamp-2 text-stone-700 text-sm leading-snug text-muted-foreground mt-2 font-light'>
+																		<p className='line-clamp-2 text-stone-800 text-sm leading-snug text-muted-foreground mt-2 font-light'>
 																			{o.description}
 																		</p>
 																	</NavigationMenuLink>
