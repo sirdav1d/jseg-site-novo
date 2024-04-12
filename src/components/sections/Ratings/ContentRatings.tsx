@@ -30,9 +30,14 @@ export default function ContentRatings({ data }: { data: Data }) {
 								</p>
 							</div>
 
-							<Carousel className='mx-auto w-full'>
+							<Carousel
+								opts={{
+									align: 'start',
+									loop: true,
+								}}
+								className='w-full mx-auto'>
 								<CarouselContent className='mx-auto w-full'>
-									<CarouselItem className=' md:basis-1/2 lg:basis-1/3'>
+									<CarouselItem className=' md:basis-1/2 lg:basis-1/3 '>
 										<Testimony
 											text={d.rating01.testimony}
 											name={d.rating01.name}

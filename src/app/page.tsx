@@ -13,7 +13,7 @@ export default async function Home() {
 		revalidate: 30,
 	});
 	return (
-		<main>
+		<main className='overflow-x-hidden'>
 			<HeroSection
 				subscription={{
 					initialData: data,
