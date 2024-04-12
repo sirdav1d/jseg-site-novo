@@ -40,7 +40,7 @@ export default function FeatureS(props: Featurecontent) {
 						data-tag={props.tag}
 						className={`w-full h-full max-w-[280px] ${
 							props.tag == 'Confiabilidade' ? 'right-4' : 'left-4'
-						}  xl:h-[276px] xl:max-w-[340px] bg-brand-green-500 absolute top-10 rounded-md -z-10 `}></MotionSpan>
+						}  xl:h-[276px] xl:max-w-[340px] bg-brand-green-500 absolute top-4 xl:top-10 rounded-md -z-10 `}></MotionSpan>
 				</div>
 				<MotionDiv
 					variants={RevealRight}

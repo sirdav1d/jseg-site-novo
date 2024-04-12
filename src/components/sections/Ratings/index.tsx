@@ -20,7 +20,7 @@ export default function Ratings({ subscription }: { subscription: any }) {
 
 	return (
 		hydrated && (
-			<div className='w-full h-full  text-zinc-900'>
+			<div className='w-full h-full py-10 text-zinc-900'>
 				<ContentRatings data={data}></ContentRatings>
 			</div>
 		)
