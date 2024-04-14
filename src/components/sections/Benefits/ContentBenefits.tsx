@@ -52,7 +52,7 @@ export default function ContentBenefits({ data }: { data: Data }) {
 									whileInView={'open'}
 									initial='close'
 									viewport={{ once: true }}
-									transition={{ delay: 0.4, ease: 'linear' }}
+									transition={{ delay: 0.3, ease: 'linear' }}
 									className='flex gap-3  items-center '>
 									<div>
 										<Trophy size={28} />
@@ -64,7 +64,7 @@ export default function ContentBenefits({ data }: { data: Data }) {
 									whileInView={'open'}
 									initial='close'
 									viewport={{ once: true }}
-									transition={{ delay: 0.6, ease: 'linear', duration: 0.5 }}
+									transition={{ delay: 0.4, ease: 'linear', duration: 0.5 }}
 									className='flex gap-3  items-center '>
 									<div>
 										<Trophy size={28} />
@@ -77,7 +77,7 @@ export default function ContentBenefits({ data }: { data: Data }) {
 									whileInView={'open'}
 									initial='close'
 									viewport={{ once: true }}
-									transition={{ delay: 0.8, ease: 'linear', duration: 0.5 }}
+									transition={{ delay: 0.5, ease: 'linear', duration: 0.5 }}
 									className='flex gap-3  items-center '>
 									<div>
 										<Trophy size={28} />
@@ -90,7 +90,7 @@ export default function ContentBenefits({ data }: { data: Data }) {
 									whileInView={'open'}
 									initial='close'
 									viewport={{ once: true }}
-									transition={{ delay: 1, ease: 'linear', duration: 0.5 }}
+									transition={{ delay: 0.6, ease: 'linear', duration: 0.5 }}
 									className='flex gap-3 items-center '>
 									<div>
 										<Trophy size={28} />
@@ -103,7 +103,7 @@ export default function ContentBenefits({ data }: { data: Data }) {
 									whileInView={'open'}
 									initial='close'
 									viewport={{ once: true }}
-									transition={{ delay: 1.2, ease: 'linear', duration: 0.5 }}
+									transition={{ delay: 0.7, ease: 'linear', duration: 0.5 }}
 									className='flex gap-3  items-center '>
 									<div>
 										<Trophy size={28} />

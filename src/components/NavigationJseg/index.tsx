@@ -10,7 +10,7 @@ import {
 	NavigationMenuList,
 	NavigationMenuTrigger,
 } from '@/components/ui/navigation-menu';
-import { links } from '@/constants/links';
+import { navLinks} from '@/constants/NavLinks';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Button } from '../ui/button';
@@ -22,7 +22,7 @@ export default function NavigationJseg() {
 		<>
 			<NavigationMenu>
 				<NavigationMenuList className='gap-4 text-stone-700 font-semibold flex flex-col lg:flex-row '>
-					{links.map((l, i) => {
+					{navLinks.map((l, i) => {
 						return (
 							<span key={i}>
 								{l.label === 'Soluções' ? (

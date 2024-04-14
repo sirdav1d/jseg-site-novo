@@ -7,7 +7,7 @@ import Access from '@/assets/icons/access';
 import Phone from '@/assets/icons/phone';
 import Alarm from '@/assets/icons/alarm';
 
-export const links = [
+export const navLinks = [
 	{ href: '/', label: 'Home' },
 	{ href: '/about', label: 'Sobre Nós' },
 	{

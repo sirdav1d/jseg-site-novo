@@ -149,7 +149,7 @@ export default function ContentHero({ data }: { data: Data }) {
 														duration: 0.5,
 													}}
 													whileInView='open'
-													className='w-96'
+													className='w-[440px]'
 													initial='close'>
 													<ResponsiveImage
 														data={

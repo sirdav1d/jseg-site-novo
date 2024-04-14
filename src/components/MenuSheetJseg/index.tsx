@@ -12,7 +12,7 @@ import {
 import { AlignJustify } from 'lucide-react';
 import Image from 'next/image';
 import logo from '@/assets/images/logo_jseg.png';
-import { links } from '@/constants/links';
+import { menuLinks } from '@/constants/MenuLinks';
 import Link from 'next/link';
 import { Button } from '../ui/button';
 import { FaWhatsapp } from 'react-icons/fa6';
@@ -29,33 +29,35 @@ export default function MenuSheetJseg() {
 						size={40}
 					/>
 				</SheetTrigger>
-				<SheetContent className='bg-stone-50 flex flex-col justify-start gap-40 items-center text-stone-900'>
+				<SheetContent className='bg-stone-50 flex flex-col justify-between gap-8 items-center text-stone-900 border-l-4 border-brand-green-500'>
 					<SheetHeader className='text-stone-900 '>
 						<SheetTitle className='text-stone-900 text-xl mt-5'>
 							<a href='/'>
 								<Image
 									src={logo}
 									alt='Logo JSEG Equipamentos'
-									width={220}
-									height={80}
+									width={180}
+									height={64}
 								/>
 							</a>
 						</SheetTitle>
 					</SheetHeader>
 
-					<ul className='gap-5 font-semibold flex flex-col'>
-						{links.map((l, index) => {
+					<ul className='gap-7 flex flex-col text-justify'>
+						{menuLinks.map((l, index) => {
 							return (
-								<Link
-									key={index}
-									className='hover:text-brand-green-500 group transition-all duration-300 ease-linear text-xl flex flex-col'
-									href={l.href}>
-									<SheetClose>
-										<li className='text-stone-700 text-xl hover:text-brand-green-500 transition-all ease-linear duration-200'>
-											{l.label}
-										</li>
-									</SheetClose>
-								</Link>
+								<li key={index}>
+									<Link
+										className='hover:text-brand-green-500 group transition-all duration-300 ease-linear text-xl flex flex-col'
+										href={l.href}>
+										<SheetClose className='flex gap-2'>
+											<l.icon color='rgb(3 166 14)' />
+											<p className='text-stone-700 text-lg font-medium rounded-md hover:text-brand-green-500 transition-all ease-linear duration-200'>
+												{l.label}
+											</p>
+										</SheetClose>
+									</Link>
+								</li>
 							);
 						})}
 					</ul>
