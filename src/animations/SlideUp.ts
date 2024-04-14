@@ -14,6 +14,6 @@ export const SlideUp: Variants = {
 	},
 	close: {
 		opacity: 0,
-		y: '-50%',
+		y: -40,
 	},
 };
