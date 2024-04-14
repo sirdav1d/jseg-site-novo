@@ -5,9 +5,9 @@ import React from 'react';
 
 export default function Politics() {
 	return (
-		<div className='mt-10 py-10'>
+		<div className='py-10'>
 			<Container>
-				<div className='grid grid-cols-2 gap-10 w-full'>
+				<div className='grid grid-cols-1 lg:grid-cols-2 gap-10'>
 					<div>
 						<h2 className='text-3xl text-brand-green-500 font-bold'>
 							Política Privacidade
@@ -69,42 +69,39 @@ export default function Politics() {
 							você tiver alguma dúvida sobre como lidamos com dados do usuário e
 							informações pessoais, entre em contacto connosco.
 						</p>
+						<br />
+						<ul className='prose w-full prose-base'>
+							<li>
+								O serviço Google AdSense que usamos para veicular publicidade
+								usa um cookie DoubleClick para veicular anúncios mais relevantes
+								em toda a Web e limitar o número de vezes que um determinado
+								anúncio é exibido para você.
+							</li>
+							<li>
+								Para mais informações sobre o Google AdSense, consulte as FAQs
+								oficiais sobre privacidade do Google AdSense.
+							</li>
+							<li>
+								Utilizamos anúncios para compensar os custos de funcionamento
+								deste site e fornecer financiamento para futuros
+								desenvolvimentos. Os cookies de publicidade comportamental
+								usados ​por este site foram projetados para garantir que você
+								forneça os anúncios mais relevantes sempre que possível,
+								rastreando anonimamente seus interesses e apresentando coisas
+								semelhantes que possam ser do seu interesse.
+							</li>
+							<li>
+								Vários parceiros anunciam em nosso nome e os cookies de
+								rastreamento de afiliados simplesmente nos permitem ver se
+								nossos clientes acessaram o site através de um dos sites de
+								nossos parceiros, para que possamos creditá-los adequadamente e,
+								quando aplicável, permitir que nossos parceiros afiliados
+								ofereçam qualquer promoção que pode fornecê-lo para fazer uma
+								compra.
+							</li>
+						</ul>
 
-						<p className='prose w-full prose-base'>
-							<ul>
-								<li>
-									O serviço Google AdSense que usamos para veicular publicidade
-									usa um cookie DoubleClick para veicular anúncios mais
-									relevantes em toda a Web e limitar o número de vezes que um
-									determinado anúncio é exibido para você.
-								</li>
-								<li>
-									Para mais informações sobre o Google AdSense, consulte as FAQs
-									oficiais sobre privacidade do Google AdSense.
-								</li>
-								<li>
-									Utilizamos anúncios para compensar os custos de funcionamento
-									deste site e fornecer financiamento para futuros
-									desenvolvimentos. Os cookies de publicidade comportamental
-									usados ​por este site foram projetados para garantir que você
-									forneça os anúncios mais relevantes sempre que possível,
-									rastreando anonimamente seus interesses e apresentando coisas
-									semelhantes que possam ser do seu interesse.
-								</li>
-								<li>
-									Vários parceiros anunciam em nosso nome e os cookies de
-									rastreamento de afiliados simplesmente nos permitem ver se
-									nossos clientes acessaram o site através de um dos sites de
-									nossos parceiros, para que possamos creditá-los adequadamente
-									e, quando aplicável, permitir que nossos parceiros afiliados
-									ofereçam qualquer promoção que pode fornecê-lo para fazer uma
-									compra.
-								</li>
-							</ul>
-							<p>
-								<br />
-							</p>
-						</p>
+						<br />
 					</div>
 
 					<div>

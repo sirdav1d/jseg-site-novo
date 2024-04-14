@@ -22,7 +22,7 @@ export default function FeatureS(props: Featurecontent) {
 					<MotionDiv
 						variants={RevealRight}
 						whileInView={'open'}
-						transition={{ delay: 0.3, duration: 0.5, ease: 'linear' }}
+						transition={{ delay: 0.2, duration: 0.5, ease: 'linear' }}
 						viewport={{ once: true }}
 						initial='close'
 						className='w-full h-full max-w-[280px] xl:h-[240px] xl:max-w-[340px] -translate-x-8 lg:-translate-x-0 rounded-md'>
@@ -35,7 +35,7 @@ export default function FeatureS(props: Featurecontent) {
 						variants={RevealRight}
 						viewport={{ once: true }}
 						whileInView={'open'}
-						transition={{ delay: 0.6, duration: 0.5, ease: 'linear' }}
+						transition={{ delay: 0.3, duration: 0.5, ease: 'linear' }}
 						initial='close'
 						data-tag={props.tag}
 						className={`w-full h-full max-w-[280px] ${
@@ -46,7 +46,7 @@ export default function FeatureS(props: Featurecontent) {
 					variants={RevealRight}
 					viewport={{ once: true }}
 					whileInView={'open'}
-					transition={{ delay: 1, duration: 0.5, ease: 'linear' }}
+					transition={{ delay: 0.4, duration: 0.5, ease: 'linear' }}
 					initial='close'
 					className='w-28 absolute top-3 -right-8'>
 					<ResponsiveImage data={props.images[1].responsiveImage} />
@@ -55,7 +55,7 @@ export default function FeatureS(props: Featurecontent) {
 					variants={RevealRight}
 					viewport={{ once: true }}
 					whileInView={'open'}
-					transition={{ delay: 1, duration: 0.5, ease: 'linear' }}
+					transition={{ delay: 0.5, duration: 0.5, ease: 'linear' }}
 					initial='close'
 					className='w-28 absolute bottom-0 xl:-bottom-12 -left-8'>
 					<ResponsiveImage data={props.images[2].responsiveImage} />

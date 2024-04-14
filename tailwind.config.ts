@@ -88,6 +88,10 @@ const config = {
 					' linear-gradient(90.05deg, #03A60E 26.47%, #2FB838 51.99%, #03A113 73.87%);',
 				bgBenefits:
 					'linear-gradient(123.96deg, #03A60E 26.98%, #5AC962 60.04%, #03A40E 96.94%);',
+				bgFooter:
+					'linear-gradient(94.32deg, #F0F0F0 38.07%, #FFFFFF 54.36%, #EEEEEE 71.68%);',
+				bgDivider:
+					'linear-gradient(90deg, rgba(3, 166, 14, 0) 10%, #03A60E 50%, rgba(3, 161, 14, 0) 90%);',
 			},
 		},
 	},

@@ -14,7 +14,7 @@ export default function Terms() {
 						</h2>
 						<br />
 						<p className='prose w-full prose-base'>
-							Ao acessar ao site
+							Ao acessar ao site {''}
 							<a
 								className='text-brand-green-500 underline'
 								href='http://jsegequipamentos.com.br/'>

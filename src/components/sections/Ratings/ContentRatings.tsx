@@ -20,7 +20,7 @@ export default function ContentRatings({ data }: { data: Data }) {
 					return (
 						<div
 							key={index}
-							className='gap-10 flex flex-col'>
+							className='gap-8 flex flex-col'>
 							<div className='text-center flex flex-col gap-5'>
 								<h2 className='text-3xl font-bold'>
 									{d.sectioncontent03.title}
