@@ -52,7 +52,7 @@ export default function MenuSheetJseg() {
 										href={l.href}>
 										<SheetClose className='flex gap-2'>
 											<l.icon color='rgb(3 166 14)' />
-											<p className='text-stone-700 text-lg font-medium rounded-md hover:text-brand-green-500 transition-all ease-linear duration-200'>
+											<p className='text-stone-700 text-base font-medium rounded-md hover:text-brand-green-500 transition-all ease-linear duration-200'>
 												{l.label}
 											</p>
 										</SheetClose>
