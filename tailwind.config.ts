@@ -91,7 +91,7 @@ const config = {
 				bgFooter:
 					'linear-gradient(94.32deg, #F0F0F0 38.07%, #FFFFFF 54.36%, #EEEEEE 71.68%);',
 				bgDivider:
-					'linear-gradient(90deg, rgba(3, 166, 14, 0) 10%, #03A60E 50%, rgba(3, 161, 14, 0) 90%);',
+					'linear-gradient(90deg, rgba(3, 166, 14, 0) 10%, #5AC962 50%, rgba(3, 161, 14, 0) 90%);',
 			},
 		},
 	},

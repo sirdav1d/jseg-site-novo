@@ -6,10 +6,16 @@ import { Instagram, Mail } from 'lucide-react';
 import Image from 'next/image';
 import { FaFacebook, FaWhatsapp } from 'react-icons/fa6';
 import Container from '../Container';
+import { MotionDiv } from '../MotionComponents';
+import { SlideUp } from '@/animations/SlideUp';
 
 export default function Footer() {
 	return (
-		<>
+		<MotionDiv
+			variants={SlideUp}
+			whileInView={'open'}
+			initial='close'
+			viewport={{ once: true }}>
 			<div className='w-full z-50 h-[2px] rounded-full bg-bgDivider'></div>
 			<div
 				id='contact'
@@ -109,6 +115,6 @@ export default function Footer() {
 					</>
 				</Container>
 			</div>
-		</>
+		</MotionDiv>
 	);
 }
