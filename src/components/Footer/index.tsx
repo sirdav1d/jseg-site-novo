@@ -78,12 +78,12 @@ export default function Footer() {
 										Telefone
 									</h2>
 									<p className='text-zinc-700 text-sm lg:text-base'>
-										(21) 99896 - 6588
+										(21) 99962 - 4160
 									</p>
 								</div>
 							</div>
 
-							<div className='grid lg:grid-cols-2 gap-4 w-full h-fit '>
+							<div className='grid lg:grid-cols-2 gap-2 w-full h-fit '>
 								{siteMap.map((s, index) => {
 									return (
 										<a

@@ -9,6 +9,7 @@ import { AllHomepage, Data } from '@/lib/types';
 import { ChevronRight, Plus } from 'lucide-react';
 import { Image as ResponsiveImage } from 'react-datocms';
 import HeroTypeAnimation from './HeroTypeAnimation';
+import NumbersAnimatedHero from './NumbersAnimatedhero';
 
 export default function ContentHero({ data }: { data: Data }) {
 	return (
@@ -85,9 +86,7 @@ export default function ContentHero({ data }: { data: Data }) {
 												</h2>
 												<div className='flex gap-1 lg:gap-2 items-center justify-center'>
 													<Plus size={20} />
-													<p className='text-brand-green-500 font-semibold text-2xl lg:text-5xl'>
-														{res.status01.value}
-													</p>
+													<NumbersAnimatedHero value={5000} />
 												</div>
 											</div>
 											<div className='flex items-center justify-center flex-col gap-3'>
@@ -96,9 +95,7 @@ export default function ContentHero({ data }: { data: Data }) {
 												</h2>
 												<div className='flex gap-1 lg:gap-2 items-center justify-center'>
 													<Plus size={20} />
-													<p className='text-brand-green-500 font-semibold text-2xl lg:text-5xl'>
-														{res.status02.value}
-													</p>
+													<NumbersAnimatedHero value={3000} />
 												</div>
 											</div>
 											<div className='flex items-center justify-center flex-col gap-3'>
@@ -107,14 +104,13 @@ export default function ContentHero({ data }: { data: Data }) {
 												</h2>
 												<div className='flex gap-1 lg:gap-2 items-center justify-center'>
 													<Plus size={20} />
-													<p className='text-brand-green-500 font-semibold text-2xl lg:text-5xl'>
-														{res.status03.value}
-													</p>
+													<NumbersAnimatedHero value={12} />
 												</div>
 											</div>
 										</div>
 									</div>
 									<div>
+										<div className='border w-full'></div>
 										<div className='absolute top-0 -z-10 right-0 object-contain w-[45%] xl:w-[38%] hidden xl:block'>
 											<MotionDiv
 												variants={SlideUp}
