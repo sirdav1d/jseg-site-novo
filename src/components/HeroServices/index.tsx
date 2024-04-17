@@ -14,7 +14,7 @@ export default function HeroServices({ data }: { data: AllServicepage }) {
 				<div className='h-full'>
 					<div className='flex flex-col h-full justify-between gap-5  py-5'>
 						<div className='flex flex-col lg:flex-row gap-5 align-middle my-auto justify-between'>
-							<h1 className='text-zinc-900 font-extrabold  max-w-xs lg:max-w-lg text-4xl '>
+							<h1 className='text-zinc-900 font-extrabold  max-w-xs lg:max-w-lg text-3xl leading-10'>
 								{data.headline}
 							</h1>
 							<p className='text-base prose font-normal max-w-2xl mb-10'>
