@@ -160,7 +160,6 @@ export const queryFeatures = gql`
 	}
 `;
 
-
 export const QueryHomePage = gql`
 	query {
 		allHomepages {
@@ -409,6 +408,92 @@ export const QueryHomePage = gql`
 			benefit04
 			benefit05
 			benefit06
+		}
+	}
+`;
+
+export const QueryService = gql`
+	query {
+		allServicepages {
+			headline
+			subheadline
+			imagesheroservice {
+				id
+				responsiveImage {
+					alt
+					aspectRatio
+					base64
+					bgColor
+					height
+					sizes
+					src
+					srcSet
+					title
+					webpSrcSet
+					width
+					__typename
+				}
+			}
+			titlesectionservs
+			descriptionsectionservs
+			cardservices {
+				id
+				title
+				description
+			}
+			titlesectionfeat
+			descriptionsectionfeat
+			featurecontent {
+				id
+				tag
+				title
+				description
+				images {
+					id
+					responsiveImage {
+						alt
+						aspectRatio
+						base64
+						bgColor
+						height
+						sizes
+						src
+						srcSet
+						title
+						webpSrcSet
+						width
+						__typename
+					}
+				}
+			}
+			titlesectionrating
+			descriptionsectionrating
+			ratingscontent {
+				id
+				name
+				testimony
+				avatar {
+					responsiveImage {
+						alt
+						aspectRatio
+						base64
+						bgColor
+						height
+						sizes
+						src
+						srcSet
+						title
+						webpSrcSet
+						width
+						__typename
+					}
+				}
+			}
+			titlesectionbenefit
+			benefitcontent {
+				id
+				benefitdescription
+			}
 		}
 	}
 `;

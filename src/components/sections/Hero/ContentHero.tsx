@@ -110,7 +110,6 @@ export default function ContentHero({ data }: { data: Data }) {
 										</div>
 									</div>
 									<div>
-										<div className='border w-full'></div>
 										<div className='absolute top-0 -z-10 right-0 object-contain w-[45%] xl:w-[38%] hidden xl:block'>
 											<MotionDiv
 												variants={SlideUp}

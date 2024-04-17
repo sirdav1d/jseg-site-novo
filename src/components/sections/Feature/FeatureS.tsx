@@ -1,7 +1,6 @@
 /** @format */
 
 import { RevealRight } from '@/animations/RevealRight';
-import { SlideRight } from '@/animations/SlideRight';
 import { MotionDiv, MotionSpan } from '@/components/MotionComponents';
 import TagComponent from '@/components/TagComponent';
 import { Featurecontent } from '@/lib/types';

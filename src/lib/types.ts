@@ -96,6 +96,7 @@ export interface AllHomepage {
 }
 
 interface Rating {
+	id?: string;
 	avatar: Image;
 	name: string;
 	testimony: string;
@@ -103,4 +104,30 @@ interface Rating {
 
 export interface Data {
 	allHomepages: AllHomepage[];
+}
+
+export interface DataService {
+	allServicepages: AllServicepage[];
+}
+
+export interface AllServicepage {
+	headline: string;
+	subheadline: string;
+	imagesheroservice: Image[];
+	titlesectionservs: string;
+	descriptionsectionservs: string;
+	cardservices: CardService[];
+	titlesectionfeat: string;
+	descriptionsectionfeat: string;
+	featurecontent: Featurecontent[];
+	titlesectionrating: string;
+	descriptionsectionrating: string;
+	ratingscontent: Rating[];
+	titlesectionbenefit: string;
+	benefitcontent: BenefitContent[];
+}
+
+interface BenefitContent {
+	id: string;
+	benefitdescription: string;
 }
