@@ -1,7 +1,24 @@
-import React from 'react'
+/** @format */
 
-export default function Phone() {
-  return (
-    <div>Phone</div>
-  )
+import { request } from '@/lib/datocms';
+import { QueryService } from '@/lib/queries';
+import WrapperRequest from '../../../components/WrapperRequest';
+
+export default async function Phone() {
+	const data: any = await request({
+		query: QueryService,
+		revalidate: 30,
+	});
+	return (
+		<main className='overflow-x-hidden'>
+			<WrapperRequest
+				subscription={{
+					initialData: data,
+					query: QueryService,
+					token: process.env.NEXT_DATOCMS_TOKEN,
+				}}
+				page='phone'
+			/>
+		</main>
+	);
 }
