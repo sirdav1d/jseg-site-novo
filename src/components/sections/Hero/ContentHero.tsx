@@ -1,7 +1,6 @@
 /** @format */
 
 import { SlideRight } from '@/animations/SlideRight';
-import { SlideUp } from '@/animations/SlideUp';
 import Container from '@/components/Container';
 import { MotionDiv } from '@/components/MotionComponents';
 import { Button } from '@/components/ui/button';
@@ -112,10 +111,13 @@ export default function ContentHero({ data }: { data: Data }) {
 									<div>
 										<div className='absolute top-0 -z-10 right-0 object-contain w-[45%] xl:w-[38%] hidden xl:block'>
 											<MotionDiv
-												variants={SlideUp}
-												whileInView='open'
-												animate='open'
-												initial='close'>
+												transition={{
+													delay: 0.2,
+													ease: 'linear',
+													duration: 0.4,
+												}}
+												animate={{ y: 0 }}
+												initial={{ y: -200 }}>
 												<ResponsiveImage
 													data={
 														res.imagehero[0].responsiveImage

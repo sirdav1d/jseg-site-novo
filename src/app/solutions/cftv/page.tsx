@@ -1,12 +1,12 @@
 /** @format */
 
 import { request } from '@/lib/datocms';
-import { QueryService } from '@/lib/queries';
+import { QueryCFTV } from '@/lib/queries';
 import WrapperRequest from '../../../components/WrapperRequest';
 
 export default async function Cftv() {
 	const data: any = await request({
-		query: QueryService,
+		query: QueryCFTV,
 		revalidate: 30,
 	});
 	return (
@@ -14,7 +14,7 @@ export default async function Cftv() {
 			<WrapperRequest
 				subscription={{
 					initialData: data,
-					query: QueryService,
+					query: QueryCFTV,
 					token: process.env.NEXT_DATOCMS_TOKEN,
 				}}
 				page='cftv'

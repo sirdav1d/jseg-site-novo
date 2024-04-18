@@ -583,3 +583,347 @@ export const QueryInternet = gql`
 		}
 	}
 `;
+
+export const QueryCFTV = gql`
+	query {
+		allCftvpages {
+			headline
+			subheadline
+			imagesheroservice {
+				id
+				responsiveImage {
+					alt
+					aspectRatio
+					base64
+					bgColor
+					height
+					sizes
+					src
+					srcSet
+					title
+					webpSrcSet
+					width
+					__typename
+				}
+			}
+			titlesectionservs
+			descriptionsectionservs
+			cardservices {
+				id
+				title
+				description
+			}
+			titlesectionfeat
+			descriptionsectionfeat
+			featurecontent {
+				id
+				tag
+				title
+				description
+				images {
+					id
+					responsiveImage {
+						alt
+						aspectRatio
+						base64
+						bgColor
+						height
+						sizes
+						src
+						srcSet
+						title
+						webpSrcSet
+						width
+						__typename
+					}
+				}
+			}
+			titlesectionrating
+			descriptionsectionrating
+			ratingscontent {
+				id
+				name
+				testimony
+				avatar {
+					responsiveImage {
+						alt
+						aspectRatio
+						base64
+						bgColor
+						height
+						sizes
+						src
+						srcSet
+						title
+						webpSrcSet
+						width
+						__typename
+					}
+				}
+			}
+			titlesectionbenefit
+			benefitcontent {
+				id
+				benefitdescription
+			}
+		}
+	}
+`;
+
+export const QueryAccess = gql`
+	query {
+		allAccesspages {
+			headline
+			subheadline
+			imagesheroservice {
+				id
+				responsiveImage {
+					alt
+					aspectRatio
+					base64
+					bgColor
+					height
+					sizes
+					src
+					srcSet
+					title
+					webpSrcSet
+					width
+					__typename
+				}
+			}
+			titlesectionservs
+			descriptionsectionservs
+			cardservices {
+				id
+				title
+				description
+			}
+			titlesectionfeat
+			descriptionsectionfeat
+			featurecontent {
+				id
+				tag
+				title
+				description
+				images {
+					id
+					responsiveImage {
+						alt
+						aspectRatio
+						base64
+						bgColor
+						height
+						sizes
+						src
+						srcSet
+						title
+						webpSrcSet
+						width
+						__typename
+					}
+				}
+			}
+			titlesectionrating
+			descriptionsectionrating
+			ratingscontent {
+				id
+				name
+				testimony
+				avatar {
+					responsiveImage {
+						alt
+						aspectRatio
+						base64
+						bgColor
+						height
+						sizes
+						src
+						srcSet
+						title
+						webpSrcSet
+						width
+						__typename
+					}
+				}
+			}
+			titlesectionbenefit
+			benefitcontent {
+				id
+				benefitdescription
+			}
+		}
+	}
+`;
+
+export const QueryPhone = gql`
+	query {
+		allPhonepages {
+			headline
+			subheadline
+			imagesheroservice {
+				id
+				responsiveImage {
+					alt
+					aspectRatio
+					base64
+					bgColor
+					height
+					sizes
+					src
+					srcSet
+					title
+					webpSrcSet
+					width
+					__typename
+				}
+			}
+			titlesectionservs
+			descriptionsectionservs
+			cardservices {
+				id
+				title
+				description
+			}
+			titlesectionfeat
+			descriptionsectionfeat
+			featurecontent {
+				id
+				tag
+				title
+				description
+				images {
+					id
+					responsiveImage {
+						alt
+						aspectRatio
+						base64
+						bgColor
+						height
+						sizes
+						src
+						srcSet
+						title
+						webpSrcSet
+						width
+						__typename
+					}
+				}
+			}
+			titlesectionrating
+			descriptionsectionrating
+			ratingscontent {
+				id
+				name
+				testimony
+				avatar {
+					responsiveImage {
+						alt
+						aspectRatio
+						base64
+						bgColor
+						height
+						sizes
+						src
+						srcSet
+						title
+						webpSrcSet
+						width
+						__typename
+					}
+				}
+			}
+			titlesectionbenefit
+			benefitcontent {
+				id
+				benefitdescription
+			}
+		}
+	}
+`;
+
+export const QueryAlarm = gql`
+	query {
+		allAlarmpages {
+			headline
+			subheadline
+			imagesheroservice {
+				id
+				responsiveImage {
+					alt
+					aspectRatio
+					base64
+					bgColor
+					height
+					sizes
+					src
+					srcSet
+					title
+					webpSrcSet
+					width
+					__typename
+				}
+			}
+			titlesectionservs
+			descriptionsectionservs
+			cardservices {
+				id
+				title
+				description
+			}
+			titlesectionfeat
+			descriptionsectionfeat
+			featurecontent {
+				id
+				tag
+				title
+				description
+				images {
+					id
+					responsiveImage {
+						alt
+						aspectRatio
+						base64
+						bgColor
+						height
+						sizes
+						src
+						srcSet
+						title
+						webpSrcSet
+						width
+						__typename
+					}
+				}
+			}
+			titlesectionrating
+			descriptionsectionrating
+			ratingscontent {
+				id
+				name
+				testimony
+				avatar {
+					responsiveImage {
+						alt
+						aspectRatio
+						base64
+						bgColor
+						height
+						sizes
+						src
+						srcSet
+						title
+						webpSrcSet
+						width
+						__typename
+					}
+				}
+			}
+			titlesectionbenefit
+			benefitcontent {
+				id
+				benefitdescription
+			}
+		}
+	}
+`;

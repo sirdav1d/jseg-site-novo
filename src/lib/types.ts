@@ -114,6 +114,22 @@ export interface DataInternet {
 	allInternetpages: AllServicepage[];
 }
 
+export interface DataCFTV {
+	allCftvpages: AllServicepage[];
+}
+
+export interface DataAccess {
+	allAccesspages: AllServicepage[];
+}
+
+export interface DataPhone {
+	allPhonepages: AllServicepage[];
+}
+
+export interface DataAlarm {
+	allAlarmpages: AllServicepage[];
+}
+
 export interface AllServicepage {
 	headline: string;
 	subheadline: string;

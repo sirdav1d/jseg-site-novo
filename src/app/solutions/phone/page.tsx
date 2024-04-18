@@ -1,12 +1,12 @@
 /** @format */
 
 import { request } from '@/lib/datocms';
-import { QueryService } from '@/lib/queries';
+import { QueryPhone} from '@/lib/queries';
 import WrapperRequest from '../../../components/WrapperRequest';
 
 export default async function Phone() {
 	const data: any = await request({
-		query: QueryService,
+		query: QueryPhone,
 		revalidate: 30,
 	});
 	return (
@@ -14,7 +14,7 @@ export default async function Phone() {
 			<WrapperRequest
 				subscription={{
 					initialData: data,
-					query: QueryService,
+					query: QueryPhone,
 					token: process.env.NEXT_DATOCMS_TOKEN,
 				}}
 				page='phone'

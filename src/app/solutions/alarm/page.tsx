@@ -1,12 +1,12 @@
 /** @format */
 
 import { request } from '@/lib/datocms';
-import { QueryService } from '@/lib/queries';
+import { QueryAlarm } from '@/lib/queries';
 import WrapperRequest from '../../../components/WrapperRequest';
 
 export default async function Alarm() {
 	const data: any = await request({
-		query: QueryService,
+		query: QueryAlarm,
 		revalidate: 30,
 	});
 	return (
@@ -14,7 +14,7 @@ export default async function Alarm() {
 			<WrapperRequest
 				subscription={{
 					initialData: data,
-					query: QueryService,
+					query: QueryAlarm,
 					token: process.env.NEXT_DATOCMS_TOKEN,
 				}}
 				page='alarm'

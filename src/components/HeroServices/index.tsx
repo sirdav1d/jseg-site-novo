@@ -7,7 +7,6 @@ import { Image as ResponsiveImage } from 'react-datocms';
 import { MotionDiv } from '../MotionComponents';
 import { Button } from '../ui/button';
 import { Card, CardContent } from '../ui/card';
-import { HoverBorderGradient } from '../ui/hover-border-gradient';
 
 export default function HeroServices({ data }: { data: AllServicepage }) {
 	return (
@@ -53,11 +52,11 @@ export default function HeroServices({ data }: { data: AllServicepage }) {
 									/>
 								</MotionDiv>
 								<MotionDiv
-									className='xl:flex hidden w-[220px]'
+									className='xl:flex hidden w-[220px] rounded-lg'
 									variants={SlideUp}
 									whileInView='open'
 									transition={{
-										delay: 0.2,
+										delay: 0.8,
 										type: 'tween',
 										duration: 0.5,
 										ease: 'linear',
@@ -65,14 +64,14 @@ export default function HeroServices({ data }: { data: AllServicepage }) {
 									initial='close'>
 									<a
 										href='#ratings'
-										className='hover:opacity-80 transition-all duration-200 ease-linear'>
-										<Card className='w-[220px] bg-brand-green-500 border-1 border-white/20 text-white'>
-											<CardContent className='w-[220px] flex flex-col items-center justify-center gap-2 h-full py-2.5 px-3'>
-												<h4 className='flex text-base font-bold text-center items-center gap-2 w-full'>
+										className='hover:drop-shadow-xl transition-all duration-200 ease-linear'>
+										<Card className='w-[220px] hover:border-zinc-50 transition-all duration-200 ease-linear bg-bgFooter text-zinc-800'>
+											<CardContent className='w-[220px] flex flex-col items-center justify-center gap-2 h-full py-2.5 px-3 '>
+												<h4 className='flex text-base font-extrabold text-center items-center gap-2 w-full'>
 													Ver Avaliações
 													<SquareArrowOutUpRight size={20} />
 												</h4>
-												<p className='text-xs prose text-zinc-100'>
+												<p className='text-xs prose text-zinc-600 drop-shadow-md'>
 													Saiba porque nossos clientes priorizam a JSEG
 													Equipamentos
 												</p>
