@@ -1,12 +1,12 @@
 /** @format */
 
 import { request } from '@/lib/datocms';
-import { QueryService } from '@/lib/queries';
+import { QuerySmartHome } from '@/lib/queries';
 import WrapperRequest from '../../../components/WrapperRequest';
 
 export default async function SmartHome() {
 	const data: any = await request({
-		query: QueryService,
+		query: QuerySmartHome,
 		revalidate: 30,
 	});
 	return (
@@ -14,10 +14,10 @@ export default async function SmartHome() {
 			<WrapperRequest
 				subscription={{
 					initialData: data,
-					query: QueryService,
+					query: QuerySmartHome,
 					token: process.env.NEXT_DATOCMS_TOKEN,
 				}}
-        page='smartHome'
+				page='smartHome'
 			/>
 		</main>
 	);

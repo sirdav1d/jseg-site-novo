@@ -1,12 +1,12 @@
 /** @format */
 
 import { request } from '@/lib/datocms';
-import { QueryService } from '@/lib/queries';
+import { QueryInternet } from '@/lib/queries';
 import WrapperRequest from '../../../components/WrapperRequest';
 
 export default async function Internet() {
 	const data: any = await request({
-		query: QueryService,
+		query: QueryInternet,
 		revalidate: 30,
 	});
 	return (
@@ -14,7 +14,7 @@ export default async function Internet() {
 			<WrapperRequest
 				subscription={{
 					initialData: data,
-					query: QueryService,
+					query: QueryInternet,
 					token: process.env.NEXT_DATOCMS_TOKEN,
 				}}
 				page='internet'

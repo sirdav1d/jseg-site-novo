@@ -21,4 +21,3 @@ export function request({ query, variables, revalidate }: RequestProps) {
 
 	return graphQLClient.request(query, variables);
 }
-

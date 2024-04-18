@@ -412,9 +412,95 @@ export const QueryHomePage = gql`
 	}
 `;
 
-export const QueryService = gql`
+export const QuerySmartHome = gql`
 	query {
-		allServicepages {
+		allSmarthomepages {
+			headline
+			subheadline
+			imagesheroservice {
+				id
+				responsiveImage {
+					alt
+					aspectRatio
+					base64
+					bgColor
+					height
+					sizes
+					src
+					srcSet
+					title
+					webpSrcSet
+					width
+					__typename
+				}
+			}
+			titlesectionservs
+			descriptionsectionservs
+			cardservices {
+				id
+				title
+				description
+			}
+			titlesectionfeat
+			descriptionsectionfeat
+			featurecontent {
+				id
+				tag
+				title
+				description
+				images {
+					id
+					responsiveImage {
+						alt
+						aspectRatio
+						base64
+						bgColor
+						height
+						sizes
+						src
+						srcSet
+						title
+						webpSrcSet
+						width
+						__typename
+					}
+				}
+			}
+			titlesectionrating
+			descriptionsectionrating
+			ratingscontent {
+				id
+				name
+				testimony
+				avatar {
+					responsiveImage {
+						alt
+						aspectRatio
+						base64
+						bgColor
+						height
+						sizes
+						src
+						srcSet
+						title
+						webpSrcSet
+						width
+						__typename
+					}
+				}
+			}
+			titlesectionbenefit
+			benefitcontent {
+				id
+				benefitdescription
+			}
+		}
+	}
+`;
+
+export const QueryInternet = gql`
+	query {
+		allInternetpages {
 			headline
 			subheadline
 			imagesheroservice {

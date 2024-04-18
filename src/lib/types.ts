@@ -106,8 +106,12 @@ export interface Data {
 	allHomepages: AllHomepage[];
 }
 
-export interface DataService {
-	allServicepages: AllServicepage[];
+export interface DataSmartHome {
+	allSmarthomepages: AllServicepage[];
+}
+
+export interface DataInternet {
+	allInternetpages: AllServicepage[];
 }
 
 export interface AllServicepage {
