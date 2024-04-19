@@ -9,6 +9,7 @@ import ContentAlarm from '@/app/solutions/alarm/ContentAlarm';
 import ContentCFTV from '@/app/solutions/cftv/ContentCFTV';
 import ContentInternet from '@/app/solutions/internet/ContentInternet';
 import ContentPhone from '@/app/solutions/phone/ContentPhone';
+import ContentHome from './ContentHome';
 
 export default function WrapperRequest({
 	subscription,
@@ -32,7 +33,7 @@ export default function WrapperRequest({
 	{
 		return (
 			hydrated && (
-				<div className='w-full h-full text-zinc-900 py-20'>
+				<div className='w-full h-full text-zinc-900'>
 					{page === 'smartHome' && (
 						<ContentSmartHome data={data}></ContentSmartHome>
 					)}
@@ -43,6 +44,7 @@ export default function WrapperRequest({
 					{page === 'access' && <ContentAccess data={data}></ContentAccess>}
 					{page === 'phone' && <ContentPhone data={data}></ContentPhone>}
 					{page === 'alarm' && <ContentAlarm data={data}></ContentAlarm>}
+					{page === 'home' && <ContentHome data={data}></ContentHome>}
 				</div>
 			)
 		);

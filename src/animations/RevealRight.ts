@@ -11,4 +11,9 @@ export const RevealRight: Variants = {
 		opacity: 0,
 		x: -40,
 	},
+
+	exit: {
+		opacity: 0,
+		x: 40,
+	},
 };

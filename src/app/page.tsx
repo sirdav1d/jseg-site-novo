@@ -1,5 +1,7 @@
 /** @format */
 
+import ContentHome from '@/components/ContentHome';
+import WrapperRequest from '@/components/WrapperRequest';
 import Benefits from '@/components/sections/Benefits';
 import Feature from '@/components/sections/Feature';
 import HeroSection from '@/components/sections/Hero';
@@ -15,41 +17,13 @@ export default async function Home() {
 	});
 	return (
 		<main className='overflow-x-hidden'>
-			<HeroSection
+			<WrapperRequest
 				subscription={{
 					initialData: data,
 					query: QueryHomePage,
 					token: process.env.NEXT_DATOCMS_TOKEN,
 				}}
-			/>
-			<ServicesList
-				subscription={{
-					initialData: data,
-					query: QueryHomePage,
-					token: process.env.NEXT_DATOCMS_TOKEN,
-				}}
-			/>
-			<Feature
-				subscription={{
-					initialData: data,
-					query: QueryHomePage,
-					token: process.env.NEXT_DATOCMS_TOKEN,
-				}}
-			/>
-			<Ratings
-				subscription={{
-					initialData: data,
-					query: QueryHomePage,
-					token: process.env.NEXT_DATOCMS_TOKEN,
-				}}
-			/>
-			<Benefits
-				subscription={{
-					initialData: data,
-					query: QueryHomePage,
-					token: process.env.NEXT_DATOCMS_TOKEN,
-				}}
-			/>
+				page={'home'}></WrapperRequest>
 		</main>
 	);
 }

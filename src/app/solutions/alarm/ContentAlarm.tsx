@@ -2,7 +2,8 @@
 
 import Container from '@/components/Container';
 import HeroServices from '@/components/HeroServices';
-import { DataAlarm} from '@/lib/types';
+import ServicesList from '@/components/sections/ServicesList';
+import { DataAlarm } from '@/lib/types';
 import React from 'react';
 
 export default function ContentAlarm({ data }: { data: DataAlarm }) {
@@ -10,6 +11,7 @@ export default function ContentAlarm({ data }: { data: DataAlarm }) {
 		<div className='text-zinc-900 h-full min-h-screen w-full'>
 			<Container>
 				<HeroServices data={data.allAlarmpages[0]} />
+				<ServicesList data={data.allAlarmpages[0]} />
 			</Container>
 		</div>
 	);

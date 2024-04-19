@@ -2,6 +2,7 @@
 
 import Container from '@/components/Container';
 import HeroServices from '@/components/HeroServices';
+import ServicesList from '@/components/sections/ServicesList';
 import { DataPhone } from '@/lib/types';
 import React from 'react';
 
@@ -10,6 +11,7 @@ export default function ContentPhone({ data }: { data: DataPhone }) {
 		<div className='text-zinc-900 h-full min-h-screen w-full'>
 			<Container>
 				<HeroServices data={data.allPhonepages[0]} />
+				<ServicesList data={data.allPhonepages[0]} />
 			</Container>
 		</div>
 	);

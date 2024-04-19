@@ -2,6 +2,7 @@
 
 import Container from '@/components/Container';
 import HeroServices from '@/components/HeroServices';
+import ServicesList from '@/components/sections/ServicesList';
 import { DataCFTV } from '@/lib/types';
 import React from 'react';
 
@@ -10,6 +11,7 @@ export default function ContentCFTV({ data }: { data: DataCFTV }) {
 		<div className='text-zinc-900 h-full min-h-screen w-full'>
 			<Container>
 				<HeroServices data={data.allCftvpages[0]} />
+				<ServicesList data={data.allCftvpages[0]} />
 			</Container>
 		</div>
 	);

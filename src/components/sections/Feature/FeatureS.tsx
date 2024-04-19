@@ -3,10 +3,10 @@
 import { RevealRight } from '@/animations/RevealRight';
 import { MotionDiv, MotionSpan } from '@/components/MotionComponents';
 import TagComponent from '@/components/TagComponent';
-import { Featurecontent } from '@/lib/types';
+import { Feature } from '@/lib/types';
 import { Image as ResponsiveImage } from 'react-datocms';
 
-export default function FeatureS(props: Featurecontent) {
+export default function FeatureS(props: Feature) {
 	return (
 		<div
 			data-tag={props.tag}

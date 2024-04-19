@@ -16,3 +16,5 @@ export const MotionCircle = motion.circle;
 export const MotionSVG = motion.svg;
 
 export const MotionSpan = motion.span;
+
+export const MotionHeading = motion.h2;
