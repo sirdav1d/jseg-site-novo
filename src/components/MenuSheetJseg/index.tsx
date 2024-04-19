@@ -31,7 +31,7 @@ export default function MenuSheetJseg() {
 				</SheetTrigger>
 				<SheetContent className='bg-stone-50 flex flex-col justify-between gap-8 items-center text-stone-900 border-l-4 border-brand-green-500'>
 					<SheetHeader className='text-stone-900 '>
-						<SheetTitle className='text-stone-900 text-xl mt-5'>
+						<SheetTitle className='text-stone-900 text-xl mt-3'>
 							<a href='/'>
 								<Image
 									src={logo}
@@ -43,7 +43,7 @@ export default function MenuSheetJseg() {
 						</SheetTitle>
 					</SheetHeader>
 
-					<ul className='gap-7 flex flex-col text-justify'>
+					<ul className='gap-9 flex flex-col text-justify'>
 						{menuLinks.map((l, index) => {
 							return (
 								<li key={index}>
@@ -66,7 +66,7 @@ export default function MenuSheetJseg() {
 						target='_blank'>
 						<Button
 							variant={'brand'}
-							className='flex gap-4 bg-left transition-all duration-200 ease-linear hover:bg-right bg-[length:496px_100px] rounded-lg drop-shadow-lg hover:drop-shadow-xl text-xl text-zinc-50 hover:bg-brand-green-700'>
+							className='flex gap-4 w-full transition-all duration-200 ease-linear rounded-lg drop-shadow-lg hover:drop-shadow-xl text-xl text-zinc-50 hover:bg-brand-green-700'>
 							<FaWhatsapp size={28} />
 							Whatsapp
 						</Button>

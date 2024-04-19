@@ -10,55 +10,33 @@ export default function FeatureS(props: Feature) {
 	return (
 		<div
 			data-tag={props.tag}
-			className='w-full h-full flex flex-col mx-auto py-5 xl:py-10 items-center gap-5 lg:gap-10 xl:gap-32 xl:flex-row-reverse data-[tag=Confiabilidade]:xl:flex-row justify-between'>
-			<div className='flex flex-col gap-5 h-full'>
+			className='w-full h-full flex flex-col mx-auto xl:py-10 items-center gap-5 lg:gap-10 xl:gap-32 xl:flex-row justify-between xl:data-[tag=CONFIABILIDADE]:flex-row-reverse xl:data-[tag=Monitoramento]:flex-row-reverse'>
+			<div className='flex flex-col gap-5 h-full '>
 				<TagComponent>{props.tag}</TagComponent>
 				<h2 className='text-xl font-bold'>{props.title}</h2>
 				<p className='prose prose-sm'>{props.description}</p>
 			</div>
-			<div className='relative h-full	mx-auto lg:mx-0 '>
-				<div className='relative h-full '>
-					<MotionDiv
-						variants={RevealRight}
-						whileInView={'open'}
-						transition={{ delay: 0.2, duration: 0.5, ease: 'linear' }}
-						viewport={{ once: true }}
-						initial='close'
-						className='w-full h-full max-w-[280px] xl:h-[240px] xl:max-w-[340px] -translate-x-8 lg:-translate-x-0 rounded-md'>
-						<ResponsiveImage
-							className='rounded-md'
-							data={props.images[0].responsiveImage}
-						/>
-					</MotionDiv>
-					<MotionSpan
-						variants={RevealRight}
-						viewport={{ once: true }}
-						whileInView={'open'}
-						transition={{ delay: 0.3, duration: 0.5, ease: 'linear' }}
-						initial='close'
-						data-tag={props.tag}
-						className={`w-full h-full max-w-[280px] ${
-							props.tag == 'Confiabilidade' ? 'right-4' : 'left-4'
-						}  xl:h-[276px] xl:max-w-[340px] bg-brand-green-500 absolute top-4 xl:top-10 rounded-md -z-10 `}></MotionSpan>
-				</div>
+
+			<div className='flex relative '>
 				<MotionDiv
+					className='max-w-[368px]'
+					variants={RevealRight}
+					whileInView={'open'}
+					transition={{ delay: 0.2, duration: 0.5, ease: 'linear' }}
+					viewport={{ once: true }}
+					initial='close'>
+					<ResponsiveImage
+						className='rounded-md xl:w-[340px]'
+						data={props.images[0].responsiveImage}
+					/>
+				</MotionDiv>
+				<MotionSpan
 					variants={RevealRight}
 					viewport={{ once: true }}
 					whileInView={'open'}
-					transition={{ delay: 0.4, duration: 0.5, ease: 'linear' }}
+					transition={{ delay: 0.3, duration: 0.5, ease: 'linear' }}
 					initial='close'
-					className='w-28 absolute top-3 -right-8'>
-					<ResponsiveImage data={props.images[1].responsiveImage} />
-				</MotionDiv>
-				<MotionDiv
-					variants={RevealRight}
-					viewport={{ once: true }}
-					whileInView={'open'}
-					transition={{ delay: 0.5, duration: 0.5, ease: 'linear' }}
-					initial='close'
-					className='w-28 absolute bottom-0 xl:-bottom-12 -left-8'>
-					<ResponsiveImage data={props.images[2].responsiveImage} />
-				</MotionDiv>
+					className={` absolute bg-brand-green-500 rounded-md -z-10 w-[368px] h-full top-4 left-4`}></MotionSpan>
 			</div>
 		</div>
 	);

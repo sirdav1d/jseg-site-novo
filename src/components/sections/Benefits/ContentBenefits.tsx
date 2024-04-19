@@ -30,7 +30,7 @@ export default function ContentBenefits({ data }: { data: any }) {
 						</h2>
 						<div className='flex-col gap-20 flex'>
 							<ul className='flex flex-col mx-auto w-full  gap-6 text-zinc-100 lg:text-xl prose prose-sm'>
-								{data.benefitsdescriptions.map((benefits: any) => {
+								{data.benefitcontent.map((benefits: any) => {
 									return (
 										<MotionLI
 											key={benefits.id}

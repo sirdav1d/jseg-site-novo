@@ -48,7 +48,7 @@ export const QueryHomePage = gql`
 			}
 			titlesectionfeature
 			descriptionsectionfeature
-			features {
+			featurecontent {
 				id
 				tag
 				title
@@ -73,7 +73,7 @@ export const QueryHomePage = gql`
 			}
 			titleratingsection
 			descriptionratingsection
-			ratings {
+			ratingscontent {
 				id
 				name
 				testimony
@@ -96,7 +96,7 @@ export const QueryHomePage = gql`
 				}
 			}
 			titlesectionbenefit
-			benefitsdescriptions {
+			benefitcontent {
 				id
 				benefitdescription
 			}
@@ -202,6 +202,23 @@ export const QuerySmartHome = gql`
 			benefitcontent {
 				id
 				benefitdescription
+			}
+			benefitimages {
+				id
+				responsiveImage {
+					alt
+					aspectRatio
+					base64
+					bgColor
+					height
+					sizes
+					src
+					srcSet
+					title
+					webpSrcSet
+					width
+					__typename
+				}
 			}
 		}
 	}

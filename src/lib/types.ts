@@ -71,12 +71,12 @@ export interface AllHomepage {
 	cardservices: CardService[];
 	titlesectionfeature: string;
 	descriptionsectionfeature: string;
-	features: Feature[];
+	featurecontent: Feature[];
 	titleratingsection: string;
 	descriptionratingsection: string;
-	ratings: Rating[];
+	ratingscontent: Rating[];
 	titlesectionbenefit: string;
-	benefitsdescriptions: Benefit[];
+	benefitcontent: Benefit[];
 	benefitimages: Image[];
 }
 

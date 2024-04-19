@@ -13,9 +13,9 @@ export default function ContentHome({ data }: { data: Data }) {
 		<>
 			<HeroSection data={data.allHomepages[0]}></HeroSection>
 			<ServicesList data={data.allHomepages[0]} />
-			{/* <Feature data={data.allHomepages[0]} />
+			<Feature data={data.allHomepages[0]} />
 			<Ratings data={data.allHomepages[0]} />
-			<Benefits data={data.allHomepages[0]} /> */}
+			<Benefits data={data.allHomepages[0]} />
 		</>
 	);
 }

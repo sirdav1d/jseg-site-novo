@@ -29,7 +29,7 @@ export default function ContentFeature({ data }: { data: AllHomepage }) {
 						</Button>
 					</div>
 					<div className='gap-20 xl:gap-10 flex flex-col w-full h-full item-center justify-center'>
-						{data.features.map((features) => {
+						{data.featurecontent.map((features) => {
 							return (
 								<FeatureS
 									key={features.id}

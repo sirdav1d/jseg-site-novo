@@ -31,7 +31,7 @@ export default function ContentRatings({ data }: { data: any }) {
 						}}
 						className='w-full mx-auto'>
 						<CarouselContent className='mx-auto w-full'>
-							{data.ratings.map((rating: any) => {
+							{data.ratingscontent.map((rating: any) => {
 								return (
 									<CarouselItem
 										key={rating.id}
