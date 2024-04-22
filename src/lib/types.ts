@@ -69,11 +69,11 @@ export interface AllHomepage {
 	titlesectionservs: string;
 	descriptionsectionservs: string;
 	cardservices: CardService[];
-	titlesectionfeature: string;
-	descriptionsectionfeature: string;
+	titlesectionfeat: string;
+	descriptionsectionfeat: string;
 	featurecontent: Feature[];
-	titleratingsection: string;
-	descriptionratingsection: string;
+	titlesectionrating: string;
+	descriptionsectionrating: string;
 	ratingscontent: Rating[];
 	titlesectionbenefit: string;
 	benefitcontent: Benefit[];

@@ -1,6 +1,7 @@
 /** @format */
 
 import Container from '@/components/Container';
+import Divider from '@/components/Divider';
 import HeroServices from '@/components/HeroServices';
 import Benefits from '@/components/sections/Benefits';
 import Feature from '@/components/sections/Feature';
@@ -14,8 +15,11 @@ export default function ContentCFTV({ data }: { data: DataCFTV }) {
 		<div className='text-zinc-900 h-full min-h-screen w-full'>
 			<Container>
 				<HeroServices data={data.allCftvpages[0]} />
+				<Divider />
 				<ServicesList data={data.allCftvpages[0]} />
+				<Divider />
 				<Feature data={data.allCftvpages[0]} />
+				<Divider />
 				<Ratings data={data.allCftvpages[0]} />
 				<Benefits data={data.allCftvpages[0]} />
 			</Container>

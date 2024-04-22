@@ -46,8 +46,8 @@ export const QueryHomePage = gql`
 				title
 				description
 			}
-			titlesectionfeature
-			descriptionsectionfeature
+			titlesectionfeat
+			descriptionsectionfeat
 			featurecontent {
 				id
 				tag
@@ -71,8 +71,8 @@ export const QueryHomePage = gql`
 					}
 				}
 			}
-			titleratingsection
-			descriptionratingsection
+			titlesectionrating
+			descriptionsectionrating
 			ratingscontent {
 				id
 				name
@@ -306,6 +306,23 @@ export const QueryInternet = gql`
 				id
 				benefitdescription
 			}
+			benefitimages {
+				id
+				responsiveImage {
+					alt
+					aspectRatio
+					base64
+					bgColor
+					height
+					sizes
+					src
+					srcSet
+					title
+					webpSrcSet
+					width
+					__typename
+				}
+			}
 		}
 	}
 `;
@@ -391,6 +408,23 @@ export const QueryCFTV = gql`
 			benefitcontent {
 				id
 				benefitdescription
+			}
+			benefitimages {
+				id
+				responsiveImage {
+					alt
+					aspectRatio
+					base64
+					bgColor
+					height
+					sizes
+					src
+					srcSet
+					title
+					webpSrcSet
+					width
+					__typename
+				}
 			}
 		}
 	}
@@ -478,6 +512,23 @@ export const QueryAccess = gql`
 				id
 				benefitdescription
 			}
+			benefitimages {
+				id
+				responsiveImage {
+					alt
+					aspectRatio
+					base64
+					bgColor
+					height
+					sizes
+					src
+					srcSet
+					title
+					webpSrcSet
+					width
+					__typename
+				}
+			}
 		}
 	}
 `;
@@ -564,6 +615,23 @@ export const QueryPhone = gql`
 				id
 				benefitdescription
 			}
+			benefitimages {
+				id
+				responsiveImage {
+					alt
+					aspectRatio
+					base64
+					bgColor
+					height
+					sizes
+					src
+					srcSet
+					title
+					webpSrcSet
+					width
+					__typename
+				}
+			}
 		}
 	}
 `;
@@ -649,6 +717,23 @@ export const QueryAlarm = gql`
 			benefitcontent {
 				id
 				benefitdescription
+			}
+			benefitimages {
+				id
+				responsiveImage {
+					alt
+					aspectRatio
+					base64
+					bgColor
+					height
+					sizes
+					src
+					srcSet
+					title
+					webpSrcSet
+					width
+					__typename
+				}
 			}
 		}
 	}

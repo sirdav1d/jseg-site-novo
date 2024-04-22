@@ -7,7 +7,6 @@ import WrapperRequest from '../../../components/WrapperRequest';
 export default async function SmartHome() {
 	const data: any = await request({
 		query: QuerySmartHome,
-		revalidate: 30,
 	});
 	return (
 		<main className='overflow-x-hidden'>

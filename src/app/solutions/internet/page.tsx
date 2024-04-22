@@ -7,7 +7,6 @@ import WrapperRequest from '../../../components/WrapperRequest';
 export default async function Internet() {
 	const data: any = await request({
 		query: QueryInternet,
-		revalidate: 30,
 	});
 	return (
 		<main className='overflow-x-hidden'>

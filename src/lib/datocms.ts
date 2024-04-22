@@ -5,7 +5,7 @@ import { GraphQLClient } from 'graphql-request';
 interface RequestProps {
 	query: string;
 	variables?: any;
-	revalidate: number;
+	revalidate?: number;
 }
 
 export function request({ query, variables, revalidate }: RequestProps) {

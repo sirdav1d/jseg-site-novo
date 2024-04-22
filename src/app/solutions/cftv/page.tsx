@@ -7,7 +7,6 @@ import WrapperRequest from '../../../components/WrapperRequest';
 export default async function Cftv() {
 	const data: any = await request({
 		query: QueryCFTV,
-		revalidate: 30,
 	});
 	return (
 		<main className='overflow-x-hidden'>

@@ -10,13 +10,13 @@ export default function ContentFeature({ data }: { data: AllHomepage }) {
 	return (
 		<div>
 			<Container>
-				<div className='flex flex-col gap-20 '>
+				<div className='flex flex-col gap-20 xl:gap-0 '>
 					<div className=' flex flex-col items-start gap-5'>
 						<div className='flex flex-col xl:flex-row items-start justify-between w-full gap-5'>
 							<h2 className='text-2xl font-bold max-w-md'>
-								{data.titlesectionfeature}
+								{data.titlesectionfeat}
 							</h2>
-							<p className='prose'>{data.descriptionsectionfeature}</p>
+							<p className='prose'>{data.descriptionsectionfeat}</p>
 						</div>
 						<Button
 							variant={'brand'}
@@ -28,7 +28,7 @@ export default function ContentFeature({ data }: { data: AllHomepage }) {
 							/>
 						</Button>
 					</div>
-					<div className='gap-20 xl:gap-10 flex flex-col w-full h-full item-center justify-center'>
+					<div className='gap-12 xl:gap-0 flex flex-col w-full h-full item-center justify-center'>
 						{data.featurecontent.map((features) => {
 							return (
 								<FeatureS
