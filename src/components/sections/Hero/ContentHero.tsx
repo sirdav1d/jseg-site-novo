@@ -101,7 +101,7 @@ export default function ContentHero({ data }: { data: AllHomepage }) {
 								</div>
 							</div>
 							<div>
-								<div className='absolute top-0 -z-10 right-0 object-contain w-[45%] xl:w-[38%] hidden xl:block'>
+								<div className='absolute top-0 -z-10 right-0 object-contain w-[45%] xl:w-[38%] hidden xl:block '>
 									<MotionDiv
 										transition={{
 											delay: 0.2,
@@ -115,7 +115,7 @@ export default function ContentHero({ data }: { data: AllHomepage }) {
 												data.imagehero[0].responsiveImage
 											}></ResponsiveImage>
 									</MotionDiv>
-									<div className='w-[56%] object-contain -translate-y-28 -translate-x-20 2xl:flex hidden'>
+									<div className='w-[56%] object-contain -translate-y-28 -translate-x-20 2xl:flex hidden '>
 										<MotionDiv
 											variants={SlideRight}
 											transition={{

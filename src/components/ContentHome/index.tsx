@@ -13,6 +13,7 @@ export default function ContentHome({ data }: { data: Data }) {
 	return (
 		<>
 			<HeroSection data={data.allHomepages[0]}></HeroSection>
+			<Divider />
 			<ServicesList data={data.allHomepages[0]} />
 			<Divider />
 			<Feature data={data.allHomepages[0]} />
