@@ -24,7 +24,7 @@ export default function HeroAbout(props: HeroAboutProps) {
 				height={770}
 				alt='Prédios'></Image>
 			<Container>
-				<div className='my-20 h-full flex flex-col gap-20 justify-center items-center z-50'>
+				<div className='h-full flex flex-col gap-20 justify-center items-center z-50 border'>
 					<div className='flex flex-col gap-5 items-center justify-center'>
 						<h2 className='text-zinc-900 font-extrabold max-w-xs lg:max-w-2xl text-center xl:text-4xl text-3xl'>
 							{props.heading}
