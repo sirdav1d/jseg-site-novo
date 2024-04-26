@@ -9,7 +9,7 @@ import React from 'react';
 
 export default function Timeline() {
 	return (
-		<div className='pb-20'>
+		<div>
 			<Container>
 				<>
 					<div className='w-full flex  gap-10 flex-col lg:flex-row'>

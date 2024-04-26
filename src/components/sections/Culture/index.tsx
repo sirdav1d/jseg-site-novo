@@ -12,10 +12,10 @@ export default function Culture() {
 	return (
 		<div
 			id='culture'
-			className='pt-20 w-full'>
+			className='xl:pt-20 w-full flex flex-col'>
 			<Container>
-				<>
-					<div className='w-full flex items-start flex-col gap-5'>
+				<div className='flex flex-col gap-12'>
+					<div className='w-full flex items-start flex-col gap-5 '>
 						<MotionDiv
 							variants={SlideUp}
 							viewport={{ once: true }}
@@ -41,7 +41,7 @@ export default function Culture() {
 							</p>
 						</MotionDiv>
 					</div>
-					<ul className='flex gap-10 w-full flex-col lg:flex-row mt-10'>
+					<ul className='flex gap-5 w-full flex-col lg:flex-row lg:justify-between'>
 						{culture.map((c, index) => {
 							return (
 								<li key={index}>
@@ -52,7 +52,7 @@ export default function Culture() {
 										transition={{ delay: 0.25 * index, type: 'spring' }}
 										whileInView={'open'}
 										initial='close'>
-										<Card className='h-[220px]'>
+										<Card className='xl:h-[220px]'>
 											<CardHeader>
 												<div className='flex gap-3 items-center '>
 													<Image
@@ -78,7 +78,7 @@ export default function Culture() {
 							);
 						})}
 					</ul>
-				</>
+				</div>
 			</Container>
 		</div>
 	);
