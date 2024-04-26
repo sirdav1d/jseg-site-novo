@@ -1,12 +1,10 @@
 /** @format */
 
 import Container from '@/components/Container';
+import { MotionSpan } from '@/components/MotionComponents';
 import { Button } from '@/components/ui/button';
 import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
-import React from 'react';
-import Image from 'next/image';
-import bgImage from '@/assets/images/krakenimages-376KN_ISplE-unsplash.jpg';
 
 interface HeroContactProps {
 	heading: string;
@@ -15,21 +13,30 @@ interface HeroContactProps {
 
 export default function HeroContact(props: HeroContactProps) {
 	return (
-		<div className=' bg-brand-green-100/30 w-full h-[90vh] bg-grid-brand-green-500/[0.1] relative flex items-center justify-center'>
-			<div className='-z-10 w-full h-full absolute pointer-events-none inset-0 flex items-center justify-center  bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_10%,green)]'></div>
-			<Image
-				className='grayscale opacity-20 absolute object-cover w-full h-full'
-				src={bgImage}
-				width={1440}
-				height={770}
-				alt='Casal Comemorando'></Image>
+		<div className=' w-full h-[90vh] relative flex items-center justify-center'>
+			<span className='h-16 w-44 hover:translate-x-40 delay-200 transition-all duration-300 ease-linear lg:w-[400px] rounded-full blur-[120px] bg-brand-green-500  absolute top-40  lg:top-60 left-0  lg:left-28 -rotate-45'></span>
+			<span className='h-16 w-40 hover:-translate-y-40 transition-all duration-300 ease-linear lg:w-96 blur-[120px] rounded-full bg-brand-green-500 absolute bottom-80 right-0 lg:right-1/4 rotate-45'></span>
+
 			<Container>
 				<div className='h-full flex flex-col gap-20 justify-center items-center z-50'>
+					<a href='#solutions'>
+						<div className='absolute bottom-20  lg:bottom-10 h-12 w-6 border-2 rounded-full border-brand-green-500 bg-transparent'>
+							<MotionSpan
+								animate={{ y: 24 }}
+								initial={{ y: 0 }}
+								transition={{
+									type: 'spring',
+									repeatType: 'reverse',
+									repeat: Infinity,
+								}}
+								className='bg-brand-green-500 flex w-4 h-4 rounded-full z-10 m-auto'></MotionSpan>
+						</div>
+					</a>
 					<div className='flex flex-col gap-5 items-center justify-center'>
 						<h2 className='text-zinc-900 font-extrabold max-w-xs lg:max-w-2xl text-center xl:text-4xl text-3xl'>
 							{props.heading}
 						</h2>
-						<p className='xl:prose-lg prose font-normal max-w-xl text-center'>
+						<p className='xl:prose-lg prose max-w-3xl text-center drop-shadow'>
 							{props.subheadline}
 						</p>
 					</div>
