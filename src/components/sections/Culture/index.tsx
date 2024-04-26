@@ -46,7 +46,7 @@ export default function Culture() {
 							return (
 								<li key={index}>
 									<MotionDiv
-										className='flex flex-col gap-4 justify-start items-start w-[368px]'
+										className='flex flex-col gap-4 justify-start items-start w-[356px] lg:w-[368px]'
 										variants={SlideUp}
 										viewport={{ once: true }}
 										transition={{ delay: 0.25 * index, type: 'spring' }}
