@@ -12,17 +12,15 @@ import React from 'react';
 
 export default function ContentCFTV({ data }: { data: DataCFTV }) {
 	return (
-		<div className='text-zinc-900 h-full min-h-screen w-full'>
-			<Container>
-				<HeroServices data={data.allCftvpages[0]} />
-				<Divider />
-				<ServicesList data={data.allCftvpages[0]} />
-				<Divider />
-				<Feature data={data.allCftvpages[0]} />
-				<Divider />
-				<Ratings data={data.allCftvpages[0]} />
-				<Benefits data={data.allCftvpages[0]} />
-			</Container>
-		</div>
+		<>
+			<HeroServices data={data.allCftvpages[0]} />
+			<Divider />
+			<ServicesList data={data.allCftvpages[0]} />
+			<Divider />
+			<Feature data={data.allCftvpages[0]} />
+			<Divider />
+			<Ratings data={data.allCftvpages[0]} />
+			<Benefits data={data.allCftvpages[0]} />
+		</>
 	);
 }

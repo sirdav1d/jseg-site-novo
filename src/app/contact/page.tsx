@@ -1,16 +1,20 @@
 /** @format */
 
-import React from 'react';
-import HeroContact from './HeroContact';
+import Divider from '@/components/Divider';
+import HeroPages from '@/components/HeroPages';
+import ContactInfo from '@/components/sections/ContactInfo';
 
 export default function Contact() {
 	return (
-		<div className='h-full'>
-			<HeroContact
-				heading={'INOVAÇÃO GUIADA POR PESSOAS, FOCADA EM RESULTADOS'}
+		<>
+			<HeroPages
+				heading={'Envie sua Mensagem para Atendimento Prioritário'}
 				subheadline={
-					'Somos Uma Equipe Orientada Por Pessoas, Movida Por Inovação E Focada Em Gerar Resultados Para Nossos Clientes'
-				}></HeroContact>
-		</div>
+					'Entre em contato conosco para tirar dúvidas, solicitar informações sobre nossos produtos, ou simplesmente para dizer olá. Estamos prontos para atendê-lo!'
+				}
+				anchor={'#formComponent'}></HeroPages>
+
+			<ContactInfo />
+		</>
 	);
 }

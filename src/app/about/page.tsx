@@ -1,23 +1,23 @@
 /** @format */
 
-import Culture from '@/components/sections/Culture';
-import HeroAbout from './HeroAbout';
 import Divider from '@/components/Divider';
+import HeroPages from '@/components/HeroPages';
+import Culture from '@/components/sections/Culture';
 import Timeline from './Timeline';
-import Ratings from '@/components/sections/Ratings';
 
 export default function About() {
 	return (
-		<div className='h-full'>
-			<HeroAbout
+		<>
+			<HeroPages
 				heading={'Descubra Como Transformamos Ideias Em Realidade'}
 				subheadline={
-					'Explore nossa empresa e como estamos construindo pontes entre pessoas, ideias e tecnologia, impactando positivamente pessoas, famílias e negócios'
-				}></HeroAbout>
+					'Explore nossa empresa e saiba como estamos promovendo a inovação e a colaboração entre pessoas, ideias e tecnologia, levando segurança e conforto para famílias e negócios'
+				}
+				anchor={'#culture'}></HeroPages>
 			<Culture />
 			<Divider />
 			<Timeline />
 			<Divider />
-		</div>
+		</>
 	);
 }

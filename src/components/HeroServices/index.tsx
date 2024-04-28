@@ -14,9 +14,9 @@ export default function HeroServices({ data }: { data: AllServicepage }) {
 	return (
 		<div className='h-[84vh] w-full py-10'>
 			<Container>
-				<div className='flex flex-row w-full  xl:flex-col gap-20 lg:gap-0 h-full justify-between items-start  '>
-					<div className='w-full align-middle mt-10 '>
-						<div className='flex flex-col xl:flex-row gap-5 w-full justify-between'>
+				<div className='flex flex-col md:flex-row w-full gap-5 xl:flex-col md:gap-20 xl:gap-0 h-full justify-between items-start  '>
+					<div className='w-full align-middle xl:mt-10 flex flex-col xl:gap-5'>
+						<div className='flex flex-col xl:flex-row gap-5 w-full justify-between '>
 							<MotionHeading
 								variants={RevealRight}
 								animate='open'
@@ -54,7 +54,7 @@ export default function HeroServices({ data }: { data: AllServicepage }) {
 						</MotionDiv>
 					</div>
 
-					<div className='lg:flex w-full flex-row gap-5 xl:h-full items-end hidden '>
+					<div className='flex w-full flex-row gap-5 xl:h-full xl:items-end  '>
 						<div className='xl:flex hidden flex-col gap-5 justify-between w-[40%]'>
 							<MotionDiv
 								className='flex gap-5  h-[134px]'
@@ -129,7 +129,7 @@ export default function HeroServices({ data }: { data: AllServicepage }) {
 								ease: 'linear',
 							}}
 							animate='open'
-							className='w-full -z-10 hidden lg:flex'
+							className='w-full -z-10 flex'
 							initial='close'>
 							<ResponsiveImage
 								className='object-contain rounded-xl drop-shadow-md'

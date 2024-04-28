@@ -12,17 +12,15 @@ import React from 'react';
 
 export default function ContentInternet({ data }: { data: DataInternet }) {
 	return (
-		<div className='text-zinc-900 h-full min-h-screen w-full'>
-			<Container>
-				<HeroServices data={data.allInternetpages[0]} />
-				<Divider />
-				<ServicesList data={data.allInternetpages[0]} />
-				<Divider />
-				<Feature data={data.allInternetpages[0]} />
-				<Divider />
-				<Ratings data={data.allInternetpages[0]} />
-				<Benefits data={data.allInternetpages[0]} />
-			</Container>
-		</div>
+		<>
+			<HeroServices data={data.allInternetpages[0]} />
+			<Divider />
+			<ServicesList data={data.allInternetpages[0]} />
+			<Divider />
+			<Feature data={data.allInternetpages[0]} />
+			<Divider />
+			<Ratings data={data.allInternetpages[0]} />
+			<Benefits data={data.allInternetpages[0]} />
+		</>
 	);
 }

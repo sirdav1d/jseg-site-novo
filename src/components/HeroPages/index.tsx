@@ -6,12 +6,13 @@ import { Button } from '@/components/ui/button';
 import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 
-interface HeroAboutProps {
+interface HeroPagesProps {
 	heading: string;
 	subheadline: string;
+	anchor: string;
 }
 
-export default function HeroAbout(props: HeroAboutProps) {
+export default function HeroPages(props: HeroPagesProps) {
 	return (
 		<div className=' w-full h-[90vh] relative flex items-center justify-center'>
 			<span className='h-16 w-44 hover:translate-x-40 transition-all delay-100 duration-300 ease-linear lg:w-[400px] rounded-full blur-[120px] bg-brand-green-500  absolute top-20 lg:top-60 left-0  lg:left-28 -rotate-45'></span>
@@ -19,7 +20,7 @@ export default function HeroAbout(props: HeroAboutProps) {
 
 			<Container>
 				<div className='h-full flex flex-col xl:gap-20 gap-10 items-center mt-20 lg:justify-center lg:mt-0 z-50'>
-					<a href='#culture'>
+					<a href={props.anchor}>
 						<div className='absolute bottom-20  lg:bottom-10 h-12 w-6 border-2 rounded-full border-brand-green-500 bg-transparent'>
 							<MotionSpan
 								animate={{ y: 24 }}
@@ -40,7 +41,7 @@ export default function HeroAbout(props: HeroAboutProps) {
 							{props.subheadline}
 						</p>
 					</div>
-					<Link href={'/contact'}>
+					<a href={'/contact#formComponent'}>
 						<Button
 							variant={'brand'}
 							className='group text-xl py-4 pl-5 pr-3'>
@@ -50,7 +51,7 @@ export default function HeroAbout(props: HeroAboutProps) {
 								className='group-hover:translate-x-2 transition-all duration-200 ease-linear'
 							/>
 						</Button>
-					</Link>
+					</a>
 				</div>
 			</Container>
 		</div>

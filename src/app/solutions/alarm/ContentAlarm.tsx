@@ -12,8 +12,8 @@ import React from 'react';
 
 export default function ContentAlarm({ data }: { data: DataAlarm }) {
 	return (
-		<div className='text-zinc-900 h-full min-h-screen w-full'>
-			<Container>
+		<>
+			
 				<HeroServices data={data.allAlarmpages[0]} />
 				<Divider />
 				<ServicesList data={data.allAlarmpages[0]} />
@@ -22,7 +22,7 @@ export default function ContentAlarm({ data }: { data: DataAlarm }) {
 				<Divider />
 				<Ratings data={data.allAlarmpages[0]} />
 				<Benefits data={data.allAlarmpages[0]} />
-			</Container>
-		</div>
+			
+		</>
 	);
 }

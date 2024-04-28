@@ -12,17 +12,15 @@ import React from 'react';
 
 export default function ContentPhone({ data }: { data: DataPhone }) {
 	return (
-		<div className='text-zinc-900 h-full min-h-screen w-full'>
-			<Container>
-				<HeroServices data={data.allPhonepages[0]} />
-				<Divider />
-				<ServicesList data={data.allPhonepages[0]} />
-				<Divider />
-				<Feature data={data.allPhonepages[0]} />
-				<Ratings data={data.allPhonepages[0]} />
-				<Divider />
-				<Benefits data={data.allPhonepages[0]} />
-			</Container>
-		</div>
+		<>
+			<HeroServices data={data.allPhonepages[0]} />
+			<Divider />
+			<ServicesList data={data.allPhonepages[0]} />
+			<Divider />
+			<Feature data={data.allPhonepages[0]} />
+			<Ratings data={data.allPhonepages[0]} />
+			<Divider />
+			<Benefits data={data.allPhonepages[0]} />
+		</>
 	);
 }

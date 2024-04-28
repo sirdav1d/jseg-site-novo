@@ -12,8 +12,8 @@ import React from 'react';
 
 export default function ContentAccess({ data }: { data: DataAccess }) {
 	return (
-		<div className='text-zinc-900 h-full min-h-screen w-full'>
-			<Container>
+		<>
+			
 				<HeroServices data={data.allAccesspages[0]} />
 				<Divider />
 				<ServicesList data={data.allAccesspages[0]} />
@@ -22,7 +22,7 @@ export default function ContentAccess({ data }: { data: DataAccess }) {
 				<Divider />
 				<Ratings data={data.allAccesspages[0]} />
 				<Benefits data={data.allAccesspages[0]} />
-			</Container>
-		</div>
+			
+		</>
 	);
 }
