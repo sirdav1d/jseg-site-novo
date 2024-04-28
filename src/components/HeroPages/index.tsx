@@ -19,7 +19,7 @@ export default function HeroPages(props: HeroPagesProps) {
 			<span className='h-16 w-40 delay-100 hover:-translate-y-40 transition-all duration-300 ease-linear lg:w-96 blur-[120px] rounded-full bg-brand-green-500 absolute bottom-40 lg:bottom-80 right-0 lg:right-1/4 rotate-45'></span>
 
 			<Container>
-				<div className='h-full flex flex-col xl:gap-20 gap-10 items-center mt-20 lg:justify-center lg:mt-0 z-50'>
+				<div className='h-full flex flex-col xl:gap-20 gap-10 items-center mt-20 lg:justify-center lg:mt-0 '>
 					<a href={props.anchor}>
 						<div className='absolute bottom-20  lg:bottom-10 h-12 w-6 border-2 rounded-full border-brand-green-500 bg-transparent'>
 							<MotionSpan

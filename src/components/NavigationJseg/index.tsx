@@ -30,7 +30,7 @@ export default function NavigationJseg() {
 												{l.label}
 											</NavigationMenuLink>
 										</NavigationMenuTrigger>{' '}
-										<NavigationMenuContent>
+										<NavigationMenuContent className='z-50'>
 											<ul className='grid w-[400px] gap-2 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] '>
 												{l.opt?.map((o, index) => {
 													return (
