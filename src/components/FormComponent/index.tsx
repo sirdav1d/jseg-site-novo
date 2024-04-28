@@ -51,8 +51,10 @@ export default function FormComponent() {
 		const name = form.getValues('name');
 		const email = form.getValues('email');
 		const consent = form.getValues('consent');
+		const role = form.getValues('role');
+		const sector = form.getValues('sector');
 
-		if (!cel || !name || !email || !consent) {
+		if (!cel || !name || !email || !consent || !role || !sector) {
 			setDisabled(true);
 		} else {
 			setDisabled(false);
