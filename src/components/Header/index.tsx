@@ -17,7 +17,7 @@ export default function Header() {
 			initial={{ y: '-100%' }}
 			animate={{ y: 0 }}
 			transition={{ delay: 1, duration: 0.5, ease: 'linear' }}
-			className=' bg-zinc-50/40 backdrop-blur-sm border-b border-zinc-600/10 z-50'>
+			className=' bg-zinc-50/40 backdrop-blur-sm border-b border-zinc-600/10 z-[999999999999999999999999999]'>
 			<Container>
 				<div className='flex justify-between py-4 w-full items-center'>
 					<a href='/'>
@@ -27,7 +27,7 @@ export default function Header() {
 							height={48}
 							alt='Logo JSEG Equipamentos'></Image>
 					</a>
-					<div className='hidden xl:flex gap-20 '>
+					<div className='hidden xl:flex gap-20 z-50'>
 						<NavigationJseg />
 						<Link
 							href={'/'}

@@ -42,15 +42,17 @@ export default function HeroServices({ data }: { data: AllServicepage }) {
 							initial='close'
 							exit={'exit'}
 							transition={{ delay: 0.6, ease: 'linear', duration: 0.3 }}>
-							<Button
-								variant={'brand'}
-								className='group text-xl py-4 pl-5 pr-3'>
-								Solicitar Orçamento
-								<ChevronRight
-									size={28}
-									className='group-hover:translate-x-2 transition-all duration-200 ease-linear'
-								/>
-							</Button>
+							<a href={'/contact#formComponent'}>
+								<Button
+									variant={'brand'}
+									className='group text-xl py-4 pl-5 pr-3'>
+									Solicitar Orçamento
+									<ChevronRight
+										size={28}
+										className='group-hover:translate-x-2 transition-all duration-200 ease-linear'
+									/>
+								</Button>
+							</a>
 						</MotionDiv>
 					</div>
 

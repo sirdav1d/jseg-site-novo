@@ -8,7 +8,7 @@ export default function Contact() {
 	return (
 		<>
 			<HeroPages
-				heading={'Envie sua Mensagem para Atendimento Prioritário'}
+				heading={'Preencha Nosso Formulário Abaixo E Faça Um Orçamento'}
 				subheadline={
 					'Entre em contato conosco para tirar dúvidas, solicitar informações sobre nossos produtos, ou simplesmente para dizer olá. Estamos prontos para atendê-lo!'
 				}

@@ -36,8 +36,8 @@ export default function RootLayout({
 		<html lang='pt-BR'>
 			<body className={`${montserrat.variable} ${poppins.variable}`}>
 				<Header />
-				<Toaster />
 				{children}
+				<Toaster />
 				<Footer />
 			</body>
 		</html>
