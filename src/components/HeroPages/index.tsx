@@ -22,8 +22,8 @@ export default function HeroPages(props: HeroPagesProps) {
 		<div className=' w-full h-[90vh] flex items-center justify-center'>
 			<Container>
 				<div className='h-full flex flex-col gap-10 items-center mt-20 lg:justify-center lg:mt-0  -z-10'>
-					<span className='h-16  w-44 hover:translate-x-40 transition-all delay-100 duration-300 ease-linear lg:w-[400px] rounded-full blur-[120px] bg-brand-green-500 absolute top-20 lg:top-60 left-0  lg:left-28 -rotate-45'></span>
-					<span className='h-16 w-40 delay-100 hover:-translate-y-40 transition-all duration-300 ease-linear lg:w-96 blur-[120px] rounded-full bg-brand-green-500 absolute bottom-40 lg:bottom-80 right-0 lg:right-1/4 rotate-45'></span>
+					<span className='h-16  w-44 hover:translate-x-40 transition-all delay-100 duration-300 -z-10 ease-linear lg:w-[400px] rounded-full blur-[120px] bg-brand-green-500 absolute top-20 lg:top-60 left-0  lg:left-28 -rotate-45'></span>
+					<span className='h-16 w-40 delay-100 hover:-translate-y-40 transition-all duration-300 -z-10 ease-linear lg:w-96 blur-[120px] rounded-full bg-brand-green-500 absolute bottom-40 lg:bottom-80 right-0 lg:right-1/4 rotate-45'></span>
 
 					<div className='flex flex-col gap-5 items-center justify-center '>
 						<MotionHeading

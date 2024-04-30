@@ -1,16 +1,16 @@
 /** @format */
+
 'use client';
 
 import Divider from '@/components/Divider';
-import HeroServices from '@/components/HeroServices';
+import HeroPages from '@/components/HeroPages';
 import Benefits from '@/components/sections/Benefits';
-import FeatureComponent from '@/components/sections/Feature/Feature';
+import ContactInfo from '@/components/sections/ContactInfo';
 import Ratings from '@/components/sections/Ratings';
-import ServicesList from '@/components/sections/ServicesList';
 import { useEffect, useState } from 'react';
 import { useQuerySubscription } from 'react-datocms';
 
-export default function ContentAccess({ subscription }: { subscription: any }) {
+export default function ContentAbout({ subscription }: { subscription: any }) {
 	const [hydrated, setHydrated] = useState(false);
 
 	useEffect(() => setHydrated(true), []);
@@ -26,12 +26,12 @@ export default function ContentAccess({ subscription }: { subscription: any }) {
 	return (
 		hydrated && (
 			<>
-				<HeroServices data={data.allHomes[0].heroservices[3]} />
-				<FeatureComponent
-					title={data.allHomes[0].titleaccess}
-					description={data.allHomes[0].descriptionaccess}
-					features={data.allHomes[0].featureaccess}
+				<HeroPages
+					heading={data.allHomes[0].headlinecontact}
+					subheadline={data.allHomes[0].subheadlinecontact}
+					anchor={'formComponent'}
 				/>
+				<ContactInfo />
 				<Divider />
 				<Ratings data={data.allHomes[0]} />
 				<Benefits data={data.allHomes[0]} />

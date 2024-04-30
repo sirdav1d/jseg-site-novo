@@ -1,23 +1,22 @@
 /** @format */
 
 import { request } from '@/lib/datocms';
-import { QueryAlarm } from '@/lib/queries';
-import WrapperRequest from '../../../components/WrapperRequest';
+import { Query } from '@/lib/queries';
+import ContentAlarm from './ContentAlarm';
 
 export default async function Alarm() {
 	const data: any = await request({
-		query: QueryAlarm,
+		query: Query,
 		revalidate: 30,
 	});
 	return (
 		<main className='overflow-x-hidden'>
-			<WrapperRequest
+			<ContentAlarm
 				subscription={{
 					initialData: data,
-					query: QueryAlarm,
+					query: Query,
 					token: process.env.NEXT_DATOCMS_TOKEN,
 				}}
-				page='alarm'
 			/>
 		</main>
 	);

@@ -1,23 +1,21 @@
 /** @format */
 
-import Divider from '@/components/Divider';
-import HeroPages from '@/components/HeroPages';
-import Culture from '@/components/sections/Culture';
-import Timeline from './Timeline';
+import { request } from '@/lib/datocms';
+import { Query } from '@/lib/queries';
+import ContentAbout from './ContentAbout';
 
-export default function About() {
+export default async function About() {
+	const data: any = await request({
+		query: Query,
+		revalidate: 30,
+	});
 	return (
-		<>
-			<HeroPages
-				heading={'Descubra Como Transformamos Ideias Em Realidade'}
-				subheadline={
-					'Explore nossa empresa e saiba como estamos promovendo a inovação e a colaboração entre pessoas, ideias e tecnologia, levando segurança e conforto para famílias e negócios'
-				}
-				anchor={'#culture'}></HeroPages>
-			<Culture />
-			<Divider />
-			<Timeline />
-			<Divider />
-		</>
+		<ContentAbout
+			subscription={{
+				initialData: data,
+				query: Query,
+				token: process.env.NEXT_DATOCMS_TOKEN,
+			}}
+		/>
 	);
 }

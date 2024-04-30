@@ -1,20 +1,21 @@
 /** @format */
 
-import Divider from '@/components/Divider';
-import HeroPages from '@/components/HeroPages';
-import ContactInfo from '@/components/sections/ContactInfo';
+import { request } from '@/lib/datocms';
+import { Query } from '@/lib/queries';
+import ContentContact from './ContentContact';
 
-export default function Contact() {
+export default async function About() {
+	const data: any = await request({
+		query: Query,
+		revalidate: 30,
+	});
 	return (
-		<>
-			<HeroPages
-				heading={'Preencha Nosso Formulário Abaixo E Faça Um Orçamento'}
-				subheadline={
-					'Entre em contato conosco para tirar dúvidas, solicitar informações sobre nossos produtos, ou simplesmente para dizer olá. Estamos prontos para atendê-lo!'
-				}
-				anchor={'#formComponent'}></HeroPages>
-
-			<ContactInfo />
-		</>
+		<ContentContact
+			subscription={{
+				initialData: data,
+				query: Query,
+				token: process.env.NEXT_DATOCMS_TOKEN,
+			}}
+		/>
 	);
 }

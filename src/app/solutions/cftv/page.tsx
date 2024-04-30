@@ -1,22 +1,22 @@
 /** @format */
 
 import { request } from '@/lib/datocms';
-import { QueryCFTV } from '@/lib/queries';
-import WrapperRequest from '../../../components/WrapperRequest';
+import { Query } from '@/lib/queries';
+import ContentCFTV from './ContentCFTV';
 
 export default async function Cftv() {
 	const data: any = await request({
-		query: QueryCFTV,
+		query: Query,
 	});
 	return (
 		<main className='overflow-x-hidden'>
-			<WrapperRequest
+			<ContentCFTV
 				subscription={{
 					initialData: data,
-					query: QueryCFTV,
+					query: Query,
 					token: process.env.NEXT_DATOCMS_TOKEN,
 				}}
-				page='cftv'
+			
 			/>
 		</main>
 	);

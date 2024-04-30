@@ -1,25 +1,44 @@
 /** @format */
+'use client';
 
-import { Data } from '@/lib/types';
-import React from 'react';
-import HeroSection from '../sections/Hero';
-import ServicesList from '../sections/ServicesList';
-import Feature from '../sections/Feature';
-import Ratings from '../sections/Ratings';
-import Benefits from '../sections/Benefits';
+import { useEffect, useState } from 'react';
+import { useQuerySubscription } from 'react-datocms';
 import Divider from '../Divider';
+import Benefits from '../sections/Benefits';
+import FeatureComponent from '../sections/Feature/Feature';
+import HeroSection from '../sections/Hero';
+import Ratings from '../sections/Ratings';
+import ServicesList from '../sections/ServicesList';
 
-export default function ContentHome({ data }: { data: Data }) {
+export default function ContentHome({ subscription }: { subscription: any }) {
+	const [hydrated, setHydrated] = useState(false);
+
+	useEffect(() => setHydrated(true), []);
+
+	const { query, initialData, token } = subscription;
+
+	const { data, error, status } = useQuerySubscription({
+		query: query,
+		enabled: true,
+		token,
+		initialData,
+	});
+
 	return (
-		<>
-			<HeroSection data={data.allHomepages[0]}></HeroSection>
-			<Divider />
-			<ServicesList data={data.allHomepages[0]} />
-			<Divider />
-			<Feature data={data.allHomepages[0]} />
-			<Divider />
-			<Ratings data={data.allHomepages[0]} />
-			<Benefits data={data.allHomepages[0]} />
-		</>
+		hydrated && (
+			<>
+				<HeroSection data={data.allHomes[0]}></HeroSection>
+				<ServicesList data={data.allHomes[0]} />
+				<Divider />
+				<FeatureComponent
+					title={data.allHomes[0].titleHomeFeat}
+					description={data.allHomes[0].descriptionHomeFeature}
+					features={data.allHomes[0].featurehome}
+				/>
+				<Divider />
+				<Ratings data={data.allHomes[0]} />
+				<Benefits data={data.allHomes[0]} />
+			</>
+		)
 	);
 }

@@ -2,21 +2,25 @@
 
 import Container from '@/components/Container';
 import { Button } from '@/components/ui/button';
-import { AllHomepage } from '@/lib/types';
+import { Feature } from '@/lib/types';
 import { ChevronRight } from 'lucide-react';
-import FeatureS from './FeatureS';
+import FeatureS from './FeatureList';
 
-export default function ContentFeature({ data }: { data: AllHomepage }) {
+interface ContentFeatureProps {
+	title: string;
+	description: string;
+	features: Feature[];
+}
+
+export default function FeatureComponent(props: ContentFeatureProps) {
 	return (
-		<div>
+		<div className='pt-20'>
 			<Container>
 				<div className='flex flex-col gap-20 xl:gap-0 '>
 					<div className=' flex flex-col items-start gap-5'>
 						<div className='flex flex-col xl:flex-row items-start justify-between w-full gap-5'>
-							<h2 className='text-2xl font-bold max-w-md'>
-								{data.titlesectionfeat}
-							</h2>
-							<p className='prose'>{data.descriptionsectionfeat}</p>
+							<h2 className='text-2xl font-bold max-w-md'>{props.title}</h2>
+							<p className='prose'>{props.description}</p>
 						</div>
 						<Button
 							variant={'brand'}
@@ -29,14 +33,15 @@ export default function ContentFeature({ data }: { data: AllHomepage }) {
 						</Button>
 					</div>
 					<div className='gap-12 xl:gap-0 flex flex-col w-full h-full item-center justify-center'>
-						{data.featurecontent.map((features) => {
+						{props.features.map((feat) => {
 							return (
 								<FeatureS
-									key={features.id}
-									title={features.title}
-									tag={features.tag}
-									description={features.description}
-									images={features.images}></FeatureS>
+									key={feat.id}
+									title={feat.title}
+									tag={feat.tag}
+									description={feat.description}
+									image={feat.image}
+									id={feat.id}></FeatureS>
 							);
 						})}
 					</div>

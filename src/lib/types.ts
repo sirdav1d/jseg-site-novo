@@ -1,5 +1,11 @@
 /** @format */
 
+export interface Status {
+	id?: string;
+	title: string;
+	value: number;
+}
+
 export interface ResponsiveImage {
 	alt: string | null;
 	aspectRatio: number;
@@ -19,9 +25,11 @@ interface Image {
 	responsiveImage: ResponsiveImage;
 }
 
-export interface Status {
-	title: string;
-	value: number;
+export interface HeroService {
+	id: string;
+	headline: string;
+	subheadline: string;
+	imageshero: Image[];
 }
 
 export interface CardService {
@@ -30,12 +38,17 @@ export interface CardService {
 	description: string;
 }
 
+interface CardCulture {
+	id: string;
+	icon: Image;
+}
+
 export interface Feature {
-	id?: string;
-	title: string;
+	id: string;
 	tag: string;
+	title: string;
 	description: string;
-	images: Image[];
+	image: Image;
 }
 
 interface Rating {
@@ -56,71 +69,57 @@ export interface DataServiceList {
 	cardservices: CardService[];
 }
 
-export interface AllHomepage {
+export interface AllHome {
 	heading: string;
 	subheadline: string;
 	keyword01: string;
 	keyword02: string;
 	keyword03: string;
+	statushero: Status[];
 	imagehero: Image[];
-	status01: Status;
-	status02: Status;
-	status03: Status;
+	headlineabout: string;
+	subheadlineabout: string;
+	headlinecontact: string;
+	subheadlinecontact: string;
+	heroservices: HeroService[];
 	titlesectionservs: string;
 	descriptionsectionservs: string;
 	cardservices: CardService[];
-	titlesectionfeat: string;
-	descriptionsectionfeat: string;
-	featurecontent: Feature[];
+	titleculture: string;
+	descriptionculture: string;
+	cardcultures: CardCulture[];
+	headingtimeline: string;
+	descriptiontimeline: string;
+	times: CardService[];
+	titlehomefeat: string;
+	descriptionhomefeat: string;
+	featurehome: Feature[];
+	titlesmarthome: string;
+	descriptionsmarthome: string;
+	featuresmarthome: Feature[];
+	titlecftv: string;
+	descriptioncftv: string;
+	featurecftv: Feature[];
+	titleinternet: string;
+	descriptioninternet: string;
+	featureinternet: Feature[];
+	titleaccess: string;
+	descriptionaccess: string;
+	featureaccess: Feature[];
+	titletel: string;
+	descriptiontel: string;
+	featuretel: Feature[];
+	titlealarm: string;
+	descriptionalarm: string;
+	featurealarm: Feature[];
 	titlesectionrating: string;
 	descriptionsectionrating: string;
 	ratingscontent: Rating[];
 	titlesectionbenefit: string;
-	benefitcontent: Benefit[];
 	benefitimages: Image[];
+	benefitcontent: Benefit[];
 }
 
 export interface Data {
-	allHomepages: AllHomepage[];
-}
-
-export interface DataSmartHome {
-	allSmarthomepages: AllServicepage[];
-}
-
-export interface DataInternet {
-	allInternetpages: AllServicepage[];
-}
-
-export interface DataCFTV {
-	allCftvpages: AllServicepage[];
-}
-
-export interface DataAccess {
-	allAccesspages: AllServicepage[];
-}
-
-export interface DataPhone {
-	allPhonepages: AllServicepage[];
-}
-
-export interface DataAlarm {
-	allAlarmpages: AllServicepage[];
-}
-
-export interface AllServicepage {
-	headline: string;
-	subheadline: string;
-	imagesheroservice: Image[];
-	titlesectionservs: string;
-	descriptionsectionservs: string;
-	cardservices: CardService[];
-	titlesectionfeat: string;
-	descriptionsectionfeat: string;
-	featurecontent: Feature[];
-	titlesectionrating: string;
-	descriptionsectionrating: string;
-	ratingscontent: Rating[];
-	titlesectionbenefit: string;
-	benefitcontent: Benefit[];
+	allHomes: AllHome[];
 }

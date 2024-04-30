@@ -1,22 +1,22 @@
 /** @format */
 
 import { request } from '@/lib/datocms';
-import { QueryPhone } from '@/lib/queries';
-import WrapperRequest from '../../../components/WrapperRequest';
+import { Query } from '@/lib/queries';
+import ContentPhone from './ContentPhone';
 
 export default async function Phone() {
 	const data: any = await request({
-		query: QueryPhone,
+		query: Query,
 	});
 	return (
 		<main className='overflow-x-hidden'>
-			<WrapperRequest
+			<ContentPhone
 				subscription={{
 					initialData: data,
-					query: QueryPhone,
+					query: Query,
 					token: process.env.NEXT_DATOCMS_TOKEN,
 				}}
-				page='phone'
+			
 			/>
 		</main>
 	);

@@ -1,22 +1,21 @@
 /** @format */
 
 import { request } from '@/lib/datocms';
-import { QuerySmartHome } from '@/lib/queries';
-import WrapperRequest from '../../../components/WrapperRequest';
+import { Query } from '@/lib/queries';
+import ContentSmartHome from './ContentSmartHome';
 
 export default async function SmartHome() {
 	const data: any = await request({
-		query: QuerySmartHome,
+		query: Query,
 	});
 	return (
 		<main className='overflow-x-hidden'>
-			<WrapperRequest
+			<ContentSmartHome
 				subscription={{
 					initialData: data,
-					query: QuerySmartHome,
+					query: Query,
 					token: process.env.NEXT_DATOCMS_TOKEN,
 				}}
-				page='smartHome'
 			/>
 		</main>
 	);

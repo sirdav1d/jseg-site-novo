@@ -1,23 +1,22 @@
 /** @format */
 
 import { request } from '@/lib/datocms';
-import { QueryAccess } from '@/lib/queries';
-import WrapperRequest from '../../../components/WrapperRequest';
+import { Query } from '@/lib/queries';
+import ContentAccess from './ContentAccess';
 
 export default async function Access() {
 	const data: any = await request({
-		query: QueryAccess,
+		query: Query,
 		revalidate: 30,
 	});
 	return (
 		<main className='overflow-x-hidden'>
-			<WrapperRequest
+			<ContentAccess
 				subscription={{
 					initialData: data,
-					query: QueryAccess,
+					query: Query,
 					token: process.env.NEXT_DATOCMS_TOKEN,
 				}}
-				page='access'
 			/>
 		</main>
 	);

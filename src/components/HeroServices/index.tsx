@@ -2,7 +2,7 @@
 
 import { RevealRight } from '@/animations/RevealRight';
 import { SlideUp } from '@/animations/SlideUp';
-import { AllServicepage } from '@/lib/types';
+import { AllHome, HeroService } from '@/lib/types';
 import { ChevronRight, SquareArrowOutUpRight } from 'lucide-react';
 import { Image as ResponsiveImage } from 'react-datocms';
 import { MotionDiv, MotionHeading, MotionP } from '../MotionComponents';
@@ -10,7 +10,7 @@ import { Button } from '../ui/button';
 import { Card, CardContent } from '../ui/card';
 import Container from '../Container';
 
-export default function HeroServices({ data }: { data: AllServicepage }) {
+export default function HeroServices({ data }: { data: HeroService }) {
 	return (
 		<div className='h-[84vh] w-full py-10'>
 			<Container>
@@ -70,7 +70,7 @@ export default function HeroServices({ data }: { data: AllServicepage }) {
 								}}
 								initial='close'>
 								<ResponsiveImage
-									data={data.imagesheroservice[0].responsiveImage}
+									data={data.imageshero[0].responsiveImage}
 									className='object-cover drop-shadow-sm rounded-lg h-full'
 								/>
 							</MotionDiv>
@@ -116,7 +116,7 @@ export default function HeroServices({ data }: { data: AllServicepage }) {
 							}}
 							initial='close'>
 							<ResponsiveImage
-								data={data.imagesheroservice[1].responsiveImage}
+								data={data.imageshero[1].responsiveImage}
 								className='object-cover rounded-lg drop-shadow-sm h-60'
 							/>
 						</MotionDiv>
@@ -135,9 +135,7 @@ export default function HeroServices({ data }: { data: AllServicepage }) {
 							initial='close'>
 							<ResponsiveImage
 								className='object-contain rounded-xl drop-shadow-md'
-								data={
-									data.imagesheroservice[2].responsiveImage
-								}></ResponsiveImage>
+								data={data.imageshero[2].responsiveImage}></ResponsiveImage>
 						</MotionDiv>
 					</div>
 				</div>
