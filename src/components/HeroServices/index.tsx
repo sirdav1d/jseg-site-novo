@@ -12,7 +12,7 @@ import Container from '../Container';
 
 export default function HeroServices({ data }: { data: HeroService }) {
 	return (
-		<div className='h-[84vh] w-full py-10'>
+		<div className='h-[90vh] w-full py-10'>
 			<Container>
 				<div className='flex flex-col md:flex-row w-full gap-5 xl:flex-col md:gap-20 xl:gap-0 h-full justify-between items-start  '>
 					<div className='w-full align-middle xl:mt-10 flex flex-col xl:gap-5'>
@@ -56,7 +56,7 @@ export default function HeroServices({ data }: { data: HeroService }) {
 						</MotionDiv>
 					</div>
 
-					<div className='flex w-full flex-row gap-5 xl:h-full xl:items-end  '>
+					<div className='flex w-full flex-row gap-5 h-fit xl:-translate-y-20 -z-10  xl:items-end '>
 						<div className='xl:flex hidden flex-col gap-5 justify-between w-[40%]'>
 							<MotionDiv
 								className='flex gap-5  h-[134px]'
@@ -105,7 +105,7 @@ export default function HeroServices({ data }: { data: HeroService }) {
 						</div>
 
 						<MotionDiv
-							className='xl:flex gap-5 hidden w-3/4 '
+							className='xl:flex gap-5 hidden w-3/4'
 							variants={SlideUp}
 							whileInView='open'
 							transition={{
