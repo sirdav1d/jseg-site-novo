@@ -32,7 +32,7 @@ export default function HeroPages(props: HeroPagesProps) {
 							initial='close'
 							exit={'exit'}
 							transition={{ delay: 0.2, ease: 'linear', duration: 0.3 }}
-							className='text-zinc-900  font-extrabold w-full md:max-w-xl lg:max-w-2xl text-center xl:text-4xl text-3xl'>
+							className='text-zinc-900  font-extrabold w-full md:max-w-xl -z-10 lg:max-w-2xl text-center xl:text-4xl text-3xl'>
 							{props.heading}
 						</MotionHeading>
 						<MotionP
@@ -41,7 +41,7 @@ export default function HeroPages(props: HeroPagesProps) {
 							initial='close'
 							exit={'exit'}
 							transition={{ delay: 0.4, ease: 'linear', duration: 0.3 }}
-							className='xl:prose-lg prose w-full xl:max-w-3xl text-center drop-shadow'>
+							className='xl:prose-lg prose w-full xl:max-w-3xl text-center -z-10 drop-shadow'>
 							{props.subheadline}
 						</MotionP>
 					</div>

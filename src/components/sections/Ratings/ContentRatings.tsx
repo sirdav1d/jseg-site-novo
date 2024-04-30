@@ -1,7 +1,6 @@
 /** @format */
 
 import Container from '@/components/Container';
-import { AllHomepage } from '@/lib/types';
 import Testimony from './Testimony';
 
 import {
@@ -12,7 +11,7 @@ import {
 	CarouselPrevious,
 } from '@/components/ui/carousel';
 
-export default function ContentRatings({ data }: { data: AllHomepage }) {
+export default function ContentRatings({ data }: { data: any }) {
 	return (
 		<div>
 			<Container>
