@@ -4,7 +4,6 @@ import { RevealRight } from '@/animations/RevealRight';
 import Container from '@/components/Container';
 import { MotionDiv, MotionLI } from '@/components/MotionComponents';
 import { Button } from '@/components/ui/button';
-import { AllHomepage } from '@/lib/types';
 import { Trophy } from 'lucide-react';
 import { Image as ResponsiveImage } from 'react-datocms';
 import { FaWhatsapp } from 'react-icons/fa6';
