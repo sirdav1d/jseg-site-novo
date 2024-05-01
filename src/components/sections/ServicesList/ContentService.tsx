@@ -21,20 +21,13 @@ export default function ContentService({ data }: { data: DataServiceList }) {
 				<div className='flex flex-col gap-10  w-full'>
 					<div className='w-full'>
 						<div className='flex flex-col gap-5 lg:flex-row'>
-							<h2 className='text-2xl w-full font-bold'>{data.titlesectionservs}</h2>
+							<h2 className='text-2xl w-full font-bold'>
+								{data.titlesectionservs}
+							</h2>
 							<p className='prose mb-10 lg:mb-0'>
 								{data.descriptionsectionservs}
 							</p>{' '}
 						</div>
-						<Button
-							variant={'brand'}
-							className='group text-lg py-3 pl-5 pr-3'>
-							Saiba Mais
-							<ChevronRight
-								size={28}
-								className='group-hover:translate-x-2 transition-all duration-200 ease-linear'
-							/>
-						</Button>
 					</div>
 
 					<div className='grid md:grid-cols-2 xl:grid-cols-3 gap-5 w-full h-full'>

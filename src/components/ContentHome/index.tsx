@@ -31,8 +31,8 @@ export default function ContentHome({ subscription }: { subscription: any }) {
 				<ServicesList data={data.allHomes[0]} />
 				<Divider />
 				<FeatureComponent
-					title={data.allHomes[0].titleHomeFeat}
-					description={data.allHomes[0].descriptionHomeFeature}
+					title={data.allHomes[0].titlehomefeat}
+					description={data.allHomes[0].descriptionhomefeat}
 					features={data.allHomes[0].featurehome}
 				/>
 				<Divider />

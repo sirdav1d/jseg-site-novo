@@ -14,7 +14,7 @@ export default function HeroServices({ data }: { data: HeroService }) {
 	return (
 		<div className='h-[90vh] w-full py-10'>
 			<Container>
-				<div className='flex flex-col md:flex-row w-full gap-5 xl:flex-col md:gap-20 xl:gap-0 h-full justify-between items-start  '>
+				<div className='flex flex-col md:flex-row w-full  xl:flex-col gap-20 xl:gap-0 h-full justify-center lg:justify-between items-start  '>
 					<div className='w-full align-middle xl:mt-10 flex flex-col xl:gap-5'>
 						<div className='flex flex-col xl:flex-row gap-5 w-full justify-between '>
 							<MotionHeading

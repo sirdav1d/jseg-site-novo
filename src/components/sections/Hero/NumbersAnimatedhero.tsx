@@ -23,7 +23,7 @@ export default function NumbersAnimatedHero(props: NumbersAnimatedHeroProps) {
 				locale='pt-BR'
 				transitions={(index) => ({
 					type: 'spring',
-					duration: index + 0.2,
+					duration: index + 0.1,
 				})}
 			/>
 		</h3>

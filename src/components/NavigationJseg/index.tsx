@@ -62,8 +62,8 @@ export default function NavigationJseg() {
 								<NavigationMenuItem
 									key={i}
 									className={`${
-										path === l.href ? 'text-brand-green-500' : 'text-stone-700'
-									} hover:text-brand-orange-500 transition-all ease-in-out duration-200 font-semibold`}>
+										path === l.href ? 'text-brand-green-700' : 'text-stone-700'
+									} hover:text-brand-green-500 transition-all ease-in-out duration-200 font-semibold`}>
 									<Link
 										href={l.href}
 										legacyBehavior

@@ -12,7 +12,7 @@ import NumbersAnimatedHero from './NumbersAnimatedhero';
 
 export default function HeroSection({ data }: { data: AllHome }) {
 	return (
-		<div className='h-[88vh] w-full py-10 flex items-center justify-center'>
+		<div className='h-[90vh] w-full py-10 flex items-center justify-center'>
 			<Container>
 				<>
 					<div className='h-full'>
@@ -89,22 +89,13 @@ export default function HeroSection({ data }: { data: AllHome }) {
 								</div>
 							</div>
 							<div>
-								<div className='absolute top-0 -z-10 right-0 object-contain w-[45%] xl:w-[38%] hidden xl:block '>
-									<MotionDiv
-										transition={{
-											delay: 0.2,
-											ease: 'linear',
-											duration: 0.4,
-										}}
-										animate={{ y: 0 }}
-										initial={{ y: -200 }}>
-										<ResponsiveImage
-											data={
-												data.imagehero[0].responsiveImage
-											}></ResponsiveImage>
-									</MotionDiv>
+								<div className='absolute top-0 -z-10 right-0 w-1/3 hidden xl:block '>
+									<ResponsiveImage
+										data={data.imagehero[0].responsiveImage}></ResponsiveImage>
+
 									<div className='w-[56%] object-contain -translate-y-28 -translate-x-20 2xl:flex hidden '>
 										<MotionDiv
+											className='h-[200px]'
 											variants={SlideRight}
 											transition={{
 												delay: 0.3,
@@ -126,7 +117,7 @@ export default function HeroSection({ data }: { data: AllHome }) {
 												duration: 0.5,
 											}}
 											whileInView='open'
-											className='w-[440px]'
+											className='h-[200px]'
 											initial='close'>
 											<ResponsiveImage
 												data={

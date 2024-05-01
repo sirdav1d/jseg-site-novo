@@ -22,15 +22,6 @@ export default function FeatureComponent(props: ContentFeatureProps) {
 							<h2 className='text-2xl font-bold max-w-md'>{props.title}</h2>
 							<p className='prose'>{props.description}</p>
 						</div>
-						<Button
-							variant={'brand'}
-							className='group text-lg py-3 pl-5 pr-3'>
-							Saiba Mais
-							<ChevronRight
-								size={28}
-								className='group-hover:translate-x-2 transition-all duration-200 ease-linear'
-							/>
-						</Button>
 					</div>
 					<div className='gap-12 xl:gap-0 flex flex-col w-full h-full item-center justify-center'>
 						{props.features.map((feat) => {
