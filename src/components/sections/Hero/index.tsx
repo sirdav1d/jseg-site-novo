@@ -89,7 +89,7 @@ export default function HeroSection({ data }: { data: AllHome }) {
 								</div>
 							</div>
 
-							<div className='absolute top-0 -z-10 right-0 w-1/3 hidden xl:block border '>
+							<div className='absolute top-0 -z-10 right-0 w-1/3 hidden xl:block '>
 								<ResponsiveImage
 									data={data.imagehero[0].responsiveImage}></ResponsiveImage>
 

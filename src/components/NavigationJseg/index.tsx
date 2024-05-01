@@ -26,7 +26,9 @@ export default function NavigationJseg() {
 								<>
 									<NavigationMenuItem className='z-50'>
 										<NavigationMenuTrigger className='z-50'>
-											<NavigationMenuLink className='hover:text-brand-green-500 group transition-all duration-200 ease-in-out text-base xl:text-lg flex flex-col font-semibold z-50'>
+											<NavigationMenuLink
+												href={l.href}
+												className='hover:text-brand-green-500 group transition-all duration-200 ease-in-out text-base xl:text-lg flex flex-col font-semibold z-50'>
 												{l.label}
 											</NavigationMenuLink>
 										</NavigationMenuTrigger>{' '}
