@@ -8,6 +8,7 @@ import { FaFacebook, FaWhatsapp } from 'react-icons/fa6';
 import Container from '../Container';
 import { MotionDiv } from '../MotionComponents';
 import { SlideUp } from '@/animations/SlideUp';
+import Link from 'next/link';
 
 export default function Footer() {
 	return (
@@ -37,7 +38,7 @@ export default function Footer() {
 									<div className=' flex gap-5 items-center justify-center'>
 										<a
 											aria-label='contato direto via instagram'
-											href='https://www.instagram.com/defenderinfo/'
+											href='https://www.instagram.com/jsegequipamentos/'
 											target='_blank'
 											rel='noopener noreferrer'>
 											<Instagram
@@ -49,7 +50,7 @@ export default function Footer() {
 										<a
 											aria-label='contato direto via whatsapp'
 											className='hover:text-brand-green-500 transition-all duration-300 ease-linear text-brand-green-500 lg:text-zinc-900'
-											href='https://api.whatsapp.com/send?phone=5521998966588&text=Ol%C3%A1,%20estava%20navegando%20em%20seu%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento'
+											href='https://api.whatsapp.com/send?phone=5521999624160&text=Ol%C3%A1,%20estava%20navegando%20em%20seu%20site%20institucional%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento'
 											target='_blank'
 											rel='noopener noreferrer'>
 											<FaWhatsapp size={32} />
@@ -57,20 +58,20 @@ export default function Footer() {
 										<a
 											aria-label='contato direto via facebook'
 											className='hover:text-brand-green-500 transition-all duration-300 ease-linear text-brand-green-500 lg:text-zinc-900'
-											href='https://www.facebook.com/defenderinformatica'
+											href='https://www.facebook.com/jsegintelbrasniteroi'
 											target='_blank'
 											rel='noopener noreferrer'>
 											<FaFacebook size={32} />
 										</a>
-										<a
+										<Link
 											aria-label='pagina de envio de email'
-											href='/contact'
+											href='/contact#formComponent'
 											rel='noopener noreferrer'>
 											<Mail
 												className='hover:text-brand-green-500 transition-all duration-300 ease-linear text-brand-green-500 lg:text-zinc-900'
 												size={32}
 											/>
-										</a>
+										</Link>
 									</div>
 								</div>
 								<div className='flex flex-col gap-1 '>

@@ -9,6 +9,7 @@ import { ChevronRight, Plus } from 'lucide-react';
 import { Image as ResponsiveImage } from 'react-datocms';
 import HeroTypeAnimation from './HeroTypeAnimation';
 import NumbersAnimatedHero from './NumbersAnimatedhero';
+import Link from 'next/link';
 
 export default function HeroSection({ data }: { data: AllHome }) {
 	return (
@@ -30,15 +31,19 @@ export default function HeroSection({ data }: { data: AllHome }) {
 									<p className='text-base prose font-normal max-w-2xl mb-10'>
 										{data.subheadline}
 									</p>
-									<Button
-										variant={'brand'}
-										className='group text-xl py-4 pl-5 pr-3'>
-										Solicitar Orçamento
-										<ChevronRight
-											size={28}
-											className='group-hover:translate-x-2 transition-all duration-200 ease-linear'
-										/>
-									</Button>
+									<Link
+										href={'/contact#formComponent'}
+										legacyBehavior>
+										<Button
+											variant={'brand'}
+											className='group text-xl py-4 pl-5 pr-3'>
+											Solicitar Orçamento
+											<ChevronRight
+												size={28}
+												className='group-hover:translate-x-2 transition-all duration-200 ease-linear'
+											/>
+										</Button>
+									</Link>
 								</div>
 								<div className='flex w-full items-center flex-row py-3 justify-between border-t border-b bg-zinc-50/40 backdrop-blur-sm border-zinc-600/10'>
 									<div className='w-1/3 xl:flex gap-5 hidden'>

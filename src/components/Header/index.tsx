@@ -26,7 +26,9 @@ export default function Header() {
 					<div className='hidden xl:flex gap-20 z-50'>
 						<NavigationJseg />
 						<Link
-							href={'/'}
+							href={
+								'https://api.whatsapp.com/send?phone=5521999624160&text=Ol%C3%A1,%20estava%20navegando%20em%20seu%20site%20institucional%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento'
+							}
 							target='_blank'>
 							<Button className='flex gap-2 px-4 py-2 bg-brand-green-700 transition-all duration-200 ease-linear rounded-lg drop-shadow-lg hover:drop-shadow-xl text-base text-zinc-50 hover:bg-brand-green-500'>
 								<FaWhatsapp size={24} />

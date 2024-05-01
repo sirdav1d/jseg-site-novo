@@ -93,4 +93,5 @@
 
 *{
   scroll-behavior: smooth;
+  scroll-margin-block: 40px;
 }
