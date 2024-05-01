@@ -27,7 +27,7 @@ export default function Testimony(props: TestimonyProps) {
 					<div className='w-16'>
 						<ResponsiveImage data={props.avatar} />
 					</div>
-					<h4 className='text-lg font-bold'>{props.name}</h4>
+					<h3 className='text-lg font-bold'>{props.name}</h3>
 				</div>
 			</CardContent>
 		</Card>

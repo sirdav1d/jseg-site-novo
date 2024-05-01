@@ -47,7 +47,7 @@ export default function ContentBenefits({ data }: { data: any }) {
 									);
 								})}
 							</ul>
-							<Button className='group py-3 pl-3 pr-4 flex gap-3 transition-all hover:text-zinc-50 hover:bg-brand-green-700 duration-300 ease-linear w-fit items-center  bg-zinc-50 text-brand-green-500 text-lg font-semibold'>
+							<Button className='group py-3 pl-3 pr-4 flex gap-3 transition-all hover:text-zinc-50 hover:bg-brand-green-700 duration-300 ease-linear w-fit items-center  bg-zinc-50 text-brand-green-700 text-lg font-semibold'>
 								<FaWhatsapp size={32} />
 								Falar Com Setor Comercial
 							</Button>
