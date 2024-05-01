@@ -88,43 +88,42 @@ export default function HeroSection({ data }: { data: AllHome }) {
 									})}
 								</div>
 							</div>
-							<div>
-								<div className='absolute top-0 -z-10 right-0 w-1/3 hidden xl:block '>
-									<ResponsiveImage
-										data={data.imagehero[0].responsiveImage}></ResponsiveImage>
 
-									<div className='w-[56%] object-contain -translate-y-28 -translate-x-20 2xl:flex hidden '>
-										<MotionDiv
-											className='h-[200px]'
-											variants={SlideRight}
-											transition={{
-												delay: 0.3,
-												duration: 0.5,
-												ease: 'linear',
-											}}
-											whileInView='open'
-											initial='close'>
-											<ResponsiveImage
-												data={
-													data.imagehero[1].responsiveImage
-												}></ResponsiveImage>
-										</MotionDiv>
-										<MotionDiv
-											variants={SlideRight}
-											transition={{
-												delay: 0.6,
-												ease: 'linear',
-												duration: 0.5,
-											}}
-											whileInView='open'
-											className='h-[200px]'
-											initial='close'>
-											<ResponsiveImage
-												data={
-													data.imagehero[2].responsiveImage
-												}></ResponsiveImage>
-										</MotionDiv>
-									</div>
+							<div className='absolute top-0 -z-10 right-0 w-1/3 hidden xl:block border '>
+								<ResponsiveImage
+									data={data.imagehero[0].responsiveImage}></ResponsiveImage>
+
+								<div className=' -translate-y-28 -translate-x-20 2xl:flex hidden '>
+									<MotionDiv
+										className='h-[200px] w-[200px]'
+										variants={SlideRight}
+										transition={{
+											delay: 0.3,
+											duration: 0.5,
+											ease: 'linear',
+										}}
+										whileInView='open'
+										initial='close'>
+										<ResponsiveImage
+											data={
+												data.imagehero[1].responsiveImage
+											}></ResponsiveImage>
+									</MotionDiv>
+									<MotionDiv
+										className='h-[200px] w-[200px]'
+										variants={SlideRight}
+										transition={{
+											delay: 0.6,
+											ease: 'linear',
+											duration: 0.5,
+										}}
+										whileInView='open'
+										initial='close'>
+										<ResponsiveImage
+											data={
+												data.imagehero[2].responsiveImage
+											}></ResponsiveImage>
+									</MotionDiv>
 								</div>
 							</div>
 						</div>
