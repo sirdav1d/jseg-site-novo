@@ -29,12 +29,9 @@ export default function ContentAbout({ subscription }: { subscription: any }) {
 				<HeroPages
 					heading={data.allHomes[0].headlinecontact}
 					subheadline={data.allHomes[0].subheadlinecontact}
-					anchor={'formComponent'}
+					anchor={'#formComponent'}
 				/>
 				<ContactInfo />
-				<Divider />
-				<Ratings data={data.allHomes[0]} />
-				<Benefits data={data.allHomes[0]} />
 			</>
 		)
 	);

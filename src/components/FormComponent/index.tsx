@@ -294,7 +294,7 @@ export default function FormComponent() {
 					<Button
 						variant={'brand'}
 						disabled={form.formState !== null ? disabled : true}
-						className=' active:bg-brand-green-500 disabled:grayscale hover:disabled:grayscale checked:bg-right w-full tracking-wider text-xl py-4 pl-5 pr-3 flex gap-4 bg-brand-green-500 bg-left transition-all duration-200 ease-linear hover:bg-brand-green-700 group drop-shadow-xl'
+						className=' active:bg-brand-green-500 disabled:grayscale hover:disabled:grayscale checked:bg-right w-full tracking-wider text-lg py-3 pl-5 pr-3 flex gap-4 bg-brand-green-700 bg-left transition-all duration-200 ease-linear hover:bg-brand-green-500 group drop-shadow-xl'
 						type='submit'>
 						Enviar Mensagem
 						<ChevronRight

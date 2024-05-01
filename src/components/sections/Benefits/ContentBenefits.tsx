@@ -5,6 +5,7 @@ import Container from '@/components/Container';
 import { MotionDiv, MotionLI } from '@/components/MotionComponents';
 import { Button } from '@/components/ui/button';
 import { Trophy } from 'lucide-react';
+import Link from 'next/link';
 import { Image as ResponsiveImage } from 'react-datocms';
 import { FaWhatsapp } from 'react-icons/fa6';
 
@@ -47,10 +48,14 @@ export default function ContentBenefits({ data }: { data: any }) {
 									);
 								})}
 							</ul>
-							<Button className='group py-3 pl-3 pr-4 flex gap-3 transition-all hover:text-zinc-50 hover:bg-brand-green-700 duration-300 ease-linear w-fit items-center  bg-zinc-50 text-brand-green-700 text-lg font-semibold'>
-								<FaWhatsapp size={32} />
-								Falar Com Setor Comercial
-							</Button>
+							<Link
+								href={'/contact#formComponent'}
+								legacyBehavior>
+								<Button className='group py-3 pl-3 pr-4 flex gap-3 transition-all hover:text-zinc-50 hover:bg-brand-green-700 duration-300 ease-linear w-fit items-center  bg-zinc-50 text-brand-green-700 text-lg font-semibold'>
+									<FaWhatsapp size={32} />
+									Falar Com Setor Comercial
+								</Button>
+							</Link>
 						</div>
 					</div>
 				</div>

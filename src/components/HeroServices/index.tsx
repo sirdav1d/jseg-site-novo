@@ -2,13 +2,14 @@
 
 import { RevealRight } from '@/animations/RevealRight';
 import { SlideUp } from '@/animations/SlideUp';
-import { AllHome, HeroService } from '@/lib/types';
+import { HeroService } from '@/lib/types';
 import { ChevronRight, SquareArrowOutUpRight } from 'lucide-react';
 import { Image as ResponsiveImage } from 'react-datocms';
+import Container from '../Container';
 import { MotionDiv, MotionHeading, MotionP } from '../MotionComponents';
 import { Button } from '../ui/button';
 import { Card, CardContent } from '../ui/card';
-import Container from '../Container';
+import Link from 'next/link';
 
 export default function HeroServices({ data }: { data: HeroService }) {
 	return (
@@ -42,7 +43,9 @@ export default function HeroServices({ data }: { data: HeroService }) {
 							initial='close'
 							exit={'exit'}
 							transition={{ delay: 0.6, ease: 'linear', duration: 0.3 }}>
-							<a href={'/contact#formComponent'}>
+							<Link
+								href={'/contact#formComponent'}
+								legacyBehavior>
 								<Button
 									variant={'brand'}
 									className='group text-xl py-4 pl-5 pr-3'>
@@ -52,7 +55,7 @@ export default function HeroServices({ data }: { data: HeroService }) {
 										className='group-hover:translate-x-2 transition-all duration-200 ease-linear'
 									/>
 								</Button>
-							</a>
+							</Link>
 						</MotionDiv>
 					</div>
 

@@ -13,7 +13,7 @@ export default function ContactInfo() {
 	return (
 		<div
 			id='formComponent'
-			className='py-20'>
+			className='py-24'>
 			<Container>
 				<>
 					<div

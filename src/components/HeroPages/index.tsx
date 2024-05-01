@@ -10,6 +10,7 @@ import {
 } from '@/components/MotionComponents';
 import { Button } from '@/components/ui/button';
 import { ChevronRight } from 'lucide-react';
+import Link from 'next/link';
 
 interface HeroPagesProps {
 	heading: string;
@@ -51,7 +52,9 @@ export default function HeroPages(props: HeroPagesProps) {
 						initial='close'
 						transition={{ delay: 0.6, ease: 'linear', duration: 0.3 }}
 						exit={'exit'}>
-						<a href={'/contact#formComponent'}>
+						<Link
+							href={'/contact#formComponent'}
+							legacyBehavior>
 							<Button
 								variant={'brand'}
 								className='group text-xl py-4 pl-5 pr-3'>
@@ -61,7 +64,7 @@ export default function HeroPages(props: HeroPagesProps) {
 									className='group-hover:translate-x-2 transition-all duration-200 ease-linear'
 								/>
 							</Button>
-						</a>
+						</Link>
 					</MotionDiv>
 					<a
 						href={props.anchor}
