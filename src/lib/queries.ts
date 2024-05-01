@@ -3,18 +3,6 @@
 import { gql } from 'graphql-request';
 
 export const Query = gql`
-	# -----------------------------------------------
-	#  Welcome to the Content Delivery API Playground!
-	# -----------------------------------------------
-	#
-	# Here you can write, validate, and test your GraphQL queries.
-	#
-	# Type queries into this side of the screen, and you will see intelligent
-	# typeaheads aware of the current GraphQL type schema and live syntax and
-	# validation errors highlighted within the text.
-	#
-	# An example GraphQL query might look like:
-
 	query {
 		allHomes {
 			heading
