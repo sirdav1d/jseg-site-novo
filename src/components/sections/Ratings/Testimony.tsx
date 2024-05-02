@@ -13,8 +13,8 @@ interface TestimonyProps {
 
 export default function Testimony(props: TestimonyProps) {
 	return (
-		<Card className=' p-4 pb-0 pt-8 max-w-[368px] w-full mx-auto '>
-			<CardContent className='flex flex-col gap-5 justify-between items-start aspect-square '>
+		<Card className=' p-4 pb-0 pt-8 max-w-[368px] h-full w-full mx-auto '>
+			<CardContent className='flex flex-col gap-5 justify-between items-start h-full '>
 				<div className='flex gap-1 text-brand-green-500'>
 					<Star />
 					<Star />
