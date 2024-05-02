@@ -59,7 +59,7 @@ export default function HeroServices({ data }: { data: HeroService }) {
 						</MotionDiv>
 					</div>
 
-					<div className='flex w-full flex-row gap-5 h-fit xl:-translate-y-20 -z-10  xl:items-end '>
+					<div className='flex w-full flex-row gap-5 h-fit xl:-translate-y-20  xl:items-end '>
 						<div className='xl:flex hidden flex-col gap-5 justify-between w-[40%]'>
 							<MotionDiv
 								className='flex gap-5  h-[134px]'
