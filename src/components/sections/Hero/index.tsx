@@ -10,7 +10,6 @@ import Link from 'next/link';
 import { Image as ResponsiveImage } from 'react-datocms';
 import { TypeAnimation } from 'react-type-animation';
 import NumbersAnimatedHero from './NumbersAnimatedhero';
-import HeroTypeAnimation from './HeroTypeAnimation';
 
 export default function HeroSection({ data }: { data: AllHome }) {
 	console.log(data.keyword01);
@@ -25,9 +24,19 @@ export default function HeroSection({ data }: { data: AllHome }) {
 									<h1 className='text-zinc-900 font-extrabold  max-w-xs lg:max-w-lg text-4xl '>
 										{data.heading}&nbsp;
 										<span className='text-brand-green-500'>
-											<HeroTypeAnimation
-												words={[data.keyword01, data.keyword02, data.keyword03]}
-											/>
+											<TypeAnimation
+												repeat={Infinity}
+												role='list'
+												wrapper='span'
+												speed={43}
+												sequence={[
+													data.keyword01,
+													1500,
+													data.keyword02,
+													1500,
+													data.keyword03,
+													1500,
+												]}></TypeAnimation>
 										</span>
 									</h1>
 									<p className='text-base prose font-normal max-w-2xl mb-10'>
