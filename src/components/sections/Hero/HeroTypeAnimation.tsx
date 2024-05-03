@@ -2,9 +2,9 @@
 
 'use client';
 
-import { MotionDiv, MotionSpan } from '@/components/MotionComponents';
+import { MotionSpan } from '@/components/MotionComponents';
 import { AnimatePresence } from 'framer-motion';
-import { FormEvent, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 interface HeroTypeAnimationprops {
 	words: string[];
@@ -24,10 +24,10 @@ export default function HeroTypeAnimation(props: HeroTypeAnimationprops) {
 		setTimeout(() => {
 			if (state === props.words[2]) {
 				setState(props.words[0]);
-			} else {
-				setState(props.words[0]);
 			}
 		}, 1500);
+
+		
 	}
 
 	useEffect(() => {
