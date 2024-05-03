@@ -1,23 +1,50 @@
 /** @format */
 
-import { TypeAnimation } from 'react-type-animation';
+'use client';
 
-export default function HeroTypeAnimation({ words }: { words: string[] }) {
+import { MotionDiv, MotionSpan } from '@/components/MotionComponents';
+import { AnimatePresence } from 'framer-motion';
+import { FormEvent, useEffect, useState } from 'react';
+
+interface HeroTypeAnimationprops {
+	words: string[];
+}
+export default function HeroTypeAnimation(props: HeroTypeAnimationprops) {
+	const [state, setState] = useState(props.words[0]);
+
+	function handleChange() {
+		setTimeout(() => {
+			if (state === props.words[0]) {
+				setState(props.words[1]);
+			}
+		}, 1500);
+		setTimeout(() => {
+			if (state === props.words[1]) setState(props.words[2]);
+		}, 1500);
+		setTimeout(() => {
+			if (state === props.words[2]) {
+				setState(props.words[0]);
+			} else {
+				setState(props.words[0]);
+			}
+		}, 1500);
+	}
+
+	useEffect(() => {
+		handleChange();
+	}, [state, setState]);
+
 	return (
-		<TypeAnimation
-			sequence={[
-				// Same substring at the start will only be typed out once, initially
-				words[0],
-				1500, // wait 1s before replacing "Mice" with "Hamsters"
-				words[1],
-				1500,
-				words[2],
-				1500,
-			]}
-			wrapper='span'
-			speed={40}
-			cursor={false}
-			repeat={Infinity}
-		/>
+		<AnimatePresence
+			mode='wait'
+			key={state}>
+			<MotionSpan
+				animate={{ y: 0, opacity: 1 }}
+				transition={{ duration: 0.5, delay: 0.2, ease: 'linear' }}
+				initial={{ y: -40, opacity: 0 }}
+				exit={{ y: 40, opacity: 0 }}>
+				{state}
+			</MotionSpan>
+		</AnimatePresence>
 	);
 }

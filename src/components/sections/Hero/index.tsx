@@ -6,12 +6,14 @@ import { MotionDiv } from '@/components/MotionComponents';
 import { Button } from '@/components/ui/button';
 import { AllHome } from '@/lib/types';
 import { ChevronRight, Plus } from 'lucide-react';
-import { Image as ResponsiveImage } from 'react-datocms';
-import HeroTypeAnimation from './HeroTypeAnimation';
-import NumbersAnimatedHero from './NumbersAnimatedhero';
 import Link from 'next/link';
+import { Image as ResponsiveImage } from 'react-datocms';
+import { TypeAnimation } from 'react-type-animation';
+import NumbersAnimatedHero from './NumbersAnimatedhero';
+import HeroTypeAnimation from './HeroTypeAnimation';
 
 export default function HeroSection({ data }: { data: AllHome }) {
+	console.log(data.keyword01);
 	return (
 		<div className='h-[90vh] w-full py-10 flex items-center justify-center'>
 			<Container>
