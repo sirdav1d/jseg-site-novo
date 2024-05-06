@@ -7,6 +7,7 @@ import ContentPhone from './ContentPhone';
 export default async function Phone() {
 	const data: any = await request({
 		query: Query,
+		revalidate: 30,
 	});
 	return (
 		<main className='overflow-x-hidden'>

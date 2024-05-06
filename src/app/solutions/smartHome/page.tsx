@@ -7,6 +7,7 @@ import ContentSmartHome from './ContentSmartHome';
 export default async function SmartHome() {
 	const data: any = await request({
 		query: Query,
+		revalidate: 30,
 	});
 	return (
 		<main className='overflow-x-hidden'>

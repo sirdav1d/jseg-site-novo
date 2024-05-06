@@ -12,7 +12,7 @@ import { TypeAnimation } from 'react-type-animation';
 import NumbersAnimatedHero from './NumbersAnimatedhero';
 
 export default function HeroSection({ data }: { data: AllHome }) {
-	console.log(data.keyword01);
+	
 	return (
 		<div className='h-[90vh] w-full py-10 flex items-center justify-center'>
 			<Container>

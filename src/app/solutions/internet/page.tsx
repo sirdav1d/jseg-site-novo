@@ -7,6 +7,7 @@ import ContentInternet from './ContentInternet';
 export default async function Internet() {
 	const data: any = await request({
 		query: Query,
+		revalidate: 30,
 	});
 	return (
 		<main className='overflow-x-hidden'>

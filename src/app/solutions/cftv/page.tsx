@@ -7,6 +7,7 @@ import ContentCFTV from './ContentCFTV';
 export default async function Cftv() {
 	const data: any = await request({
 		query: Query,
+		revalidate: 30,
 	});
 	return (
 		<main className='overflow-x-hidden'>
