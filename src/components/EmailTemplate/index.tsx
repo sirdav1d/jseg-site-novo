@@ -8,7 +8,7 @@ import {
 	Html,
 	Preview,
 	Section,
-	Text
+	Text,
 } from '@react-email/components';
 import { Tailwind } from '@react-email/tailwind';
 import React from 'react';

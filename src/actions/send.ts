@@ -35,8 +35,9 @@ export async function sendEmail(values: SendEmailProps) {
 			}),
 			text: '',
 		});
-		console.log({ data });
-	} catch (err) {
-		console.log(err);
+		console.log(data.data?.id);
+		console.log(data.error);
+	} catch (error) {
+		console.log(error);
 	}
 }

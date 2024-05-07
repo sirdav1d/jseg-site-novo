@@ -134,7 +134,7 @@ export default function HeroServices({ data }: { data: HeroService }) {
 								ease: 'linear',
 							}}
 							animate='open'
-							className='w-full -z-50 flex border-2'
+							className='w-full -z-50 flex'
 							initial='close'>
 							<ResponsiveImage
 								className='rounded-xl drop-shadow-md -z-10'
