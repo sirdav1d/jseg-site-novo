@@ -59,7 +59,7 @@ export default function HeroServices({ data }: { data: HeroService }) {
 						</MotionDiv>
 					</div>
 
-					<div className='flex w-full flex-row gap-5 h-fit xl:-translate-y-20  xl:items-end '>
+					<div className='flex w-full flex-row gap-5 h-fit xl:-translate-y-20  xl:items-end -z-10'>
 						<div className='xl:flex hidden flex-col gap-5 justify-between w-[40%]'>
 							<MotionDiv
 								className='flex gap-5  h-[134px]'
@@ -108,7 +108,7 @@ export default function HeroServices({ data }: { data: HeroService }) {
 						</div>
 
 						<MotionDiv
-							className='xl:flex gap-5 hidden w-3/4'
+							className='xl:flex gap-5 hidden w-3/4 -z-10'
 							variants={SlideUp}
 							whileInView='open'
 							transition={{
@@ -120,7 +120,7 @@ export default function HeroServices({ data }: { data: HeroService }) {
 							initial='close'>
 							<ResponsiveImage
 								data={data.imageshero[1].responsiveImage}
-								className='object-cover rounded-lg drop-shadow-sm h-60'
+								className='rounded-lg drop-shadow-sm h-60 -z-10'
 							/>
 						</MotionDiv>
 
@@ -134,10 +134,10 @@ export default function HeroServices({ data }: { data: HeroService }) {
 								ease: 'linear',
 							}}
 							animate='open'
-							className='w-full -z-10 flex'
+							className='w-full -z-50 flex border-2'
 							initial='close'>
 							<ResponsiveImage
-								className='object-contain rounded-xl drop-shadow-md'
+								className='rounded-xl drop-shadow-md -z-10'
 								data={data.imageshero[2].responsiveImage}></ResponsiveImage>
 						</MotionDiv>
 					</div>
