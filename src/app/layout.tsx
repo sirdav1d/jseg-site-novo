@@ -6,6 +6,7 @@ import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Toaster } from '@/components/ui/toaster';
+import BannerLGPD from '@/components/BannerLGPD';
 
 const montserrat = Montserrat({
 	subsets: ['latin'],
@@ -36,6 +37,7 @@ export default function RootLayout({
 		<html lang='pt-BR'>
 			<body className={`${montserrat.variable} ${poppins.variable}`}>
 				<Header />
+				<BannerLGPD />
 				{children}
 				<Toaster />
 				<Footer />
