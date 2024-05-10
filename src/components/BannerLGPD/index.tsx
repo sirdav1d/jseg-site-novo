@@ -60,7 +60,7 @@ export default function BannerLGPD() {
 					initial={{ y: -80, opacity: 0 }}
 					exit={{ y: 80, opacity: 0, transition: { duration: 0.3 } }}
 					className={`fixed bottom-0 left-0 flex   items-center w-fit h-fit text-xs lg:text-sm p-5  z-[99999999999999999999]`}>
-					<div className='w-full md:max-w-[348px]  rounded-lg gap-1 lg:gap-5 shadow-lg hover:shadow-2xl duration-300 ease-linear transition-all flex flex-col  justify-center items-center mx-auto p-5 bg-stone-50/70 backdrop-blur-sm lg:py-8 lg:px-8 text-stone-50'>
+					<div className='w-full md:max-w-[348px]  rounded-lg gap-1 lg:gap-5 shadow-lg hover:shadow-2xl duration-300 ease-linear transition-all flex flex-col  justify-center items-center mx-auto p-5 bg-stone-50/80 backdrop-blur-lg lg:py-8 lg:px-8 '>
 						<Image
 							src={logo}
 							width={180}
