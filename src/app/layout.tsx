@@ -7,6 +7,8 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Toaster } from '@/components/ui/toaster';
 import BannerLGPD from '@/components/BannerLGPD';
+import { GoogleTagManager } from '@next/third-parties/google';
+
 
 const montserrat = Montserrat({
 	subsets: ['latin'],
@@ -35,6 +37,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='pt-BR'>
+			<GoogleTagManager gtmId='GTM-TPTWC6S' />
 			<body className={`${montserrat.variable} ${poppins.variable}`}>
 				<Header />
 				<BannerLGPD />
