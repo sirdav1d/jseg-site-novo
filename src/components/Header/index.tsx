@@ -1,15 +1,13 @@
 /** @format */
 
-import React from 'react';
-import Image from 'next/image';
 import logo from '@/assets/images/logo_jseg.png';
-import Container from '../Container';
-import NavigationJseg from '../NavigationJseg';
-import MenuSheetJseg from '../MenuSheetJseg';
-import { MotionDiv } from '../MotionComponents';
+import Image from 'next/image';
 import Link from 'next/link';
-import { Button } from '../ui/button';
 import { FaWhatsapp } from 'react-icons/fa6';
+import Container from '../Container';
+import MenuSheetJseg from '../MenuSheetJseg';
+import NavigationJseg from '../NavigationJseg';
+import { Button } from '../ui/button';
 
 export default function Header() {
 	return (

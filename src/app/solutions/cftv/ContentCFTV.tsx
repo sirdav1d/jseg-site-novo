@@ -6,7 +6,6 @@ import HeroServices from '@/components/HeroServices';
 import Benefits from '@/components/sections/Benefits';
 import FeatureComponent from '@/components/sections/Feature/Feature';
 import Ratings from '@/components/sections/Ratings';
-import ServicesList from '@/components/sections/ServicesList';
 import { useEffect, useState } from 'react';
 import { useQuerySubscription } from 'react-datocms';
 

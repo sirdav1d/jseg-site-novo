@@ -2,11 +2,8 @@
 
 'use client';
 
-import Divider from '@/components/Divider';
 import HeroPages from '@/components/HeroPages';
-import Benefits from '@/components/sections/Benefits';
 import ContactInfo from '@/components/sections/ContactInfo';
-import Ratings from '@/components/sections/Ratings';
 import { useEffect, useState } from 'react';
 import { useQuerySubscription } from 'react-datocms';
 

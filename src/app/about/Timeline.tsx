@@ -1,11 +1,9 @@
 /** @format */
 
 import { RevealRight } from '@/animations/RevealRight';
-import { SlideRight } from '@/animations/SlideRight';
 import { SlideUp } from '@/animations/SlideUp';
 import Container from '@/components/Container';
 import { MotionDiv } from '@/components/MotionComponents';
-import React from 'react';
 
 export default function Timeline() {
 	return (
