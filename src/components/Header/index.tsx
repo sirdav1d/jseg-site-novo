@@ -24,6 +24,7 @@ export default function Header() {
 					<div className='hidden xl:flex gap-20 z-50'>
 						<NavigationJseg />
 						<Link
+							id='WhatsappHeader'
 							href={
 								'https://api.whatsapp.com/send?phone=5521999624160&text=Ol%C3%A1,%20estava%20navegando%20em%20seu%20site%20institucional%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento'
 							}

@@ -48,14 +48,16 @@ export default function ContentBenefits({ data }: { data: any }) {
 									);
 								})}
 							</ul>
-							<Link
-								href={'/contact#formComponent'}
-								legacyBehavior>
+							<a
+								href={
+									'https://api.whatsapp.com/send?phone=5521999624160&text=Ol%C3%A1,%20estava%20navegando%20em%20seu%20site%20institucional%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento'
+								}
+								target='_blank'>
 								<Button className='group py-3 pl-3 pr-4 flex gap-3 transition-all hover:text-zinc-50 hover:bg-brand-green-700 duration-300 ease-linear w-fit items-center  bg-zinc-50 text-brand-green-700 text-lg font-semibold'>
 									<FaWhatsapp size={32} />
 									Falar Com Setor Comercial
 								</Button>
-							</Link>
+							</a>
 						</div>
 					</div>
 				</div>
